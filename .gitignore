@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.py[cod]
+*$py.class
+NHANES AUG'21 - AUG'23/
+data/master_patient.csv
+data/final_cohort.csv
+data/hsgin_ablation_cache.json
+graphs/*.pt
+!graphs/.gitkeep
+checkpoints/
+*.pth
+.vscode/
+.idea/

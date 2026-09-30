@@ -1,0 +1,30 @@
+organ,feature,description,raw_total,raw_available,raw_missing_percent,cohort_total,cohort_available,cohort_missing_percent,status
+Demographics,RIDAGEYR,Age in years,11933,11933,0.0,6282,6282,0.0,RETAINED
+Demographics,RIAGENDR,"Gender (1=Male, 2=Female)",11933,11933,0.0,6282,6282,0.0,RETAINED
+Liver,LBXSATSI,Alanine Aminotransferase ALT (U/L),11933,6321,47.03,6282,6282,0.0,RETAINED
+Liver,LBXSASSI,Aspartate Aminotransferase AST (U/L),11933,6308,47.14,6282,6282,0.0,RETAINED
+Liver,LBXSGTSI,Gamma Glutamyl Transferase GGT (U/L),11933,6327,46.98,6282,6282,0.0,RETAINED
+Liver,LBXSAL,Albumin (g/dL),11933,6366,46.65,6282,6282,0.0,RETAINED
+Liver,LBXSTB,Total Bilirubin (mg/dL),11933,6325,47.0,6282,6279,0.05,RETAINED
+Liver,LBXSAPSI,Alkaline Phosphatase ALP (U/L),11933,6327,46.98,6282,6282,0.0,RETAINED
+Liver,LUXSMED,Liver Stiffness Median (kPa),11933,6700,43.85,6282,5892,6.21,RETAINED
+Liver,LUXCAPM,Controlled Attenuation Parameter CAP (dB/m),11933,6699,43.86,6282,5892,6.21,RETAINED
+Kidney,LBXSCR,Serum Creatinine (mg/dL),11933,6326,46.99,6282,6280,0.03,RETAINED
+Kidney,LBXSBU,Blood Urea Nitrogen BUN (mg/dL),11933,6326,46.99,6282,6279,0.05,RETAINED
+Kidney,LBXSUA,Uric Acid (mg/dL),11933,6329,46.96,6282,6282,0.0,RETAINED
+Kidney,URXUMA,Urine Albumin (ug/mL),11933,8153,31.68,6282,6158,1.97,RETAINED
+Kidney,URXUCR,Urine Creatinine (mg/dL),11933,8154,31.67,6282,6159,1.96,RETAINED
+Kidney,KIQ022,"Ever told had kidney failure/disease (1=Yes, 2=No)",11933,7807,34.58,6282,5404,13.98,RETAINED
+Heart,BPXOSY1,Systolic Blood Pressure Reading 1 (mmHg),11933,7517,37.01,6282,6089,3.07,RETAINED
+Heart,BPXODI1,Diastolic Blood Pressure Reading 1 (mmHg),11933,7517,37.01,6282,6089,3.07,RETAINED
+Heart,BPXOPLS1,Pulse Reading 1 (bpm),11933,7517,37.01,6282,6089,3.07,RETAINED
+Heart,LBDHDD,Direct HDL Cholesterol (mg/dL),11933,6890,42.26,6282,6282,0.0,RETAINED
+Heart,LBXTC,Total Cholesterol (mg/dL),11933,6890,42.26,6282,6282,0.0,RETAINED
+Heart,BPQ020,"Ever told had high blood pressure (1=Yes, 2=No)",11933,8498,28.79,6282,5838,7.07,RETAINED
+Heart,MCQ160C,"Ever told had coronary heart disease (1=Yes, 2=No)",11933,7807,34.58,6282,5403,13.99,RETAINED
+Heart,MCQ160E,"Ever told had heart attack (1=Yes, 2=No)",11933,7807,34.58,6282,5403,13.99,RETAINED
+Biomarker,LBXWBCSI,White Blood Cell count (10^9/L),11933,7593,36.37,6282,6282,0.0,RETAINED
+Biomarker,LBXRBCSI,Red Blood Cell count (10^12/L),11933,7593,36.37,6282,6282,0.0,RETAINED
+Biomarker,LBXHGB,Hemoglobin (g/dL),11933,7593,36.37,6282,6282,0.0,RETAINED
+Biomarker,LBXPLTSI,Platelet Count (10^9/L),11933,7593,36.37,6282,6282,0.0,RETAINED
+Biomarker,LBXHSCRP,High-sensitivity C-Reactive Protein hs-CRP (mg/L),11933,7282,38.98,6282,6282,0.0,RETAINED

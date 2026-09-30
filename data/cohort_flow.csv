@@ -1,0 +1,7 @@
+step,description,n_remaining,n_excluded
+1,Initial NHANES August 2021–August 2023 Participants,11933,0
+2,Demographic availability (Age & Gender complete),11933,0
+3,Liver enzymes availability (ALT & AST complete & >0),6308,5625
+4,Platelet count availability (LBXPLTSI complete & >0),6282,26
+5,Kidney baseline availability (Serum Creatinine & BUN complete),6277,5
+6,Cardiovascular baseline availability (HDL & Total Cholesterol complete),6277,0

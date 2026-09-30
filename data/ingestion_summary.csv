@@ -1,0 +1,28 @@
+file_key,description,category,num_rows,unique_seqn,is_seqn_unique,num_columns
+DEMO_L,Demographics,DEMO G,11933,11933,True,27
+BIOPRO_L,Biochemistry Profile,LABORATORY,7199,7199,True,42
+CBC_L,Complete Blood Count,LABORATORY,8727,8727,True,23
+ALB_CR_L,Albumin & Creatinine - Urine,LABORATORY,8493,8493,True,8
+HDL_L,HDL Cholesterol,LABORATORY,8068,8068,True,4
+TRIGLY_L,Triglycerides,LABORATORY,3996,3996,True,10
+TCHOL_L,Total Cholesterol,LABORATORY,8068,8068,True,4
+HSCRP_L,High-Sensitivity C-Reactive Protein,LABORATORY,8727,8727,True,4
+GLU_L,Fasting Glucose,LABORATORY,3996,3996,True,4
+INS_L,Insulin,LABORATORY,3996,3996,True,5
+GHB_L,Glycohemoglobin,LABORATORY,7199,7199,True,3
+HEPA_L,Hepatitis A,LABORATORY,8611,8611,True,3
+HEPBD_L,Hepatitis B Surface/Core Antibody,LABORATORY,8068,8068,True,5
+HEPC_L,Hepatitis C,LABORATORY,8068,8068,True,5
+HEPE_L,Hepatitis E,LABORATORY,8068,8068,True,4
+BMX_L,Body Measures,EXAMINATION,8860,8860,True,22
+BPXO_L,Blood Pressure - Oscillometric,EXAMINATION,7801,7801,True,12
+LUX_L,Liver Ultrasound Elastography,EXAMINATION,7199,7199,True,13
+BPQ_L,Blood Pressure Questionnaire,QUESTIONNAIRE,8501,8501,True,6
+KIQ_U_L,Kidney Conditions Questionnaire,QUESTIONNAIRE,7809,7809,True,9
+MCQ_L,Medical Conditions Questionnaire,QUESTIONNAIRE,11744,11744,True,35
+DIQ_L,Diabetes Questionnaire,QUESTIONNAIRE,11744,11744,True,9
+HEQ_L,Hepatitis Questionnaire,QUESTIONNAIRE,10696,10696,True,2
+FNQ_L,Functioning Questionnaire,QUESTIONNAIRE,10942,10942,True,32
+DPQ_L,Depression Screening Questionnaire,QUESTIONNAIRE,6337,6337,True,11
+SLQ_L,Sleep Disorders Questionnaire,QUESTIONNAIRE,8501,8501,True,7
+DBQ_L,Diet Behavior Questionnaire,QUESTIONNAIRE,11933,11933,True,27

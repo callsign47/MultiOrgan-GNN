@@ -1,0 +1,220 @@
+{
+  "Exp1_All_Features": {
+    "info": {
+      "name": "Experiment 1: All Features (Full Manifest, Includes Direct FIB-4 Inputs)",
+      "features": [
+        "RIDAGEYR",
+        "RIAGENDR",
+        "LBXSATSI",
+        "LBXSASSI",
+        "LBXSGTSI",
+        "LBXSAL",
+        "LBXSTB",
+        "LBXSAPSI",
+        "LUXSMED",
+        "LUXCAPM",
+        "LBXSCR",
+        "LBXSBU",
+        "LBXSUA",
+        "URXUMA",
+        "URXUCR",
+        "KIQ022",
+        "BPXOSY1",
+        "BPXODI1",
+        "BPXOPLS1",
+        "LBDHDD",
+        "LBXTC",
+        "BPQ020",
+        "MCQ160C",
+        "MCQ160E",
+        "LBXWBCSI",
+        "LBXRBCSI",
+        "LBXHGB",
+        "LBXPLTSI",
+        "LBXHSCRP"
+      ],
+      "excluded": [],
+      "description": "Full feature manifest (27 features) including Age, AST, ALT, Platelets."
+    },
+    "models": {
+      "Ridge_Regression": {
+        "mae_mean": 0.21048908789210521,
+        "mae_std": 0.003904512073940511,
+        "rmse_mean": 0.3832030591376355,
+        "rmse_std": 0.04480728502884483,
+        "r2_mean": 0.7549791986160728,
+        "r2_std": 0.0323375701138737
+      },
+      "Random_Forest": {
+        "mae_mean": 0.10604809216264921,
+        "mae_std": 0.006060680271128387,
+        "rmse_mean": 0.2304392320444057,
+        "rmse_std": 0.05085616335449064,
+        "r2_mean": 0.9104707800336046,
+        "r2_std": 0.03095902433336692
+      },
+      "XGBoost": {
+        "mae_mean": 0.08972108854909897,
+        "mae_std": 0.002367079263562029,
+        "rmse_mean": 0.20310743320878172,
+        "rmse_std": 0.047380065519272756,
+        "r2_mean": 0.9302403115325635,
+        "r2_std": 0.02594572119697005
+      },
+      "MLP_Regressor": {
+        "mae_mean": 0.09121966579383922,
+        "mae_std": 0.0051418179632392695,
+        "rmse_mean": 0.20120642831602414,
+        "rmse_std": 0.041412988420770167,
+        "r2_mean": 0.9312737926085772,
+        "r2_std": 0.02261038966202529
+      }
+    }
+  },
+  "Exp2_Remove_Enzymes_Platelets": {
+    "info": {
+      "name": "Experiment 2: Remove ALT/AST/Platelets (Retain Age)",
+      "features": [
+        "RIDAGEYR",
+        "RIAGENDR",
+        "LBXSGTSI",
+        "LBXSAL",
+        "LBXSTB",
+        "LBXSAPSI",
+        "LUXSMED",
+        "LUXCAPM",
+        "LBXSCR",
+        "LBXSBU",
+        "LBXSUA",
+        "URXUMA",
+        "URXUCR",
+        "KIQ022",
+        "BPXOSY1",
+        "BPXODI1",
+        "BPXOPLS1",
+        "LBDHDD",
+        "LBXTC",
+        "BPQ020",
+        "MCQ160C",
+        "MCQ160E",
+        "LBXWBCSI",
+        "LBXRBCSI",
+        "LBXHGB",
+        "LBXHSCRP"
+      ],
+      "excluded": [
+        "LBXSASSI",
+        "LBXSATSI",
+        "LBXPLTSI"
+      ],
+      "description": "Excludes ALT, AST, Platelets; retains Age and remaining multi-organ features."
+    },
+    "models": {
+      "Ridge_Regression": {
+        "mae_mean": 0.30581984615097835,
+        "mae_std": 0.004498678270812767,
+        "rmse_mean": 0.5097793991762671,
+        "rmse_std": 0.03755157132445732,
+        "r2_mean": 0.566182615332572,
+        "r2_std": 0.020873978704717553
+      },
+      "Random_Forest": {
+        "mae_mean": 0.28501235488118637,
+        "mae_std": 0.007024977570324199,
+        "rmse_mean": 0.49556118418801526,
+        "rmse_std": 0.04185562274323668,
+        "r2_mean": 0.5900237152697979,
+        "r2_std": 0.030606756499415258
+      },
+      "XGBoost": {
+        "mae_mean": 0.27832783279537415,
+        "mae_std": 0.004409255423242151,
+        "rmse_mean": 0.4843692255435486,
+        "rmse_std": 0.03687152496067372,
+        "r2_mean": 0.6080780993616852,
+        "r2_std": 0.026462857303061173
+      },
+      "MLP_Regressor": {
+        "mae_mean": 0.36470168494783806,
+        "mae_std": 0.011991558384365051,
+        "rmse_mean": 0.5848654493017691,
+        "rmse_std": 0.034694822649730166,
+        "r2_mean": 0.4235530782141209,
+        "r2_std": 0.0773921896299001
+      }
+    }
+  },
+  "Exp3_Leakage_Free": {
+    "info": {
+      "name": "Experiment 3: Complete Leakage-Free (Remove Age, AST, ALT, Platelets)",
+      "features": [
+        "RIAGENDR",
+        "LBXSGTSI",
+        "LBXSAL",
+        "LBXSTB",
+        "LBXSAPSI",
+        "LUXSMED",
+        "LUXCAPM",
+        "LBXSCR",
+        "LBXSBU",
+        "LBXSUA",
+        "URXUMA",
+        "URXUCR",
+        "KIQ022",
+        "BPXOSY1",
+        "BPXODI1",
+        "BPXOPLS1",
+        "LBDHDD",
+        "LBXTC",
+        "BPQ020",
+        "MCQ160C",
+        "MCQ160E",
+        "LBXWBCSI",
+        "LBXRBCSI",
+        "LBXHGB",
+        "LBXHSCRP"
+      ],
+      "excluded": [
+        "RIDAGEYR",
+        "LBXSASSI",
+        "LBXSATSI",
+        "LBXPLTSI"
+      ],
+      "description": "Excludes ALL 4 direct FIB-4 mathematical inputs. Uses Liver(other)+Kidney+Heart+Biomarkers."
+    },
+    "models": {
+      "Ridge_Regression": {
+        "mae_mean": 0.4065078484345242,
+        "mae_std": 0.009358766793488862,
+        "rmse_mean": 0.6057883295395523,
+        "rmse_std": 0.03864006725214436,
+        "r2_mean": 0.3869388778315261,
+        "r2_std": 0.022169924956470376
+      },
+      "Random_Forest": {
+        "mae_mean": 0.38622764379036373,
+        "mae_std": 0.00953651903404977,
+        "rmse_mean": 0.5955955148121379,
+        "rmse_std": 0.04035150415744142,
+        "r2_mean": 0.40660881186833214,
+        "r2_std": 0.04339065713919468
+      },
+      "XGBoost": {
+        "mae_mean": 0.38205208566367943,
+        "mae_std": 0.009801708883839636,
+        "rmse_mean": 0.578526575171206,
+        "rmse_std": 0.040387260154253625,
+        "r2_mean": 0.4408019952455218,
+        "r2_std": 0.031597616969129744
+      },
+      "MLP_Regressor": {
+        "mae_mean": 0.46580631240051795,
+        "mae_std": 0.02455689688556852,
+        "rmse_mean": 0.7230230529972983,
+        "rmse_std": 0.08038841623294289,
+        "r2_mean": 0.12579805243682896,
+        "r2_std": 0.12172908760897767
+      }
+    }
+  }
+}

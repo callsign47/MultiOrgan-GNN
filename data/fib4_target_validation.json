@@ -1,0 +1,20 @@
+{
+  "n_patients": 6277,
+  "mean": 1.0589867003643407,
+  "std": 0.7748451748113337,
+  "median": 0.9027841294394288,
+  "min": 0.06343292180752859,
+  "max": 13.997084244475305,
+  "p25": 0.5091245713324304,
+  "p75": 1.4022870736268234,
+  "iqr": 0.893162502294393,
+  "skewness": 2.9235707912259494,
+  "unit_verification": {
+    "Age": "Years (RIDAGEYR)",
+    "AST": "U/L (LBXSASSI)",
+    "ALT": "U/L (LBXSATSI)",
+    "Platelets": "10^9/L or 10^3/uL (LBXPLTSI)",
+    "Formula": "(Age * AST) / (Platelet * sqrt(ALT))"
+  },
+  "validation_gates_passed": true
+}

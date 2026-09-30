@@ -1,0 +1,186 @@
+{
+  "Demographics": [
+    {
+      "feature": "RIDAGEYR",
+      "description": "Age in years",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 0.0
+    },
+    {
+      "feature": "RIAGENDR",
+      "description": "Gender (1=Male, 2=Female)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 0.0
+    }
+  ],
+  "Liver": [
+    {
+      "feature": "LBXSATSI",
+      "description": "Alanine Aminotransferase ALT (U/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 47.03
+    },
+    {
+      "feature": "LBXSASSI",
+      "description": "Aspartate Aminotransferase AST (U/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 47.14
+    },
+    {
+      "feature": "LBXSGTSI",
+      "description": "Gamma Glutamyl Transferase GGT (U/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 46.98
+    },
+    {
+      "feature": "LBXSAL",
+      "description": "Albumin (g/dL)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 46.65
+    },
+    {
+      "feature": "LBXSTB",
+      "description": "Total Bilirubin (mg/dL)",
+      "cohort_missing_pct": 0.05,
+      "raw_missing_pct": 47.0
+    },
+    {
+      "feature": "LBXSAPSI",
+      "description": "Alkaline Phosphatase ALP (U/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 46.98
+    },
+    {
+      "feature": "LUXSMED",
+      "description": "Liver Stiffness Median (kPa)",
+      "cohort_missing_pct": 6.21,
+      "raw_missing_pct": 43.85
+    },
+    {
+      "feature": "LUXCAPM",
+      "description": "Controlled Attenuation Parameter CAP (dB/m)",
+      "cohort_missing_pct": 6.21,
+      "raw_missing_pct": 43.86
+    }
+  ],
+  "Kidney": [
+    {
+      "feature": "LBXSCR",
+      "description": "Serum Creatinine (mg/dL)",
+      "cohort_missing_pct": 0.03,
+      "raw_missing_pct": 46.99
+    },
+    {
+      "feature": "LBXSBU",
+      "description": "Blood Urea Nitrogen BUN (mg/dL)",
+      "cohort_missing_pct": 0.05,
+      "raw_missing_pct": 46.99
+    },
+    {
+      "feature": "LBXSUA",
+      "description": "Uric Acid (mg/dL)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 46.96
+    },
+    {
+      "feature": "URXUMA",
+      "description": "Urine Albumin (ug/mL)",
+      "cohort_missing_pct": 1.97,
+      "raw_missing_pct": 31.68
+    },
+    {
+      "feature": "URXUCR",
+      "description": "Urine Creatinine (mg/dL)",
+      "cohort_missing_pct": 1.96,
+      "raw_missing_pct": 31.67
+    },
+    {
+      "feature": "KIQ022",
+      "description": "Ever told had kidney failure/disease (1=Yes, 2=No)",
+      "cohort_missing_pct": 13.98,
+      "raw_missing_pct": 34.58
+    }
+  ],
+  "Heart": [
+    {
+      "feature": "BPXOSY1",
+      "description": "Systolic Blood Pressure Reading 1 (mmHg)",
+      "cohort_missing_pct": 3.07,
+      "raw_missing_pct": 37.01
+    },
+    {
+      "feature": "BPXODI1",
+      "description": "Diastolic Blood Pressure Reading 1 (mmHg)",
+      "cohort_missing_pct": 3.07,
+      "raw_missing_pct": 37.01
+    },
+    {
+      "feature": "BPXOPLS1",
+      "description": "Pulse Reading 1 (bpm)",
+      "cohort_missing_pct": 3.07,
+      "raw_missing_pct": 37.01
+    },
+    {
+      "feature": "LBDHDD",
+      "description": "Direct HDL Cholesterol (mg/dL)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 42.26
+    },
+    {
+      "feature": "LBXTC",
+      "description": "Total Cholesterol (mg/dL)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 42.26
+    },
+    {
+      "feature": "BPQ020",
+      "description": "Ever told had high blood pressure (1=Yes, 2=No)",
+      "cohort_missing_pct": 7.07,
+      "raw_missing_pct": 28.79
+    },
+    {
+      "feature": "MCQ160C",
+      "description": "Ever told had coronary heart disease (1=Yes, 2=No)",
+      "cohort_missing_pct": 13.99,
+      "raw_missing_pct": 34.58
+    },
+    {
+      "feature": "MCQ160E",
+      "description": "Ever told had heart attack (1=Yes, 2=No)",
+      "cohort_missing_pct": 13.99,
+      "raw_missing_pct": 34.58
+    }
+  ],
+  "Biomarker": [
+    {
+      "feature": "LBXWBCSI",
+      "description": "White Blood Cell count (10^9/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 36.37
+    },
+    {
+      "feature": "LBXRBCSI",
+      "description": "Red Blood Cell count (10^12/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 36.37
+    },
+    {
+      "feature": "LBXHGB",
+      "description": "Hemoglobin (g/dL)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 36.37
+    },
+    {
+      "feature": "LBXPLTSI",
+      "description": "Platelet Count (10^9/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 36.37
+    },
+    {
+      "feature": "LBXHSCRP",
+      "description": "High-sensitivity C-Reactive Protein hs-CRP (mg/L)",
+      "cohort_missing_pct": 0.0,
+      "raw_missing_pct": 38.98
+    }
+  ]
+}
