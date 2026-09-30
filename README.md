@@ -1,10 +1,10 @@
-# HSGIN: Heterogeneous Systemic Graph Interaction Network for Multi-Organ Disease Modeling
+# MultiOrgan-GNN: Heterogeneous Systemic Graph Interaction Network for Multi-Organ Disease Modeling
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
 [![PyTorch Geometric](https://img.shields.io/badge/PyG-2.3+-3C2179.svg)](https://pyg.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Official repository for **HSGIN (Heterogeneous Systemic Graph Interaction Network)**, a multi-organ graph neural network architecture designed to model inter-organ interactions across **Liver, Kidney, and Heart/Cardiovascular** physiological domains for liver fibrosis risk assessment (continuous FIB-4 index) on the **NHANES August 2021–August 2023** cohort ($N = 6,277$).
+Official repository for **MultiOrgan-GNN** (formerly HSGIN), a multi-organ graph neural network architecture designed to model inter-organ interactions across **Liver, Kidney, and Heart/Cardiovascular** physiological domains for liver fibrosis risk assessment (continuous FIB-4 index) on the **NHANES August 2021–August 2023** cohort ($N = 6,277$).
 
 ---
 
@@ -73,8 +73,8 @@ Official repository for **HSGIN (Heterogeneous Systemic Graph Interaction Networ
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/HSGIN.git
-cd HSGIN
+git clone https://github.com/your-username/MultiOrgan-GNN.git
+cd MultiOrgan-GNN
 ```
 
 ### 2. Set Up Environment
