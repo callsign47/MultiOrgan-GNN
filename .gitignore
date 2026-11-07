@@ -1,4 +1,4 @@
-﻿__pycache__/
+__pycache__/
 *.py[cod]
 *$py.class
 NHANES AUG'21 - AUG'23/
@@ -9,5 +9,15 @@ graphs/*.pt
 !graphs/.gitkeep
 checkpoints/
 *.pth
+*.pt
+*.xpt
+*.npz
 .vscode/
 .idea/
+
+# Local training artifacts & telemetry
+catboost_info/
+
+# Local backups and scratch audit scripts
+backups/
+
