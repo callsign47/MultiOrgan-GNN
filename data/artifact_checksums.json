@@ -1,0 +1,86 @@
+[
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\master_patient.csv",
+    "filename": "master_patient.csv",
+    "exists": true,
+    "size_bytes": 11537773,
+    "sha256": "b1682cb1d0ad083a2d8e7749f826a9c078169925a8f9914eae2460f12d1a111d",
+    "dim": "11933 rows x 299 cols"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\ingestion_summary.csv",
+    "filename": "ingestion_summary.csv",
+    "exists": true,
+    "size_bytes": 1708,
+    "sha256": "d87cba4449124fdccd2f7bd3aadf34c9a3de363c76d00fcf6efe2cb4ea365cda",
+    "dim": "27 rows x 7 cols"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\cohort_flow.csv",
+    "filename": "cohort_flow.csv",
+    "exists": true,
+    "size_bytes": 451,
+    "sha256": "c2c6ad7d54929caa1cdb13c6f0576fd60f85705afeae243ef9e42da71e7305c1",
+    "dim": "6 rows x 4 cols"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\missingness_report.csv",
+    "filename": "missingness_report.csv",
+    "exists": true,
+    "size_bytes": 2709,
+    "sha256": "d53a9ab11a44aac59660bda612fbabdfa9eeee1833c6cd64cf2753298735a5d7",
+    "dim": "29 rows x 10 cols"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\feature_manifest.json",
+    "filename": "feature_manifest.json",
+    "exists": true,
+    "size_bytes": 4956,
+    "sha256": "6712e1575dc12c36e2345e08cc1112a3ae90be283fce882dcf681e59862cbe22",
+    "dim": "JSON object with 5 top-level keys"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\fib4_target_validation.json",
+    "filename": "fib4_target_validation.json",
+    "exists": true,
+    "size_bytes": 570,
+    "sha256": "85560c93d75d3990a8d2bb2f984439004aaeb8b9d28d6e63bbc94bb1e5346e9d",
+    "dim": "JSON object with 12 top-level keys"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\final_cohort.csv",
+    "filename": "final_cohort.csv",
+    "exists": true,
+    "size_bytes": 8183972,
+    "sha256": "7d9f30deb21b4c49683b96a62d6866fedd8877f3c60b8c03d208f699c6c5ca1f",
+    "dim": "6277 rows x 301 cols"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\data\\comparative\\folds_v1.json",
+    "filename": "folds_v1.json",
+    "exists": true,
+    "size_bytes": 1193842,
+    "sha256": "226b731be71e246942c3378c02182b9de5a9a1a02cf2742418fa0d343152cfe8",
+    "dim": "JSON object with 4 top-level keys"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\configs\\comparative\\folds_v1.json",
+    "exists": false
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\leakage_gate_report.json",
+    "filename": "leakage_gate_report.json",
+    "exists": true,
+    "size_bytes": 5048,
+    "sha256": "724a3a48d7b5f59a797726e510c7b66acf0399b00f42c892532095d1a7cd0f89",
+    "dim": "JSON object with 3 top-level keys"
+  },
+  {
+    "path": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\graphs\\patient_graphs.pt",
+    "filename": "patient_graphs.pt",
+    "exists": true,
+    "size_bytes": 19393163,
+    "sha256": "4bffe0406004b951b3db848c7d92bd4183d4b2530a523a38f885e6dc21324145",
+    "dim": "PyTorch serialized object (6,277 HeteroData graphs)"
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "status": "CONFIRMED_AND_CONTROLLED",
+  "finding": "Standard CV OOF features introduce an indirect exposure to outer test set labels. Strict inner cross-fitting quarantines outer folds.",
+  "audit_summary": [
+    {
+      "outer_fold": 1,
+      "base_model": "HSGIN_seed42",
+      "correlation_inner_vs_outer": 0.9333546197949779,
+      "mae_inner_vs_outer": 0.12909808967116343
+    },
+    {
+      "outer_fold": 1,
+      "base_model": "XGBoost_tuned",
+      "correlation_inner_vs_outer": 0.9606816314032326,
+      "mae_inner_vs_outer": 0.106099059087793
+    },
+    {
+      "outer_fold": 1,
+      "base_model": "CatBoost",
+      "correlation_inner_vs_outer": 0.9384840426148431,
+      "mae_inner_vs_outer": 0.15931543709533322
+    },
+    {
+      "outer_fold": 1,
+      "base_model": "FT_Transformer_seed42",
+      "correlation_inner_vs_outer": 0.9343267475744621,
+      "mae_inner_vs_outer": 0.12428539359244282
+    },
+    {
+      "outer_fold": 2,
+      "base_model": "HSGIN_seed42",
+      "correlation_inner_vs_outer": 0.9341283551992724,
+      "mae_inner_vs_outer": 0.12452866480695231
+    },
+    {
+      "outer_fold": 2,
+      "base_model": "XGBoost_tuned",
+      "correlation_inner_vs_outer": 0.9609320066914401,
+      "mae_inner_vs_outer": 0.10681217485875855
+    },
+    {
+      "outer_fold": 2,
+      "base_model": "CatBoost",
+      "correlation_inner_vs_outer": 0.9435612822337927,
+      "mae_inner_vs_outer": 0.15322378873270795
+    },
+    {
+      "outer_fold": 2,
+      "base_model": "FT_Transformer_seed42",
+      "correlation_inner_vs_outer": 0.9353496626458682,
+      "mae_inner_vs_outer": 0.13039518759215502
+    },
+    {
+      "outer_fold": 3,
+      "base_model": "HSGIN_seed42",
+      "correlation_inner_vs_outer": 0.9358401337254251,
+      "mae_inner_vs_outer": 0.13110587303498883
+    },
+    {
+      "outer_fold": 3,
+      "base_model": "XGBoost_tuned",
+      "correlation_inner_vs_outer": 0.9589321342710008,
+      "mae_inner_vs_outer": 0.11218546031726126
+    },
+    {
+      "outer_fold": 3,
+      "base_model": "CatBoost",
+      "correlation_inner_vs_outer": 0.942331973758365,
+      "mae_inner_vs_outer": 0.15525312868600344
+    },
+    {
+      "outer_fold": 3,
+      "base_model": "FT_Transformer_seed42",
+      "correlation_inner_vs_outer": 0.9404654650815929,
+      "mae_inner_vs_outer": 0.13007884937268432
+    },
+    {
+      "outer_fold": 4,
+      "base_model": "HSGIN_seed42",
+      "correlation_inner_vs_outer": 0.9450326705880424,
+      "mae_inner_vs_outer": 0.12004004933358378
+    },
+    {
+      "outer_fold": 4,
+      "base_model": "XGBoost_tuned",
+      "correlation_inner_vs_outer": 0.9563500292557076,
+      "mae_inner_vs_outer": 0.10659950139938547
+    },
+    {
+      "outer_fold": 4,
+      "base_model": "CatBoost",
+      "correlation_inner_vs_outer": 0.950428355007724,
+      "mae_inner_vs_outer": 0.13531140699430833
+    },
+    {
+      "outer_fold": 4,
+      "base_model": "FT_Transformer_seed42",
+      "correlation_inner_vs_outer": 0.943927933635216,
+      "mae_inner_vs_outer": 0.126687483153629
+    },
+    {
+      "outer_fold": 5,
+      "base_model": "HSGIN_seed42",
+      "correlation_inner_vs_outer": 0.9336666073919088,
+      "mae_inner_vs_outer": 0.1306397903373829
+    },
+    {
+      "outer_fold": 5,
+      "base_model": "XGBoost_tuned",
+      "correlation_inner_vs_outer": 0.9587892815715346,
+      "mae_inner_vs_outer": 0.10927879866373483
+    },
+    {
+      "outer_fold": 5,
+      "base_model": "CatBoost",
+      "correlation_inner_vs_outer": 0.9379214696241935,
+      "mae_inner_vs_outer": 0.1555919486006906
+    },
+    {
+      "outer_fold": 5,
+      "base_model": "FT_Transformer_seed42",
+      "correlation_inner_vs_outer": 0.9329156329455385,
+      "mae_inner_vs_outer": 0.1298787536070623
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "LOO_Demographics": {
+    "observed_delta_r2": -0.003319281905421967,
+    "ci_r2": [
+      -0.0087495338969882,
+      0.0021977083367675397
+    ],
+    "observed_delta_rmse": 0.0017731117459892642,
+    "ci_rmse": [
+      -0.0011232392330107726,
+      0.004781646758062087
+    ],
+    "observed_delta_mae": 0.0008788375174768603,
+    "ci_mae": [
+      -0.0008465588932203699,
+      0.0026072811669115826
+    ],
+    "raw_p_value": 0.239,
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.239,
+    "holm_significant_05": false
+  },
+  "LOO_Liver": {
+    "observed_delta_r2": 0.09652218514002286,
+    "ci_r2": [
+      0.07146502912744139,
+      0.1202517596040133
+    ],
+    "observed_delta_rmse": -0.04931878379952004,
+    "ci_rmse": [
+      -0.06318770992289066,
+      -0.03554450592766897
+    ],
+    "observed_delta_mae": -0.02381372903716411,
+    "ci_mae": [
+      -0.028759044689130868,
+      -0.0186971603785145
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "LOO_Kidney": {
+    "observed_delta_r2": 0.042982513342354034,
+    "ci_r2": [
+      0.031560251464223886,
+      0.05606374097369729
+    ],
+    "observed_delta_rmse": -0.02247571293878503,
+    "ci_rmse": [
+      -0.02852256026477918,
+      -0.016697122031065163
+    ],
+    "observed_delta_mae": -0.02284115279034843,
+    "ci_mae": [
+      -0.027235116294147217,
+      -0.01851570854014275
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "LOO_Heart": {
+    "observed_delta_r2": 0.03924536700740067,
+    "ci_r2": [
+      0.020910423256765544,
+      0.05800883175188428
+    ],
+    "observed_delta_rmse": -0.020555915845606454,
+    "ci_rmse": [
+      -0.029547680804254562,
+      -0.011471449638976021
+    ],
+    "observed_delta_mae": -0.027325769347041506,
+    "ci_mae": [
+      -0.03195607430820164,
+      -0.022563293769560615
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "LOO_Biomarker": {
+    "observed_delta_r2": 0.05445989340809998,
+    "ci_r2": [
+      0.03962626566731738,
+      0.06967235804861416
+    ],
+    "observed_delta_rmse": -0.028332746750440174,
+    "ci_rmse": [
+      -0.03648820377617534,
+      -0.020334904677551564
+    ],
+    "observed_delta_mae": -0.01969292740931544,
+    "ci_mae": [
+      -0.024220827347339942,
+      -0.015062878869411054
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "ONLY_Demographics": {
+    "observed_delta_r2": 0.46640971455112556,
+    "ci_r2": [
+      0.43978124446252703,
+      0.4951178931990173
+    ],
+    "observed_delta_rmse": -0.20969490405087432,
+    "ci_rmse": [
+      -0.22892679527291793,
+      -0.19076688435514436
+    ],
+    "observed_delta_mae": -0.1836977415120679,
+    "ci_mae": [
+      -0.19302100921064935,
+      -0.17399608369105893
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "ONLY_Liver": {
+    "observed_delta_r2": 0.26401739576069816,
+    "ci_r2": [
+      0.21994148246130438,
+      0.3078023732607402
+    ],
+    "observed_delta_rmse": -0.1265789464100162,
+    "ci_rmse": [
+      -0.14227681090809227,
+      -0.11120802561985647
+    ],
+    "observed_delta_mae": -0.12098928864162845,
+    "ci_mae": [
+      -0.12914408085860507,
+      -0.11314044600957696
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "ONLY_Kidney": {
+    "observed_delta_r2": 0.32309682800878947,
+    "ci_r2": [
+      0.2855675030141473,
+      0.35999333943143264
+    ],
+    "observed_delta_rmse": -0.15184062568091994,
+    "ci_rmse": [
+      -0.17405071055757432,
+      -0.12957336188955074
+    ],
+    "observed_delta_mae": -0.11122575773916482,
+    "ci_mae": [
+      -0.11952641766854062,
+      -0.10258395770376373
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "ONLY_Heart": {
+    "observed_delta_r2": 0.24909594868894347,
+    "ci_r2": [
+      0.21655337734021493,
+      0.2794974977228957
+    ],
+    "observed_delta_rmse": -0.12005091207398477,
+    "ci_rmse": [
+      -0.1391265637683731,
+      -0.1015203415429289
+    ],
+    "observed_delta_mae": -0.07896449233750147,
+    "ci_mae": [
+      -0.0866134795603464,
+      -0.07128234615514042
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  },
+  "ONLY_Biomarker": {
+    "observed_delta_r2": 0.31924436297665915,
+    "ci_r2": [
+      0.2820483332334728,
+      0.3576778467412009
+    ],
+    "observed_delta_rmse": -0.15022063279760878,
+    "ci_rmse": [
+      -0.1659635460379895,
+      -0.13535348935032615
+    ],
+    "observed_delta_mae": -0.13358473102458363,
+    "ci_mae": [
+      -0.14195591138937533,
+      -0.12475165328990478
+    ],
+    "raw_p_value": 0.0,
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.0,
+    "holm_significant_05": true
+  }
+}

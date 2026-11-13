@@ -1,0 +1,1205 @@
+{
+  "total_params": 137217,
+  "trainable_params": 137217,
+  "submodule_summary": {
+    "encoder_dict.patient": 256,
+    "encoder_dict.liver": 576,
+    "encoder_dict.kidney": 576,
+    "encoder_dict.heart": 704,
+    "encoder_dict.biomarker": 448,
+    "conv_layers.0": 60032,
+    "conv_layers.1": 60032,
+    "predict_head.0": 12352,
+    "predict_head.1": 128,
+    "predict_head.4": 2080,
+    "predict_head.6": 33
+  },
+  "param_details": {
+    "encoder_dict.patient": {
+      "count": 256,
+      "params": [
+        {
+          "name": "encoder_dict.patient.0.weight",
+          "shape": [
+            64,
+            1
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.patient.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.patient.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.patient.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "encoder_dict.liver": {
+      "count": 576,
+      "params": [
+        {
+          "name": "encoder_dict.liver.0.weight",
+          "shape": [
+            64,
+            6
+          ],
+          "count": 384
+        },
+        {
+          "name": "encoder_dict.liver.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.liver.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.liver.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "encoder_dict.kidney": {
+      "count": 576,
+      "params": [
+        {
+          "name": "encoder_dict.kidney.0.weight",
+          "shape": [
+            64,
+            6
+          ],
+          "count": 384
+        },
+        {
+          "name": "encoder_dict.kidney.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.kidney.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.kidney.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "encoder_dict.heart": {
+      "count": 704,
+      "params": [
+        {
+          "name": "encoder_dict.heart.0.weight",
+          "shape": [
+            64,
+            8
+          ],
+          "count": 512
+        },
+        {
+          "name": "encoder_dict.heart.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.heart.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.heart.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "encoder_dict.biomarker": {
+      "count": 448,
+      "params": [
+        {
+          "name": "encoder_dict.biomarker.0.weight",
+          "shape": [
+            64,
+            4
+          ],
+          "count": 256
+        },
+        {
+          "name": "encoder_dict.biomarker.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.biomarker.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "encoder_dict.biomarker.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "conv_layers.0": {
+      "count": 60032,
+      "params": [
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___biomarker>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___biomarker>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___biomarker>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<patient___pertains_to___biomarker>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<biomarker___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<biomarker___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<biomarker___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<biomarker___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<liver___interacts_with___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<kidney___interacts_with___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.0.conv.convs.<heart___interacts_with___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        }
+      ]
+    },
+    "conv_layers.1": {
+      "count": 60032,
+      "params": [
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___biomarker>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___biomarker>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___biomarker>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<patient___pertains_to___biomarker>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<biomarker___rev_pertains_to___patient>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<biomarker___rev_pertains_to___patient>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<biomarker___rev_pertains_to___patient>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<biomarker___rev_pertains_to___patient>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<liver___interacts_with___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___liver>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___liver>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___liver>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___liver>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___heart>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___heart>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___heart>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<kidney___interacts_with___heart>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___kidney>.att_src",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___kidney>.att_dst",
+          "shape": [
+            1,
+            2,
+            32
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___kidney>.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "conv_layers.1.conv.convs.<heart___interacts_with___kidney>.lin.weight",
+          "shape": [
+            64,
+            64
+          ],
+          "count": 4096
+        }
+      ]
+    },
+    "predict_head.0": {
+      "count": 12352,
+      "params": [
+        {
+          "name": "predict_head.0.weight",
+          "shape": [
+            64,
+            192
+          ],
+          "count": 12288
+        },
+        {
+          "name": "predict_head.0.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "predict_head.1": {
+      "count": 128,
+      "params": [
+        {
+          "name": "predict_head.1.weight",
+          "shape": [
+            64
+          ],
+          "count": 64
+        },
+        {
+          "name": "predict_head.1.bias",
+          "shape": [
+            64
+          ],
+          "count": 64
+        }
+      ]
+    },
+    "predict_head.4": {
+      "count": 2080,
+      "params": [
+        {
+          "name": "predict_head.4.weight",
+          "shape": [
+            32,
+            64
+          ],
+          "count": 2048
+        },
+        {
+          "name": "predict_head.4.bias",
+          "shape": [
+            32
+          ],
+          "count": 32
+        }
+      ]
+    },
+    "predict_head.6": {
+      "count": 33,
+      "params": [
+        {
+          "name": "predict_head.6.weight",
+          "shape": [
+            1,
+            32
+          ],
+          "count": 32
+        },
+        {
+          "name": "predict_head.6.bias",
+          "shape": [
+            1
+          ],
+          "count": 1
+        }
+      ]
+    }
+  },
+  "sample_batch_out_shape": [
+    64
+  ]
+}

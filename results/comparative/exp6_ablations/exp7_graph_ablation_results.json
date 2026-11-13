@@ -1,0 +1,337 @@
+{
+  "experiment": "Exp7_GraphArchitectureAblation",
+  "device": "cuda",
+  "epochs": 30,
+  "batch_size": 64,
+  "reference_hsgin_full": {
+    "fold_metrics": [
+      {
+        "r2": 0.4903479104915466,
+        "mae": 0.35015831515192986,
+        "rmse": 0.544545034350065
+      },
+      {
+        "r2": 0.5351117948166351,
+        "mae": 0.33590321552459224,
+        "rmse": 0.5151827609044521
+      },
+      {
+        "r2": 0.4492433596349895,
+        "mae": 0.35788228713658704,
+        "rmse": 0.5631741082911954
+      },
+      {
+        "r2": 0.5140932918375631,
+        "mae": 0.36249721098349863,
+        "rmse": 0.5941757395451859
+      },
+      {
+        "r2": 0.49930680834312113,
+        "mae": 0.3480762858077349,
+        "rmse": 0.52191887609138
+      }
+    ],
+    "aggregate": {
+      "r2_mean": 0.4976206330247711,
+      "r2_std": 0.028541310277369992,
+      "mae_mean": 0.35090346292086855,
+      "mae_std": 0.009128795968250279,
+      "rmse_mean": 0.5477993038364557,
+      "rmse_std": 0.028745031167354256
+    },
+    "pooled": {
+      "r2": 0.49881496553400406,
+      "mae": 0.35090095449404596,
+      "rmse": 0.5485471730342443
+    },
+    "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp4_gnn\\HSGIN_seed42_oof_predictions.csv"
+  },
+  "variants": {
+    "NoCrossTalk": {
+      "description": "Star topology only; removes all 6 organ-to-organ cross-talk edges",
+      "fold_metrics": [
+        {
+          "r2": 0.49865403978411627,
+          "mae": 0.35108021293191394,
+          "rmse": 0.5400894046288924
+        },
+        {
+          "r2": 0.5551425209731,
+          "mae": 0.3367636779168989,
+          "rmse": 0.5039616701559454
+        },
+        {
+          "r2": 0.45167277962271934,
+          "mae": 0.354617636992162,
+          "rmse": 0.5619306384358271
+        },
+        {
+          "r2": 0.5242907506434686,
+          "mae": 0.3655217334153168,
+          "rmse": 0.5879078590994229
+        },
+        {
+          "r2": 0.5023978074707824,
+          "mae": 0.34707892645165267,
+          "rmse": 0.520305364704217
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.5064315796988373,
+        "r2_std": 0.033961723801784256,
+        "mae_mean": 0.35101243754158884,
+        "mae_std": 0.009402354850463488,
+        "rmse_mean": 0.5428389874048609,
+        "rmse_std": 0.029740425312489355
+      },
+      "pooled": {
+        "r2": 0.507730213478184,
+        "mae": 0.35101017834384557,
+        "rmse": 0.5436464103419919
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\HSGIN_Variant_NoCrossTalk_oof.csv",
+      "elapsed_sec": 924.3
+    },
+    "FlatReadout": {
+      "description": "Replaces organ-aware hierarchical readout with flat mean pooling across all nodes",
+      "fold_metrics": [
+        {
+          "r2": 0.5007521103058501,
+          "mae": 0.3515418784538652,
+          "rmse": 0.5389581163025381
+        },
+        {
+          "r2": 0.540361975157843,
+          "mae": 0.32892219563293607,
+          "rmse": 0.5122654117192688
+        },
+        {
+          "r2": 0.44662459403037846,
+          "mae": 0.35063653083673985,
+          "rmse": 0.5645114248966132
+        },
+        {
+          "r2": 0.4821484831765259,
+          "mae": 0.3658019275363698,
+          "rmse": 0.6133962185968181
+        },
+        {
+          "r2": 0.4981292180051653,
+          "mae": 0.3496815911327225,
+          "rmse": 0.522532271364026
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4936032761351525,
+        "r2_std": 0.030318887737289586,
+        "mae_mean": 0.34931682471852665,
+        "mae_std": 0.011785796989208635,
+        "rmse_mean": 0.5503326885758528,
+        "rmse_std": 0.036136981172165336
+      },
+      "pooled": {
+        "r2": 0.4933865920227686,
+        "mae": 0.34931393009126044,
+        "rmse": 0.55150985062437
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\HSGIN_Variant_FlatReadout_oof.csv",
+      "elapsed_sec": 1033.99
+    },
+    "RandomEdges": {
+      "description": "Structural null control: Erd\u0151s\u2013R\u00e9nyi random digraph on 5 organ/patient nodes with matching edge count E=14 sampled uniformly from 20 possible directed edge pairs",
+      "random_edge_types": [
+        "biomarker->liver",
+        "patient->liver",
+        "kidney->biomarker",
+        "liver->patient",
+        "kidney->liver",
+        "heart->liver",
+        "liver->kidney",
+        "heart->biomarker",
+        "kidney->heart",
+        "patient->biomarker",
+        "liver->heart",
+        "patient->kidney",
+        "biomarker->heart",
+        "kidney->patient"
+      ],
+      "fold_metrics": [
+        {
+          "r2": 0.496801671171509,
+          "mae": 0.36099911108613014,
+          "rmse": 0.5410862434739186
+        },
+        {
+          "r2": 0.5390381483543094,
+          "mae": 0.3396716616383404,
+          "rmse": 0.5130025821161882
+        },
+        {
+          "r2": 0.4504272001163333,
+          "mae": 0.35480465117203763,
+          "rmse": 0.562568516898203
+        },
+        {
+          "r2": 0.4858552728077997,
+          "mae": 0.37222664569359853,
+          "rmse": 0.6111969258001863
+        },
+        {
+          "r2": 0.5026726316425623,
+          "mae": 0.3509740835048288,
+          "rmse": 0.5201616633277886
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.49495898481850276,
+        "r2_std": 0.028537084362185487,
+        "mae_mean": 0.35573523061898704,
+        "mae_std": 0.010781910378789367,
+        "rmse_mean": 0.5496031863232569,
+        "rmse_std": 0.035329405202419006
+      },
+      "pooled": {
+        "r2": 0.49481793945860586,
+        "mae": 0.35573351010146065,
+        "rmse": 0.5507302023101217
+      },
+      "oof_csv": "results/comparative/exp6_ablations\\HSGIN_Variant_RandomEdges_oof.csv",
+      "elapsed_sec": 1095.98
+    },
+    "HomoGNN": {
+      "description": "Homogeneous GCN collapsing all node and relation types into uniform message passing",
+      "fold_metrics": [
+        {
+          "r2": 0.5043849071265943,
+          "mae": 0.3559233136000527,
+          "rmse": 0.5369936612494817
+        },
+        {
+          "r2": 0.5231563491130047,
+          "mae": 0.34267672303186103,
+          "rmse": 0.5217651409114982
+        },
+        {
+          "r2": 0.4516230266771295,
+          "mae": 0.35973850443543665,
+          "rmse": 0.5619561314893156
+        },
+        {
+          "r2": 0.49867469830051847,
+          "mae": 0.3653835414593438,
+          "rmse": 0.6035291901851003
+        },
+        {
+          "r2": 0.49879957442550826,
+          "mae": 0.35615799152756117,
+          "rmse": 0.5221831776099816
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.49532771112855106,
+        "r2_std": 0.02362126792658323,
+        "mae_mean": 0.3559760148108511,
+        "mae_std": 0.007477498787468595,
+        "rmse_mean": 0.5492854602890754,
+        "rmse_std": 0.0308088239645353
+      },
+      "pooled": {
+        "r2": 0.495895882110692,
+        "mae": 0.35597388768117294,
+        "rmse": 0.5501423225725185
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\HSGIN_Variant_HomoGNN_oof.csv",
+      "elapsed_sec": 787.44
+    }
+  },
+  "bootstrap_vs_hsgin_full": {
+    "NoCrossTalk": {
+      "observed_delta_r2": -0.008915247944179971,
+      "ci_r2": [
+        -0.020515108574284964,
+        0.002897856739970293
+      ],
+      "observed_delta_rmse": 0.0049007626922523695,
+      "ci_rmse": [
+        -0.0015911010148451864,
+        0.011420529510960491
+      ],
+      "observed_delta_mae": -0.0001092238497996112,
+      "ci_mae": [
+        -0.0034169333785302055,
+        0.0032194545178280904
+      ],
+      "a_significantly_better_r2": false,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.143,
+      "holm_p_value": 0.572,
+      "holm_significant_05": false
+    },
+    "FlatReadout": {
+      "observed_delta_r2": 0.005428373511235485,
+      "ci_r2": [
+        -0.007414681625496358,
+        0.020025791739975058
+      ],
+      "observed_delta_rmse": -0.002962677590125695,
+      "ci_rmse": [
+        -0.010739632590926734,
+        0.004132826645298745
+      ],
+      "observed_delta_mae": 0.0015870244027855196,
+      "ci_mae": [
+        -0.0018594665230578912,
+        0.004828074603610501
+      ],
+      "a_significantly_better_r2": false,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.452,
+      "holm_p_value": 1.0,
+      "holm_significant_05": false
+    },
+    "RandomEdges": {
+      "observed_delta_r2": 0.003997026075398202,
+      "ci_r2": [
+        -0.011090562423721565,
+        0.018315919137735316
+      ],
+      "observed_delta_rmse": -0.002183029275877435,
+      "ci_rmse": [
+        -0.009932752549956977,
+        0.006066768482956821
+      ],
+      "observed_delta_mae": -0.00483255560741469,
+      "ci_mae": [
+        -0.008409559754312016,
+        -0.0013182137945483728
+      ],
+      "a_significantly_better_r2": false,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.604,
+      "holm_p_value": 1.0,
+      "holm_significant_05": false
+    },
+    "HomoGNN": {
+      "observed_delta_r2": 0.002919083423312041,
+      "ci_r2": [
+        -0.012976836535966799,
+        0.018661362266303407
+      ],
+      "observed_delta_rmse": -0.001595149538274221,
+      "ci_rmse": [
+        -0.010309424686942079,
+        0.006978930012536046
+      ],
+      "observed_delta_mae": -0.005072933187126982,
+      "ci_mae": [
+        -0.009540877356218426,
+        -0.0006354826095521215
+      ],
+      "a_significantly_better_r2": false,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.713,
+      "holm_p_value": 1.0,
+      "holm_significant_05": false
+    }
+  }
+}

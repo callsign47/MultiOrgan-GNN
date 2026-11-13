@@ -1,0 +1,210 @@
+{
+  "mean_rank_stability_spearman_rho": 0.9453846153846154,
+  "spearman_pairwise_rhos": [
+    0.9515,
+    0.9577,
+    0.9523,
+    0.9731,
+    0.9338,
+    0.9254,
+    0.9308,
+    0.9346,
+    0.9454,
+    0.9492
+  ],
+  "top_features": [
+    {
+      "feature": "BPXOSY1",
+      "label": "Oscillometric Systolic BP (mmHg)",
+      "domain": "Heart",
+      "mean_r2_drop": 0.09519253368778607,
+      "std_r2_drop": 0.013661280082731238,
+      "mean_gain_pct": 8.575719683080893,
+      "fold_importances": [
+        0.07459550480003298,
+        0.09236834711119567,
+        0.1145855394704021,
+        0.0895666997603331,
+        0.10484657729696649
+      ],
+      "rank": 1
+    },
+    {
+      "feature": "LBXWBCSI",
+      "label": "White Blood Cell Count (1000 cells/uL)",
+      "domain": "Biomarker",
+      "mean_r2_drop": 0.08255926131170571,
+      "std_r2_drop": 0.0067800770049515555,
+      "mean_gain_pct": 4.784311189606771,
+      "fold_importances": [
+        0.08373950756588858,
+        0.08109817962726337,
+        0.07465477120429874,
+        0.07857916931158435,
+        0.09472467884949347
+      ],
+      "rank": 2
+    },
+    {
+      "feature": "LBXSBU",
+      "label": "Blood Urea Nitrogen (BUN, mg/dL)",
+      "domain": "Kidney",
+      "mean_r2_drop": 0.07461923384424354,
+      "std_r2_drop": 0.015619194698514936,
+      "mean_gain_pct": 9.127379366677696,
+      "fold_importances": [
+        0.0864240766081564,
+        0.09253225957933231,
+        0.07853093476675123,
+        0.04834955522507504,
+        0.06725934304190274
+      ],
+      "rank": 3
+    },
+    {
+      "feature": "LBXSGTSI",
+      "label": "Gamma Glutamyl Transferase (GGT, U/L)",
+      "domain": "Liver",
+      "mean_r2_drop": 0.048235418979385145,
+      "std_r2_drop": 0.009913824213011653,
+      "mean_gain_pct": 3.3532706732090336,
+      "fold_importances": [
+        0.03850684593979552,
+        0.05369203468491611,
+        0.04780928890300695,
+        0.06392204426425956,
+        0.037246881104947616
+      ],
+      "rank": 4
+    },
+    {
+      "feature": "LBXSTB",
+      "label": "Total Bilirubin (mg/dL)",
+      "domain": "Liver",
+      "mean_r2_drop": 0.04595660796788818,
+      "std_r2_drop": 0.009239768373811227,
+      "mean_gain_pct": 6.076905679511524,
+      "fold_importances": [
+        0.04517816062741666,
+        0.04053012037805979,
+        0.035273078904319945,
+        0.04603226933132204,
+        0.06276941059832247
+      ],
+      "rank": 5
+    },
+    {
+      "feature": "LUXSMED",
+      "label": "Liver Stiffness Median / FibroScan (kPa)",
+      "domain": "Liver",
+      "mean_r2_drop": 0.043998584343094095,
+      "std_r2_drop": 0.017929706817323875,
+      "mean_gain_pct": 4.863246699428096,
+      "fold_importances": [
+        0.03762707194087607,
+        0.03996655797068317,
+        0.017115173754601032,
+        0.07078584391078153,
+        0.05449827413852866
+      ],
+      "rank": 6
+    },
+    {
+      "feature": "LBXRBCSI",
+      "label": "Red Blood Cell Count (10^6 cells/uL)",
+      "domain": "Biomarker",
+      "mean_r2_drop": 0.04144379590142315,
+      "std_r2_drop": 0.006636375990587486,
+      "mean_gain_pct": 4.7072342543940735,
+      "fold_importances": [
+        0.0366584883054729,
+        0.050507873201341036,
+        0.031630112631882666,
+        0.04553879777787763,
+        0.04288370759054155
+      ],
+      "rank": 7
+    },
+    {
+      "feature": "BPQ020",
+      "label": "Hypertension History (Yes/No)",
+      "domain": "Heart",
+      "mean_r2_drop": 0.03605626687671752,
+      "std_r2_drop": 0.0039076540031303345,
+      "mean_gain_pct": 19.59367959665294,
+      "fold_importances": [
+        0.03176311372246569,
+        0.03282218025095868,
+        0.041517279743054566,
+        0.03987335324797311,
+        0.034305407419135604
+      ],
+      "rank": 8
+    },
+    {
+      "feature": "LBXSAL",
+      "label": "Albumin, Serum (g/dL)",
+      "domain": "Liver",
+      "mean_r2_drop": 0.031273142704567804,
+      "std_r2_drop": 0.004368071356629704,
+      "mean_gain_pct": 3.0473667375689675,
+      "fold_importances": [
+        0.027967242007610593,
+        0.024969706901843004,
+        0.03185805402148152,
+        0.03714103010162702,
+        0.03442968049027689
+      ],
+      "rank": 9
+    },
+    {
+      "feature": "LBXSCR",
+      "label": "Creatinine, Serum (mg/dL)",
+      "domain": "Kidney",
+      "mean_r2_drop": 0.018538949254035236,
+      "std_r2_drop": 0.0031547486093369925,
+      "mean_gain_pct": 2.948831629800402,
+      "fold_importances": [
+        0.017207489502623165,
+        0.02033611538844282,
+        0.017499463273665604,
+        0.014161374445733076,
+        0.02349030365971152
+      ],
+      "rank": 10
+    }
+  ],
+  "domain_aggregation": [
+    {
+      "domain": "Heart",
+      "total_r2_drop": 0.18015270872243933,
+      "avg_r2_drop_per_feature": 0.022519088590304916,
+      "feature_count": 8
+    },
+    {
+      "domain": "Liver",
+      "total_r2_drop": 0.17722779575748476,
+      "avg_r2_drop_per_feature": 0.029537965959580793,
+      "feature_count": 6
+    },
+    {
+      "domain": "Biomarker",
+      "total_r2_drop": 0.13099157206378995,
+      "avg_r2_drop_per_feature": 0.032747893015947487,
+      "feature_count": 4
+    },
+    {
+      "domain": "Kidney",
+      "total_r2_drop": 0.11627688339994836,
+      "avg_r2_drop_per_feature": 0.019379480566658062,
+      "feature_count": 6
+    },
+    {
+      "domain": "Demographic",
+      "total_r2_drop": 0.0005827566633202718,
+      "avg_r2_drop_per_feature": 0.0005827566633202718,
+      "feature_count": 1
+    }
+  ],
+  "disclaimer": "All explanation outputs carry the statement: these are predictive attributions, not evidence of biological causality."
+}

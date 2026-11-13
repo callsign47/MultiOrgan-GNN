@@ -1,0 +1,50 @@
+{
+  "audit_finding": "AUDIT RESOLUTION (ISSUE 1): The apparent contradiction between Phase 6 and Phase 8 arose from an unsupported prose claim ('dropping liver plummets R2 to 0.0398, liver accounts for >90% of variance') that contradicted the actual on-disk experimental results. The verified on-disk metrics in exp6_xgboost_results.json and exp6_hsgin_results.json show: 1. Retrained Leave-One-Liver-Out R2 is 0.3758 for XGBoost (Delta = -0.0965) and 0.3914 for HSGIN (Delta = -0.1074). 2. Retrained Heart ONLY achieves R2 = 0.2232, Liver ONLY achieves R2 = 0.2083, Biomarker ONLY achieves R2 = 0.1531, and Kidney ONLY achieves R2 = 0.1492. 3. In Phase 8 held-out permutation attribution, Heart (29.8% share) and Liver (29.3% share) are the two primary drivers, with Biomarkers (21.6%) and Kidney (19.2%) providing substantial orthogonal signal. 4. Both Phase 6 and Phase 8 consistently demonstrate that FIB-4 prediction in the leakage-controlled setting is a genuinely multi-organ task: Liver markers provide hepatic injury tone, Heart features (BPXOSY1) provide the primary surrogate proxy for patient age, and Biomarkers (LBXWBCSI) provide the surrogate proxy for platelet count.",
+  "reconciled_table": [
+    {
+      "domain": "Heart",
+      "feature_count": 8,
+      "phase8_heldout_perm_r2_drop": 0.1802,
+      "phase8_attributed_share_pct": 29.8,
+      "phase6_xgb_retrained_only_r2": 0.2232,
+      "phase6_xgb_retrained_loo_delta": -0.0392,
+      "phase6_hsgin_retrained_loo_delta": -0.0611
+    },
+    {
+      "domain": "Liver",
+      "feature_count": 6,
+      "phase8_heldout_perm_r2_drop": 0.1772,
+      "phase8_attributed_share_pct": 29.3,
+      "phase6_xgb_retrained_only_r2": 0.2083,
+      "phase6_xgb_retrained_loo_delta": -0.0965,
+      "phase6_hsgin_retrained_loo_delta": -0.1074
+    },
+    {
+      "domain": "Biomarker",
+      "feature_count": 4,
+      "phase8_heldout_perm_r2_drop": 0.131,
+      "phase8_attributed_share_pct": 21.6,
+      "phase6_xgb_retrained_only_r2": 0.1531,
+      "phase6_xgb_retrained_loo_delta": -0.0545,
+      "phase6_hsgin_retrained_loo_delta": -0.0794
+    },
+    {
+      "domain": "Kidney",
+      "feature_count": 6,
+      "phase8_heldout_perm_r2_drop": 0.1163,
+      "phase8_attributed_share_pct": 19.2,
+      "phase6_xgb_retrained_only_r2": 0.1492,
+      "phase6_xgb_retrained_loo_delta": -0.043,
+      "phase6_hsgin_retrained_loo_delta": -0.0339
+    },
+    {
+      "domain": "Demographic",
+      "feature_count": 1,
+      "phase8_heldout_perm_r2_drop": 0.0006,
+      "phase8_attributed_share_pct": 0.1,
+      "phase6_xgb_retrained_only_r2": 0.0059,
+      "phase6_xgb_retrained_loo_delta": 0.0033,
+      "phase6_hsgin_retrained_loo_delta": -0.0054
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "description": "RandomEdges Erd\u0151s\u2013R\u00e9nyi G(5, 14) multi-seed evaluation (Seeds 42, 43, 44)",
+  "seeds": {
+    "seed_42": {
+      "r2": 0.49481793945860586,
+      "mae": 0.35573351010146065,
+      "rmse": 0.5507302023101217
+    },
+    "seed_43": {
+      "r2": 0.49559984128951984,
+      "mae": 0.3523838658818151,
+      "rmse": 0.5503038375008439
+    },
+    "seed_44": {
+      "r2": 0.4896651794595097,
+      "mae": 0.35091522184430707,
+      "rmse": 0.5535317477766275
+    }
+  },
+  "multi_seed_mean_r2": 0.4934,
+  "multi_seed_std_r2": 0.0026,
+  "ensemble_pooled": {
+    "r2": 0.5095312007786508,
+    "mae": 0.34692152434067114,
+    "rmse": 0.5426510237995014
+  },
+  "hsgin_comparison": {
+    "single_seed_42": {
+      "hsgin_r2": 0.4988,
+      "random_edges_r2": 0.49481793945860586,
+      "delta_r2": 0.004,
+      "bootstrap": {
+        "observed_delta_r2": 0.003997026075398202,
+        "ci_r2": [
+          -0.011149553971596473,
+          0.01843443757536564
+        ],
+        "observed_delta_rmse": -0.002183029275877435,
+        "ci_rmse": [
+          -0.010075593129107312,
+          0.006093499879339969
+        ],
+        "observed_delta_mae": -0.00483255560741469,
+        "ci_mae": [
+          -0.008390572410796774,
+          -0.0016285008257226857
+        ],
+        "a_significantly_better_r2": false,
+        "b_significantly_better_r2": false
+      }
+    },
+    "multi_seed_mean": {
+      "hsgin_mean_r2": 0.4953,
+      "random_edges_mean_r2": 0.4934,
+      "delta_r2": 0.0019
+    },
+    "three_seed_ensemble": {
+      "hsgin_ensemble_r2": 0.5114,
+      "random_edges_ensemble_r2": 0.5095,
+      "delta_r2": 0.0019,
+      "bootstrap": {
+        "observed_delta_r2": 0.0018836801959376537,
+        "ci_r2": [
+          -0.00881799556116596,
+          0.015136734140165767
+        ],
+        "observed_delta_rmse": -0.0010430473021711961,
+        "ci_rmse": [
+          -0.0086430742702406,
+          0.004749352565933536
+        ],
+        "observed_delta_mae": -0.0013530995046128202,
+        "ci_mae": [
+          -0.0032114786635244683,
+          0.0007015034457079888
+        ],
+        "a_significantly_better_r2": false,
+        "b_significantly_better_r2": false
+      }
+    }
+  }
+}

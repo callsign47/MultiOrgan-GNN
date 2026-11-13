@@ -1,0 +1,25 @@
+{
+  "experiment": "Exp8_YRandomization_and_LeakageControls",
+  "y_randomization": {
+    "n_permutations_xgboost": 100,
+    "n_permutations_ridge": 100,
+    "n_permutations_mlp": 100,
+    "n_permutations_hsgin": 10,
+    "base_seed": 42,
+    "seed_offset": 1000
+  },
+  "leaky_controls": {
+    "excluded_components": ["RIDAGEYR", "LBXSASSI", "LBXSATSI", "LBXPLTSI"],
+    "sets": {
+      "formula_only_4": ["RIDAGEYR", "LBXSASSI", "LBXSATSI", "LBXPLTSI"],
+      "leaky_full_29": "25_manifest_plus_4_components",
+      "log_transformed_formula": "exact_mathematical_decomposition"
+    },
+    "models": ["Ridge", "XGBoost", "MLP"]
+  },
+  "acceptance_criteria": {
+    "y_randomization_mean_r2_max": 0.02,
+    "y_randomization_empirical_p_max": 0.01,
+    "leaky_control_r2_min": 0.90
+  }
+}

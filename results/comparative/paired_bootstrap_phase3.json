@@ -1,0 +1,249 @@
+{
+  "HSGIN vs XGBoost_tuned": {
+    "observed_delta_r2": 0.029022433483188337,
+    "ci_r2": [
+      0.012242524193123844,
+      0.04676155971989312
+    ],
+    "observed_delta_rmse": -0.0156590270094491,
+    "ci_rmse": [
+      -0.025515118468753456,
+      -0.006475363185814123
+    ],
+    "observed_delta_mae": -0.01897123712769677,
+    "ci_mae": [
+      -0.024020789973682295,
+      -0.01387443267894943
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "HSGIN vs CatBoost": {
+    "observed_delta_r2": 0.030322451469622647,
+    "ci_r2": [
+      0.012197175218798317,
+      0.048153136247373184
+    ],
+    "observed_delta_rmse": -0.01635029335156779,
+    "ci_rmse": [
+      -0.027028043354440527,
+      -0.006435839424385738
+    ],
+    "observed_delta_mae": -0.018362847709061325,
+    "ci_mae": [
+      -0.02328319010665362,
+      -0.013530806645734575
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "HSGIN vs Classical_HGNN": {
+    "observed_delta_r2": 0.030793418319729926,
+    "ci_r2": [
+      0.010356336365403488,
+      0.05317949332362047
+    ],
+    "observed_delta_rmse": -0.01660051472894808,
+    "ci_rmse": [
+      -0.029322965950919176,
+      -0.005619908673021926
+    ],
+    "observed_delta_mae": -0.01394637316698022,
+    "ci_mae": [
+      -0.018927601099955543,
+      -0.00882814418552994
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "HSGIN vs ExtraTrees": {
+    "observed_delta_r2": 0.054776544627538226,
+    "ci_r2": [
+      0.03307542301127998,
+      0.07653627039128925
+    ],
+    "observed_delta_rmse": -0.02919932797367486,
+    "ci_rmse": [
+      -0.04248349523476733,
+      -0.01701228703058532
+    ],
+    "observed_delta_mae": -0.025712087279757823,
+    "ci_mae": [
+      -0.03118465040254631,
+      -0.02037588509887089
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "XGBoost_tuned vs CatBoost": {
+    "observed_delta_r2": 0.0013000179864343098,
+    "ci_r2": [
+      -0.009299800927787039,
+      0.012048619356336592
+    ],
+    "observed_delta_rmse": -0.0006912663421186904,
+    "ci_rmse": [
+      -0.006558730565088627,
+      0.004729124179305053
+    ],
+    "observed_delta_mae": 0.0006083894186354466,
+    "ci_mae": [
+      -0.002174377000121083,
+      0.00338655250025985
+    ],
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false
+  },
+  "XGBoost_tuned vs LightGBM": {
+    "observed_delta_r2": 0.01819912384791067,
+    "ci_r2": [
+      0.009782664191483176,
+      0.026620500396185062
+    ],
+    "observed_delta_rmse": -0.00960136178800608,
+    "ci_rmse": [
+      -0.014523199458461361,
+      -0.005076306387633635
+    ],
+    "observed_delta_mae": -0.00584319301766445,
+    "ci_mae": [
+      -0.008582920343045312,
+      -0.0032396933017944576
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "XGBoost_tuned vs HistGradientBoosting": {
+    "observed_delta_r2": 0.03139666484404091,
+    "ci_r2": [
+      0.018425242541112583,
+      0.045497839470693
+    ],
+    "observed_delta_rmse": -0.016464725956139237,
+    "ci_rmse": [
+      -0.024448902229918863,
+      -0.009420515076375759
+    ],
+    "observed_delta_mae": -0.008387991908020698,
+    "ci_mae": [
+      -0.012097769870168838,
+      -0.004762748792510586
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "XGBoost_tuned vs XGBoost_Exp0": {
+    "observed_delta_r2": 0.019176085877534388,
+    "ci_r2": [
+      0.00837522426113579,
+      0.030208430974885844
+    ],
+    "observed_delta_rmse": -0.010112240727995658,
+    "ci_rmse": [
+      -0.016088281166092407,
+      -0.0043862708221862065
+    ],
+    "observed_delta_mae": -0.0041697621262618,
+    "ci_mae": [
+      -0.0070918411044552975,
+      -0.001086888923860685
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "CatBoost vs XGBoost_Exp0": {
+    "observed_delta_r2": 0.017876067891100078,
+    "ci_r2": [
+      0.003041096312309147,
+      0.03252308110255646
+    ],
+    "observed_delta_rmse": -0.009420974385876968,
+    "ci_rmse": [
+      -0.016832396425264837,
+      -0.0016636804894654893
+    ],
+    "observed_delta_mae": -0.004778151544897247,
+    "ci_mae": [
+      -0.008275191334760523,
+      -0.0014826877409489282
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "ExtraTrees vs RandomForest_tuned": {
+    "observed_delta_r2": 0.015208629284067299,
+    "ci_r2": [
+      0.007684158192767623,
+      0.02361907493648057
+    ],
+    "observed_delta_rmse": -0.007848967768709691,
+    "ci_rmse": [
+      -0.012262453179874455,
+      -0.0038808919553255197
+    ],
+    "observed_delta_mae": -0.005556421646912613,
+    "ci_mae": [
+      -0.00808204221420612,
+      -0.0030556920585244826
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "RandomForest_tuned vs Random_Forest_Exp0": {
+    "observed_delta_r2": 0.03475455133640115,
+    "ci_r2": [
+      0.016487335547091114,
+      0.06442714992698009
+    ],
+    "observed_delta_rmse": -0.01755307514007165,
+    "ci_rmse": [
+      -0.0313757321337856,
+      -0.008520134138621915
+    ],
+    "observed_delta_mae": -0.01049436532668313,
+    "ci_mae": [
+      -0.013352327472783244,
+      -0.007908901326009249
+    ],
+    "a_significantly_better_r2": true,
+    "b_significantly_better_r2": false
+  },
+  "Ridge_tuned vs Ridge_Exp0": {
+    "observed_delta_r2": 0.00014812982221712456,
+    "ci_r2": [
+      -0.0005656163996809544,
+      0.000967966935419162
+    ],
+    "observed_delta_rmse": -7.326050629996583e-05,
+    "ci_rmse": [
+      -0.00045540873364298683,
+      0.0002921303273031666
+    ],
+    "observed_delta_mae": -0.00045337045667581677,
+    "ci_mae": [
+      -0.00068459459095781,
+      -0.0002213471430352823
+    ],
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false
+  },
+  "ElasticNet vs Ridge_tuned": {
+    "observed_delta_r2": -3.142238945230691e-05,
+    "ci_r2": [
+      -0.0015350395139058976,
+      0.0015889963183613332
+    ],
+    "observed_delta_rmse": 1.5541297383792063e-05,
+    "ci_rmse": [
+      -0.0007541223836094318,
+      0.0007850417764295153
+    ],
+    "observed_delta_mae": -7.466181788678972e-05,
+    "ci_mae": [
+      -0.0006401462111914364,
+      0.0005191206420829032
+    ],
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false
+  }
+}

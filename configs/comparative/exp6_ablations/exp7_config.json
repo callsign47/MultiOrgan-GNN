@@ -1,0 +1,42 @@
+{
+  "experiment": "Exp7_GraphArchitectureAblations",
+  "base_architecture": "HSGIN",
+  "hyperparameters": {
+    "epochs": 30,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "heads": 2,
+    "dropout": 0.1,
+    "seed": 42
+  },
+  "variants": {
+    "NoCrossTalk": {
+      "type": "star_topology",
+      "description": "Star graph preserving 8 bipartite patient-organ edges and removing all 6 organ-organ cross-talk edges",
+      "edge_count": 8,
+      "readout": "hierarchical_organ_aware"
+    },
+    "FlatReadout": {
+      "type": "readout_ablation",
+      "description": "Retains full 14-edge biology but replaces hierarchical organ-aware readout with flat mean pooling across all 5 nodes",
+      "edge_count": 14,
+      "readout": "flat_mean_pooling"
+    },
+    "RandomEdges": {
+      "type": "structural_null_control",
+      "description": "Erdos-Renyi random digraph G(5, 14) sampling 14 directed edge types uniformly at random from 20 possible non-self directed pairs",
+      "edge_count": 14,
+      "readout": "hierarchical_organ_aware",
+      "seed": 42
+    },
+    "HomoGNN": {
+      "type": "relational_collapse",
+      "description": "Collapses heterogeneous node and relation types into a homogeneous 5-node graph with uniform GCN message passing",
+      "edge_count": 14,
+      "readout": "patient_node_mlp"
+    }
+  }
+}

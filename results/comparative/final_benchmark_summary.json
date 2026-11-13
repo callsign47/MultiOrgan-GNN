@@ -1,0 +1,556 @@
+{
+  "project": "Comparative Evaluation of Machine Learning, Deep Learning, and GNNs for Leakage-Controlled FIB-4 Prediction",
+  "governing_constraint": "Extend, Never Replace (100% preservation verified)",
+  "cohort_size": 6277,
+  "feature_count": 25,
+  "node_types": 5,
+  "edge_types": 14,
+  "league_table": [
+    {
+      "model": "HSGIN",
+      "pooled_r2": 0.5114148809745884,
+      "rmse": 0.5416079764973302,
+      "mae": 0.3455684248360583,
+      "spearman_rho": 0.7736048658026744
+    },
+    {
+      "model": "NNW_Blend",
+      "pooled_r2": 0.5101358598676503,
+      "rmse": 0.5423164254882853,
+      "mae": 0.3466377534555943,
+      "spearman_rho": 0.7732579819777784
+    },
+    {
+      "model": "RandomEdges_Ensemble",
+      "pooled_r2": 0.5095312007786508,
+      "rmse": 0.5426510237995014,
+      "mae": 0.34692152434067114,
+      "spearman_rho": 0.7743180437790483
+    },
+    {
+      "model": "Ridge_Stacking",
+      "pooled_r2": 0.5088985991301129,
+      "rmse": 0.5430008639052579,
+      "mae": 0.3518241322691056,
+      "spearman_rho": 0.7721810584784288
+    },
+    {
+      "model": "RandomEdges_Control",
+      "pooled_r2": 0.49481793945860586,
+      "rmse": 0.5507302023101217,
+      "mae": 0.35573351010146065,
+      "spearman_rho": 0.7653919150800341
+    },
+    {
+      "model": "Classical_HGNN",
+      "pooled_r2": 0.47710488774994664,
+      "rmse": 0.5603020677628453,
+      "mae": 0.3590665848077128,
+      "spearman_rho": 0.7558163578490317
+    },
+    {
+      "model": "XGBoost_Tuned",
+      "pooled_r2": 0.4697925320508156,
+      "rmse": 0.5642062000436934,
+      "mae": 0.36987219162174273,
+      "spearman_rho": 0.7437602703823298
+    },
+    {
+      "model": "CatBoost",
+      "pooled_r2": 0.4684925140643814,
+      "rmse": 0.5648974663858121,
+      "mae": 0.3692638022031073,
+      "spearman_rho": 0.7487484383284968
+    },
+    {
+      "model": "FT_Transformer",
+      "pooled_r2": 0.4674426818579638,
+      "rmse": 0.5654550831753982,
+      "mae": 0.3511163555586163,
+      "spearman_rho": 0.7680774985629185
+    },
+    {
+      "model": "MLP_Retuned",
+      "pooled_r2": 0.4581857827959477,
+      "rmse": 0.5703482750722164,
+      "mae": 0.35234577411965845,
+      "spearman_rho": 0.7669558485193051
+    },
+    {
+      "model": "LightGBM",
+      "pooled_r2": 0.45159340820290506,
+      "rmse": 0.5738075618316995,
+      "mae": 0.3757153846394072,
+      "spearman_rho": 0.7367317219912211
+    },
+    {
+      "model": "Extra_Trees",
+      "pooled_r2": 0.44403842090646584,
+      "rmse": 0.5777465010079191,
+      "mae": 0.3766130417738038,
+      "spearman_rho": 0.7392333825395287
+    },
+    {
+      "model": "HistGradientBoosting",
+      "pooled_r2": 0.4383958672067748,
+      "rmse": 0.5806709259998326,
+      "mae": 0.3782601835297633,
+      "spearman_rho": 0.7299513659870014
+    },
+    {
+      "model": "Random_Forest",
+      "pooled_r2": 0.42882979162239854,
+      "rmse": 0.5855954687766288,
+      "mae": 0.3821694634207164,
+      "spearman_rho": 0.7275860906900603
+    },
+    {
+      "model": "Ridge_Tuned",
+      "pooled_r2": 0.3864321024923134,
+      "rmse": 0.6069406821766204,
+      "mae": 0.4060533826966758,
+      "spearman_rho": 0.6917852361892305
+    },
+    {
+      "model": "ElasticNet",
+      "pooled_r2": 0.386400680102861,
+      "rmse": 0.6069562234740044,
+      "mae": 0.40597872087878895,
+      "spearman_rho": 0.6924362442897872
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "model_A": "HSGIN",
+      "model_B": "XGBoost_Tuned",
+      "delta_r2": 0.04162234892377281,
+      "ci_95": [
+        0.02395015540880613,
+        0.059954919555665856
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.014,
+      "p_fdr": 0.014,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "CatBoost",
+      "delta_r2": 0.04292236691020701,
+      "ci_95": [
+        0.023644515758931808,
+        0.061726387655760856
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.013000000000000001,
+      "p_fdr": 0.007,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "LightGBM",
+      "delta_r2": 0.05982147277168337,
+      "ci_95": [
+        0.04213257717068507,
+        0.07997212633676518
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.012,
+      "p_fdr": 0.004666666666666667,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "MLP_Retuned",
+      "delta_r2": 0.053229098178640744,
+      "ci_95": [
+        0.02124577687532567,
+        0.0940766343358531
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.011,
+      "p_fdr": 0.0035,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "Classical_HGNN",
+      "delta_r2": 0.03430999322464179,
+      "ci_95": [
+        0.013969750197608825,
+        0.05461002305106595
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.01,
+      "p_fdr": 0.0028,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "Ridge_Tuned",
+      "delta_r2": 0.12498277848227501,
+      "ci_95": [
+        0.10151340308676612,
+        0.15129219436884964
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.009000000000000001,
+      "p_fdr": 0.0023333333333333335,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "NNW_Blend",
+      "model_B": "XGBoost_Tuned",
+      "delta_r2": 0.040343327816834695,
+      "ci_95": [
+        0.028873625537698757,
+        0.05207158825887288
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.008,
+      "p_fdr": 0.002,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "XGBoost_Tuned",
+      "model_B": "Ridge_Tuned",
+      "delta_r2": 0.0833604295585022,
+      "ci_95": [
+        0.06542445538983802,
+        0.10063146566314803
+      ],
+      "raw_p_value": 0.001,
+      "meets_mmd": true,
+      "p_holm": 0.007,
+      "p_fdr": 0.00175,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "FT_Transformer",
+      "delta_r2": 0.043972199116624644,
+      "ci_95": [
+        0.015146156869327349,
+        0.07764168353064184
+      ],
+      "raw_p_value": 0.002,
+      "meets_mmd": true,
+      "p_holm": 0.012,
+      "p_fdr": 0.0031111111111111114,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "RandomEdges_Control",
+      "delta_r2": 0.016596941515982566,
+      "ci_95": [
+        0.004346531773917548,
+        0.027901348475917007
+      ],
+      "raw_p_value": 0.008,
+      "meets_mmd": true,
+      "p_holm": 0.04,
+      "p_fdr": 0.0112,
+      "significant_holm_05": true,
+      "significant_fdr_05": true
+    },
+    {
+      "model_A": "XGBoost_Tuned",
+      "model_B": "MLP_Retuned",
+      "delta_r2": 0.011606749254867932,
+      "ci_95": [
+        -0.02016458822079603,
+        0.0452467187380261
+      ],
+      "raw_p_value": 0.532,
+      "meets_mmd": true,
+      "p_holm": 1.0,
+      "p_fdr": 0.6770909090909091,
+      "significant_holm_05": false,
+      "significant_fdr_05": false
+    },
+    {
+      "model_A": "Ridge_Stacking",
+      "model_B": "HSGIN",
+      "delta_r2": -0.0025162818444754986,
+      "ci_95": [
+        -0.015014525449224256,
+        0.00907603148725788
+      ],
+      "raw_p_value": 0.734,
+      "meets_mmd": false,
+      "p_holm": 1.0,
+      "p_fdr": 0.8563333333333333,
+      "significant_holm_05": false,
+      "significant_fdr_05": false
+    },
+    {
+      "model_A": "HSGIN",
+      "model_B": "RandomEdges_Ensemble",
+      "delta_r2": 0.0018836801959376537,
+      "ci_95": [
+        -0.00881799556116596,
+        0.015136734140165767
+      ],
+      "raw_p_value": 0.814,
+      "meets_mmd": false,
+      "p_holm": 1.0,
+      "p_fdr": 0.8766153846153846,
+      "significant_holm_05": false,
+      "significant_fdr_05": false
+    },
+    {
+      "model_A": "NNW_Blend",
+      "model_B": "HSGIN",
+      "delta_r2": -0.0012790211069381163,
+      "ci_95": [
+        -0.013758298731697765,
+        0.010297044530142362
+      ],
+      "raw_p_value": 0.862,
+      "meets_mmd": false,
+      "p_holm": 0.862,
+      "p_fdr": 0.862,
+      "significant_holm_05": false,
+      "significant_fdr_05": false
+    }
+  ],
+  "explainability": {
+    "mean_rank_stability_spearman_rho": 0.9453846153846154,
+    "spearman_pairwise_rhos": [
+      0.9515,
+      0.9577,
+      0.9523,
+      0.9731,
+      0.9338,
+      0.9254,
+      0.9308,
+      0.9346,
+      0.9454,
+      0.9492
+    ],
+    "top_features": [
+      {
+        "feature": "BPXOSY1",
+        "label": "Oscillometric Systolic BP (mmHg)",
+        "domain": "Heart",
+        "mean_r2_drop": 0.09519253368778607,
+        "std_r2_drop": 0.013661280082731238,
+        "mean_gain_pct": 8.575719683080893,
+        "fold_importances": [
+          0.07459550480003298,
+          0.09236834711119567,
+          0.1145855394704021,
+          0.0895666997603331,
+          0.10484657729696649
+        ],
+        "rank": 1
+      },
+      {
+        "feature": "LBXWBCSI",
+        "label": "White Blood Cell Count (1000 cells/uL)",
+        "domain": "Biomarker",
+        "mean_r2_drop": 0.08255926131170571,
+        "std_r2_drop": 0.0067800770049515555,
+        "mean_gain_pct": 4.784311189606771,
+        "fold_importances": [
+          0.08373950756588858,
+          0.08109817962726337,
+          0.07465477120429874,
+          0.07857916931158435,
+          0.09472467884949347
+        ],
+        "rank": 2
+      },
+      {
+        "feature": "LBXSBU",
+        "label": "Blood Urea Nitrogen (BUN, mg/dL)",
+        "domain": "Kidney",
+        "mean_r2_drop": 0.07461923384424354,
+        "std_r2_drop": 0.015619194698514936,
+        "mean_gain_pct": 9.127379366677696,
+        "fold_importances": [
+          0.0864240766081564,
+          0.09253225957933231,
+          0.07853093476675123,
+          0.04834955522507504,
+          0.06725934304190274
+        ],
+        "rank": 3
+      },
+      {
+        "feature": "LBXSGTSI",
+        "label": "Gamma Glutamyl Transferase (GGT, U/L)",
+        "domain": "Liver",
+        "mean_r2_drop": 0.048235418979385145,
+        "std_r2_drop": 0.009913824213011653,
+        "mean_gain_pct": 3.3532706732090336,
+        "fold_importances": [
+          0.03850684593979552,
+          0.05369203468491611,
+          0.04780928890300695,
+          0.06392204426425956,
+          0.037246881104947616
+        ],
+        "rank": 4
+      },
+      {
+        "feature": "LBXSTB",
+        "label": "Total Bilirubin (mg/dL)",
+        "domain": "Liver",
+        "mean_r2_drop": 0.04595660796788818,
+        "std_r2_drop": 0.009239768373811227,
+        "mean_gain_pct": 6.076905679511524,
+        "fold_importances": [
+          0.04517816062741666,
+          0.04053012037805979,
+          0.035273078904319945,
+          0.04603226933132204,
+          0.06276941059832247
+        ],
+        "rank": 5
+      },
+      {
+        "feature": "LUXSMED",
+        "label": "Liver Stiffness Median / FibroScan (kPa)",
+        "domain": "Liver",
+        "mean_r2_drop": 0.043998584343094095,
+        "std_r2_drop": 0.017929706817323875,
+        "mean_gain_pct": 4.863246699428096,
+        "fold_importances": [
+          0.03762707194087607,
+          0.03996655797068317,
+          0.017115173754601032,
+          0.07078584391078153,
+          0.05449827413852866
+        ],
+        "rank": 6
+      },
+      {
+        "feature": "LBXRBCSI",
+        "label": "Red Blood Cell Count (10^6 cells/uL)",
+        "domain": "Biomarker",
+        "mean_r2_drop": 0.04144379590142315,
+        "std_r2_drop": 0.006636375990587486,
+        "mean_gain_pct": 4.7072342543940735,
+        "fold_importances": [
+          0.0366584883054729,
+          0.050507873201341036,
+          0.031630112631882666,
+          0.04553879777787763,
+          0.04288370759054155
+        ],
+        "rank": 7
+      },
+      {
+        "feature": "BPQ020",
+        "label": "Hypertension History (Yes/No)",
+        "domain": "Heart",
+        "mean_r2_drop": 0.03605626687671752,
+        "std_r2_drop": 0.0039076540031303345,
+        "mean_gain_pct": 19.59367959665294,
+        "fold_importances": [
+          0.03176311372246569,
+          0.03282218025095868,
+          0.041517279743054566,
+          0.03987335324797311,
+          0.034305407419135604
+        ],
+        "rank": 8
+      },
+      {
+        "feature": "LBXSAL",
+        "label": "Albumin, Serum (g/dL)",
+        "domain": "Liver",
+        "mean_r2_drop": 0.031273142704567804,
+        "std_r2_drop": 0.004368071356629704,
+        "mean_gain_pct": 3.0473667375689675,
+        "fold_importances": [
+          0.027967242007610593,
+          0.024969706901843004,
+          0.03185805402148152,
+          0.03714103010162702,
+          0.03442968049027689
+        ],
+        "rank": 9
+      },
+      {
+        "feature": "LBXSCR",
+        "label": "Creatinine, Serum (mg/dL)",
+        "domain": "Kidney",
+        "mean_r2_drop": 0.018538949254035236,
+        "std_r2_drop": 0.0031547486093369925,
+        "mean_gain_pct": 2.948831629800402,
+        "fold_importances": [
+          0.017207489502623165,
+          0.02033611538844282,
+          0.017499463273665604,
+          0.014161374445733076,
+          0.02349030365971152
+        ],
+        "rank": 10
+      }
+    ],
+    "domain_aggregation": [
+      {
+        "domain": "Heart",
+        "total_r2_drop": 0.18015270872243933,
+        "avg_r2_drop_per_feature": 0.022519088590304916,
+        "feature_count": 8
+      },
+      {
+        "domain": "Liver",
+        "total_r2_drop": 0.17722779575748476,
+        "avg_r2_drop_per_feature": 0.029537965959580793,
+        "feature_count": 6
+      },
+      {
+        "domain": "Biomarker",
+        "total_r2_drop": 0.13099157206378995,
+        "avg_r2_drop_per_feature": 0.032747893015947487,
+        "feature_count": 4
+      },
+      {
+        "domain": "Kidney",
+        "total_r2_drop": 0.11627688339994836,
+        "avg_r2_drop_per_feature": 0.019379480566658062,
+        "feature_count": 6
+      },
+      {
+        "domain": "Demographic",
+        "total_r2_drop": 0.0005827566633202718,
+        "avg_r2_drop_per_feature": 0.0005827566633202718,
+        "feature_count": 1
+      }
+    ],
+    "disclaimer": "All explanation outputs carry the statement: these are predictive attributions, not evidence of biological causality."
+  },
+  "experiments_summary": {
+    "exp0_reproduction": "100% exact reproduction (Delta = 0.0000 across all 6 models)",
+    "exp1_linear_trees": "Ridge (0.3864), ElasticNet (0.3864), RF (0.4288), ExtraTrees (0.4440)",
+    "exp2_boosting": "Tuned XGBoost (0.4698), CatBoost (0.4685), LightGBM (0.4516), HistGB (0.4384)",
+    "exp3_deep_tabular": "Retuned MLP (0.4492 single / 0.4582 ens), FT-Transformer (0.4674 ens), TabNet (0.4501 ens)",
+    "exp4_gnn": "HSGIN 3-seed (0.5114 pooled / 0.4988 mean), Classical HGNN (0.4771 pooled / 0.4702 mean)",
+    "exp5_ensembles": "NNW Weighted Blend (0.5101), Ridge Stacking (0.5089)",
+    "exp6_ablations": "Leave-one-domain-out retrained ablation: Drop Liver delta R2 = -0.0965 (XGBoost) / -0.1074 (HSGIN). Standalone domains: Heart R2=0.2232, Liver R2=0.2083, Biomarker R2=0.1531, Kidney R2=0.1492",
+    "exp7_graph_ablations": "RandomEdges 3-seed ensemble (0.5095) vs HSGIN 3-seed ensemble (0.5114): Delta R2 = +0.0019 (95% CI [-0.0088, +0.0151], p=0.6920 n.s., below MMD); Single-seed Delta R2 = +0.0040 (p=0.5840). Confirms graph acts as localized capacity regularizer without requiring specific biological topology",
+    "exp8_controls": "Exact Log-Formula R2=1.0000; Leaky Raw4 R2=0.9494-0.9649; HSGIN 100-permutation empirical null R2 mean = -0.0114 +/- 0.0066, 95% CI [-0.0253, -0.0012], max = +0.0006 (empirical p = 0.0099, p < 0.01)",
+    "exp9_subgroups": "Rule-out Sensitivity=87.0% (NPV 67.2%); Rule-in Specificity=99.5% (PPV 52.5%); Range restriction proven"
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "file_summary": [
+    {
+      "filename": "DEMO_L.xpt",
+      "category": "DEMO G",
+      "num_rows": 11933,
+      "num_cols": 27,
+      "filesize_bytes": 2582160,
+      "sha256": "ca4374a158b493b8b0163e1388da21d57a18d1b9cecff2aa4e2fa2bec494fe23",
+      "is_seqn_unique": true,
+      "target_components": [
+        "RIDAGEYR"
+      ],
+      "model_features": [
+        "RIAGENDR",
+        "RIDAGEYR"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "BMX_L.xpt",
+      "category": "EXAMINATION",
+      "num_rows": 8860,
+      "num_cols": 22,
+      "filesize_bytes": 1563200,
+      "sha256": "44440c416d9ad709e8b1708a5975378ab4d5b18edc39eb5015c2ae7186500170",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "BPXO_L.xpt",
+      "category": "EXAMINATION",
+      "num_rows": 7801,
+      "num_cols": 12,
+      "filesize_bytes": 696720,
+      "sha256": "189aa9bed689d2c69cf8d780b01de85073276fea5694dd52cdf696229f9054a6",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "BPXOSY1",
+        "BPXODI1",
+        "BPXOPLS1"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "LUX_L.xpt",
+      "category": "EXAMINATION",
+      "num_rows": 7199,
+      "num_cols": 13,
+      "filesize_bytes": 765680,
+      "sha256": "40e49c5f1b58054e4787cd59cdeb224cd7658784b760274c3449bd4c1eb64c34",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "LUXSMED",
+        "LUXCAPM"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "ALB_CR_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8493,
+      "num_cols": 8,
+      "filesize_bytes": 545440,
+      "sha256": "fc011a80d14419884559372a3196f0a268b494f4f2fa972d00be1f3a23ba3c41",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "URXUMA",
+        "URXUCR"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "BIOPRO_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 7199,
+      "num_cols": 42,
+      "filesize_bytes": 2425520,
+      "sha256": "912b345aad6b71d53a3bc299a7f3bb0d5530e9fa5b6e76d2d00103979861a476",
+      "is_seqn_unique": true,
+      "target_components": [
+        "LBXSATSI",
+        "LBXSASSI"
+      ],
+      "model_features": [
+        "LBXSATSI",
+        "LBXSAL",
+        "LBXSAPSI",
+        "LBXSASSI",
+        "LBXSBU",
+        "LBXSCR",
+        "LBXSGTSI",
+        "LBXSTB",
+        "LBXSUA"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "CBC_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8727,
+      "num_cols": 23,
+      "filesize_bytes": 1609840,
+      "sha256": "4405da2a5899dcd11e3ef4dbec0b4d2fca6d736a3efa7a85afee668baa95923f",
+      "is_seqn_unique": true,
+      "target_components": [
+        "LBXPLTSI"
+      ],
+      "model_features": [
+        "LBXWBCSI",
+        "LBXRBCSI",
+        "LBXHGB",
+        "LBXPLTSI"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "GHB_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 7199,
+      "num_cols": 3,
+      "filesize_bytes": 174000,
+      "sha256": "67aee0353160e2392dc0a33bece99b90764a630c76d82415ac4639105ad9dd03",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "GLU_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 3996,
+      "num_cols": 4,
+      "filesize_bytes": 129200,
+      "sha256": "70f773ab37e3d8485341f32137e280e05b9279e5fe9b6f0362e4052d8fe9a201",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HDL_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8068,
+      "num_cols": 4,
+      "filesize_bytes": 259520,
+      "sha256": "c1bb43df5ca366f470b411c043f4aee7ae6552a7f4bca1178bc87b24fb9a7300",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "LBDHDD"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "HEPA_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8611,
+      "num_cols": 3,
+      "filesize_bytes": 207920,
+      "sha256": "0eacb9b1b0bce97ac85aa5df1f95f78aca36bff72c9f07ba70a9d381579b5517",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HEPBD_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8068,
+      "num_cols": 5,
+      "filesize_bytes": 324160,
+      "sha256": "e2828da40dbca482a784a5aa2971bb7923fe43b4199bf7953290a3fb9ff01982",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HEPC_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8068,
+      "num_cols": 5,
+      "filesize_bytes": 324160,
+      "sha256": "ccdbbec2d51adc948fc4db9f328721c734ed74eac4b33dbba6ed643870231b83",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HEPE_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8068,
+      "num_cols": 4,
+      "filesize_bytes": 259520,
+      "sha256": "6753e7540a7a76a0e2e16aaf85b036e38ac34b9c6e620aebec95592724f5194b",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HSCRP_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8727,
+      "num_cols": 4,
+      "filesize_bytes": 280560,
+      "sha256": "c56098d7c33509087a4645dfdf39936c14213d9123e1e718831a10d5bc4e3a1b",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "LBXHSCRP"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "INS_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 3996,
+      "num_cols": 5,
+      "filesize_bytes": 161280,
+      "sha256": "cdbf53b644805e5e67725c81ee32048dad3c06687689435b042a7a144cb9ec65",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "TCHOL_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 8068,
+      "num_cols": 4,
+      "filesize_bytes": 259520,
+      "sha256": "5c3312e555bb0706fd97cbd63fcbc9e78f00bda8d2d149732d9dd368169b25d3",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "LBXTC"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "TRIGLY_L.xpt",
+      "category": "LABORATORY",
+      "num_rows": 3996,
+      "num_cols": 10,
+      "filesize_bytes": 321840,
+      "sha256": "77679864c33b98d9b6db528f3a0ac0a15ea34bde9731c04d23bc9801277975f4",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "BPQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 8501,
+      "num_cols": 6,
+      "filesize_bytes": 409680,
+      "sha256": "0acde3af0526c375942fe0735e3bf69a0422bcbc606f98a478209d2f47baa4b5",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "BPQ020"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "DBQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 11933,
+      "num_cols": 27,
+      "filesize_bytes": 2582160,
+      "sha256": "774ead4e3b8d4ec90e464dc77d8eed3fb20e5eb2899e78dc98b3100ab98d1c88",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "DIQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 11744,
+      "num_cols": 9,
+      "filesize_bytes": 847600,
+      "sha256": "9535a023673ae869afae19d842d8679e06f6a464606ac15900686b41ef05090f",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "DPQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 6337,
+      "num_cols": 11,
+      "filesize_bytes": 560000,
+      "sha256": "25605a02685035fe997477b31a0991cca2776b0f72f24a8e61ac5b018456304b",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "FNQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 10942,
+      "num_cols": 32,
+      "filesize_bytes": 2806400,
+      "sha256": "d140701b0ae0e6a1711bd63a2f64589ca9cb59c6247603e80c0b9d7dcc24eb29",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "HEQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 10696,
+      "num_cols": 2,
+      "filesize_bytes": 172240,
+      "sha256": "0d515ca8d8666618b6d007d1a29185266ab4f6ee4ecaa4db92cab53d453eb541",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    },
+    {
+      "filename": "KIQ_U_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 7809,
+      "num_cols": 9,
+      "filesize_bytes": 564320,
+      "sha256": "2f114aeee6e9c7bc9381729b95a6685e28f35c3fbc26558ca8b9458bf4bf3437",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "KIQ022"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "MCQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 11744,
+      "num_cols": 35,
+      "filesize_bytes": 3294000,
+      "sha256": "0889bb3eaa5adedf1a11c4af2d4776fc4c4c3cfdeea24fcedb77c4636b478f61",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [
+        "MCQ160C",
+        "MCQ160E"
+      ],
+      "is_used_in_study": true
+    },
+    {
+      "filename": "SLQ_L.xpt",
+      "category": "QUESTIONNAIRE",
+      "num_rows": 8501,
+      "num_cols": 7,
+      "filesize_bytes": 375840,
+      "sha256": "918c3258b2f466ac1cae55ea45330c736dbdc573ee4dc72306e3d2b222764741",
+      "is_seqn_unique": true,
+      "target_components": [],
+      "model_features": [],
+      "is_used_in_study": false
+    }
+  ],
+  "used_files": [
+    "ALB_CR_L.xpt",
+    "BIOPRO_L.xpt",
+    "BPQ_L.xpt",
+    "BPXO_L.xpt",
+    "CBC_L.xpt",
+    "DEMO_L.xpt",
+    "HDL_L.xpt",
+    "HSCRP_L.xpt",
+    "KIQ_U_L.xpt",
+    "LUX_L.xpt",
+    "MCQ_L.xpt",
+    "TCHOL_L.xpt"
+  ],
+  "unused_files": [
+    "BMX_L.xpt",
+    "DBQ_L.xpt",
+    "DIQ_L.xpt",
+    "DPQ_L.xpt",
+    "FNQ_L.xpt",
+    "GHB_L.xpt",
+    "GLU_L.xpt",
+    "HEPA_L.xpt",
+    "HEPBD_L.xpt",
+    "HEPC_L.xpt",
+    "HEPE_L.xpt",
+    "HEQ_L.xpt",
+    "INS_L.xpt",
+    "SLQ_L.xpt",
+    "TRIGLY_L.xpt"
+  ],
+  "master_patient_shape": [
+    11933,
+    299
+  ],
+  "final_cohort_shape": [
+    6277,
+    301
+  ],
+  "model_features": [
+    "BPQ020",
+    "BPXODI1",
+    "BPXOPLS1",
+    "BPXOSY1",
+    "KIQ022",
+    "LBDHDD",
+    "LBXHGB",
+    "LBXHSCRP",
+    "LBXPLTSI",
+    "LBXRBCSI",
+    "LBXSAL",
+    "LBXSAPSI",
+    "LBXSASSI",
+    "LBXSATSI",
+    "LBXSBU",
+    "LBXSCR",
+    "LBXSGTSI",
+    "LBXSTB",
+    "LBXSUA",
+    "LBXTC",
+    "LBXWBCSI",
+    "LUXCAPM",
+    "LUXSMED",
+    "MCQ160C",
+    "MCQ160E",
+    "RIAGENDR",
+    "RIDAGEYR",
+    "URXUCR",
+    "URXUMA"
+  ],
+  "target_components": [
+    "LBXPLTSI",
+    "LBXSASSI",
+    "LBXSATSI",
+    "RIDAGEYR"
+  ]
+}

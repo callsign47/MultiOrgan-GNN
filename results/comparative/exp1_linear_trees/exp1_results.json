@@ -1,0 +1,373 @@
+{
+  "experiment": "Exp1_Linear_Trees",
+  "seed": 42,
+  "inner_cv_folds": 3,
+  "features": [
+    "RIAGENDR",
+    "LBXSGTSI",
+    "LBXSAL",
+    "LBXSTB",
+    "LBXSAPSI",
+    "LUXSMED",
+    "LUXCAPM",
+    "LBXSCR",
+    "LBXSBU",
+    "LBXSUA",
+    "URXUMA",
+    "URXUCR",
+    "KIQ022",
+    "BPXOSY1",
+    "BPXODI1",
+    "BPXOPLS1",
+    "LBDHDD",
+    "LBXTC",
+    "BPQ020",
+    "MCQ160C",
+    "MCQ160E",
+    "LBXWBCSI",
+    "LBXRBCSI",
+    "LBXHGB",
+    "LBXHSCRP"
+  ],
+  "models": {
+    "Ridge": {
+      "fold_metrics": [
+        {
+          "r2": 0.37908712839959613,
+          "mae": 0.411122892991152,
+          "rmse": 0.6010522535581696
+        },
+        {
+          "r2": 0.41610126309983,
+          "mae": 0.39429450751241846,
+          "rmse": 0.5773721450185607
+        },
+        {
+          "r2": 0.36121431778571234,
+          "mae": 0.40775202384007386,
+          "rmse": 0.6065133913136922
+        },
+        {
+          "r2": 0.3689205517947931,
+          "mae": 0.4201007104287333,
+          "rmse": 0.677143138737049
+        },
+        {
+          "r2": 0.41013121852476975,
+          "mae": 0.39700210776384254,
+          "rmse": 0.5664934147584014
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.38709089592094026,
+        "r2_std": 0.022073861763313763,
+        "mae_mean": 0.40605444850724404,
+        "mae_std": 0.009445733964077066,
+        "rmse_mean": 0.6057148686771746,
+        "rmse_std": 0.038641966341754284
+      },
+      "pooled": {
+        "r2": 0.38643210283779406,
+        "mae": 0.40605338247307,
+        "rmse": 0.6069406803834777
+      },
+      "best_params_per_fold": [
+        {
+          "fold": 1,
+          "best_params": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 2,
+          "best_params": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 3,
+          "best_params": {
+            "alpha": 100.0
+          }
+        },
+        {
+          "fold": 4,
+          "best_params": {
+            "alpha": 50.0
+          }
+        },
+        {
+          "fold": 5,
+          "best_params": {
+            "alpha": 100.0
+          }
+        }
+      ],
+      "elapsed_sec": 13.16,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp1_linear_trees\\Ridge_oof_predictions.csv"
+    },
+    "ElasticNet": {
+      "fold_metrics": [
+        {
+          "r2": 0.3792312736082195,
+          "mae": 0.41102077293378836,
+          "rmse": 0.6009824822300663
+        },
+        {
+          "r2": 0.414869902302174,
+          "mae": 0.3946363664530914,
+          "rmse": 0.5779806229527408
+        },
+        {
+          "r2": 0.3620127585882902,
+          "mae": 0.4077764413003793,
+          "rmse": 0.6061342215294698
+        },
+        {
+          "r2": 0.3690921267212933,
+          "mae": 0.4193343868924082,
+          "rmse": 0.6770510832261819
+        },
+        {
+          "r2": 0.410022430266775,
+          "mae": 0.39713065599880726,
+          "rmse": 0.5665456509442122
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.38704569829735036,
+        "r2_std": 0.021504234822624903,
+        "mae_mean": 0.4059797247156949,
+        "mae_std": 0.00909906757098698,
+        "rmse_mean": 0.6057388121765342,
+        "rmse_std": 0.0385093234989689
+      },
+      "pooled": {
+        "r2": 0.38640068045502285,
+        "mae": 0.40597872068350677,
+        "rmse": 0.60695622167752
+      },
+      "best_params_per_fold": [
+        {
+          "fold": 1,
+          "best_params": {
+            "alpha": 0.05,
+            "l1_ratio": 0.1
+          }
+        },
+        {
+          "fold": 2,
+          "best_params": {
+            "alpha": 0.05,
+            "l1_ratio": 0.1
+          }
+        },
+        {
+          "fold": 3,
+          "best_params": {
+            "alpha": 0.01,
+            "l1_ratio": 0.1
+          }
+        },
+        {
+          "fold": 4,
+          "best_params": {
+            "alpha": 0.01,
+            "l1_ratio": 0.25
+          }
+        },
+        {
+          "fold": 5,
+          "best_params": {
+            "alpha": 0.01,
+            "l1_ratio": 0.1
+          }
+        }
+      ],
+      "elapsed_sec": 1.33,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp1_linear_trees\\ElasticNet_oof_predictions.csv"
+    },
+    "RandomForest": {
+      "fold_metrics": [
+        {
+          "r2": 0.4106793861507688,
+          "mae": 0.39102655720942076,
+          "rmse": 0.5855617696734181
+        },
+        {
+          "r2": 0.46371920879233197,
+          "mae": 0.3739592467288075,
+          "rmse": 0.5533286794351809
+        },
+        {
+          "r2": 0.4225400524251427,
+          "mae": 0.3744739144319071,
+          "rmse": 0.5766651963331658
+        },
+        {
+          "r2": 0.40965026658860093,
+          "mae": 0.3923260988727213,
+          "rmse": 0.6549273836720658
+        },
+        {
+          "r2": 0.44101667754209684,
+          "mae": 0.37906098440041114,
+          "rmse": 0.5514632616092192
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4295211182997883,
+        "r2_std": 0.020495141738856866,
+        "mae_mean": 0.38216936032865356,
+        "mae_std": 0.007973670776005616,
+        "rmse_mean": 0.5843892581446101,
+        "rmse_std": 0.03764450521574833
+      },
+      "pooled": {
+        "r2": 0.42882979192533854,
+        "mae": 0.38216946341663843,
+        "rmse": 0.5855954670561179
+      },
+      "best_params_per_fold": [
+        {
+          "fold": 1,
+          "best_params": {
+            "max_depth": null,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 2,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.5,
+            "min_samples_leaf": 2,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 3,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.5,
+            "min_samples_leaf": 2,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 4,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.5,
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 5,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.5,
+            "min_samples_leaf": 2,
+            "n_estimators": 200
+          }
+        }
+      ],
+      "elapsed_sec": 227.72,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp1_linear_trees\\RandomForest_oof_predictions.csv"
+    },
+    "ExtraTrees": {
+      "fold_metrics": [
+        {
+          "r2": 0.4313549737272704,
+          "mae": 0.3857246234820106,
+          "rmse": 0.5751982032910856
+        },
+        {
+          "r2": 0.4781958334293964,
+          "mae": 0.3688576598364991,
+          "rmse": 0.5458091741558575
+        },
+        {
+          "r2": 0.42221459710953113,
+          "mae": 0.37486761007166414,
+          "rmse": 0.5768276771405932
+        },
+        {
+          "r2": 0.428287650601503,
+          "mae": 0.38487616979615963,
+          "rmse": 0.6445064238995551
+        },
+        {
+          "r2": 0.4630829579919905,
+          "mae": 0.3687380649973137,
+          "rmse": 0.5404689568169981
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4446272025719383,
+        "r2_std": 0.021967820950118795,
+        "mae_mean": 0.37661282563672943,
+        "mae_std": 0.007436503825806304,
+        "rmse_mean": 0.5765620870608179,
+        "rmse_std": 0.03705892423808608
+      },
+      "pooled": {
+        "r2": 0.444038421271839,
+        "mae": 0.376613041764186,
+        "rmse": 0.5777464992738378
+      },
+      "best_params_per_fold": [
+        {
+          "fold": 1,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.75,
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 2,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.75,
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 3,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.75,
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 4,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.75,
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+          }
+        },
+        {
+          "fold": 5,
+          "best_params": {
+            "max_depth": null,
+            "max_features": 0.75,
+            "min_samples_leaf": 2,
+            "n_estimators": 200
+          }
+        }
+      ],
+      "elapsed_sec": 82.46,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp1_linear_trees\\ExtraTrees_oof_predictions.csv"
+    }
+  }
+}

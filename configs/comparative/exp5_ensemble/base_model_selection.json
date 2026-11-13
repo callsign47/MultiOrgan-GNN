@@ -1,0 +1,16 @@
+{
+  "phase": 5,
+  "canonical_base_models": {
+    "HSGIN_seed42": "results\\comparative\\exp4_gnn\\HSGIN_seed42_oof_predictions.csv",
+    "XGBoost_tuned": "results\\comparative\\exp2_boosting\\XGBoost_tuned_oof_predictions.csv",
+    "CatBoost": "results\\comparative\\exp2_boosting\\CatBoost_oof_predictions.csv",
+    "FT_Transformer_seed42": "results\\comparative\\exp3_deep_tabular\\FT_Transformer_seed42_oof_predictions.csv"
+  },
+  "inner_fitting_protocol": "10 pair-excluded subsets D \\ (F_k U F_j)",
+  "nnw_solver": "SLSQP",
+  "nnw_constraints": "w >= 0, sum(w) = 1",
+  "meta_learner": "RidgeCV(alphas=logspace(-4,4,50), cv=5)",
+  "n_bootstrap": 2000,
+  "correction": "Holm-Bonferroni",
+  "random_seed": 42
+}

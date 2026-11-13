@@ -1,0 +1,348 @@
+{
+  "experiment": "Exp2_Boosting",
+  "seed": 42,
+  "inner_val_frac": 0.2,
+  "early_stopping_rounds": 50,
+  "features": [
+    "RIAGENDR",
+    "LBXSGTSI",
+    "LBXSAL",
+    "LBXSTB",
+    "LBXSAPSI",
+    "LUXSMED",
+    "LUXCAPM",
+    "LBXSCR",
+    "LBXSBU",
+    "LBXSUA",
+    "URXUMA",
+    "URXUCR",
+    "KIQ022",
+    "BPXOSY1",
+    "BPXODI1",
+    "BPXOPLS1",
+    "LBDHDD",
+    "LBXTC",
+    "BPQ020",
+    "MCQ160C",
+    "MCQ160E",
+    "LBXWBCSI",
+    "LBXRBCSI",
+    "LBXHGB",
+    "LBXHSCRP"
+  ],
+  "models": {
+    "XGBoost_tuned": {
+      "config": {
+        "n_estimators": "2000",
+        "max_depth": "5",
+        "learning_rate": "0.03",
+        "subsample": "0.8",
+        "colsample_bytree": "0.8",
+        "min_child_weight": "3",
+        "reg_alpha": "0.1",
+        "reg_lambda": "1.0",
+        "tree_method": "hist",
+        "early_stopping_rounds": "50",
+        "random_state": "42",
+        "n_jobs": "-1"
+      },
+      "fold_metrics": [
+        {
+          "r2": 0.4417395497354376,
+          "mae": 0.3756134757162723,
+          "rmse": 0.5699218783293012
+        },
+        {
+          "r2": 0.5267842963016349,
+          "mae": 0.3575590000891254,
+          "rmse": 0.5197764923673244
+        },
+        {
+          "r2": 0.4332323617077879,
+          "mae": 0.3694095318937721,
+          "rmse": 0.5713014546288123
+        },
+        {
+          "r2": 0.4606427421695035,
+          "mae": 0.3819541394411205,
+          "rmse": 0.6260034508697399
+        },
+        {
+          "r2": 0.4882179199955924,
+          "mae": 0.36483004650053247,
+          "rmse": 0.5276667117999008
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4701233739819912,
+        "r2_std": 0.034042160209333504,
+        "mae_mean": 0.3698732387281646,
+        "mae_std": 0.008440234212961814,
+        "rmse_mean": 0.5629339975990157,
+        "rmse_std": 0.03795511152815695
+      },
+      "pooled": {
+        "r2": 0.4697925326321549,
+        "mae": 0.36987219141230493,
+        "rmse": 0.5642061982263401
+      },
+      "best_iters_per_fold": [
+        {
+          "fold": 1,
+          "best_iter": 384
+        },
+        {
+          "fold": 2,
+          "best_iter": 494
+        },
+        {
+          "fold": 3,
+          "best_iter": 316
+        },
+        {
+          "fold": 4,
+          "best_iter": 298
+        },
+        {
+          "fold": 5,
+          "best_iter": 276
+        }
+      ],
+      "elapsed_sec": 5.03,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp2_boosting\\XGBoost_tuned_oof_predictions.csv"
+    },
+    "LightGBM": {
+      "config": {
+        "n_estimators": "2000",
+        "max_depth": "6",
+        "num_leaves": "31",
+        "learning_rate": "0.03",
+        "subsample": "0.8",
+        "colsample_bytree": "0.8",
+        "min_child_samples": "20",
+        "reg_alpha": "0.1",
+        "reg_lambda": "1.0",
+        "random_state": "42",
+        "n_jobs": "-1",
+        "verbose": "-1"
+      },
+      "fold_metrics": [
+        {
+          "r2": 0.43018190863277883,
+          "mae": 0.38230292342356664,
+          "rmse": 0.5757911894925096
+        },
+        {
+          "r2": 0.4935568071383496,
+          "mae": 0.36497875536396845,
+          "rmse": 0.5377153433277188
+        },
+        {
+          "r2": 0.43751525580785255,
+          "mae": 0.37119972171827337,
+          "rmse": 0.5691387838169658
+        },
+        {
+          "r2": 0.43934049031815303,
+          "mae": 0.38704892115292705,
+          "rmse": 0.6382459389442962
+        },
+        {
+          "r2": 0.45894925660028096,
+          "mae": 0.3730499072276596,
+          "rmse": 0.542545491408619
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.451908743699483,
+        "r2_std": 0.022896807021389465,
+        "mae_mean": 0.3757160457772791,
+        "mae_std": 0.007932413309940725,
+        "rmse_mean": 0.5726873493980218,
+        "rmse_std": 0.03592137975063519
+      },
+      "pooled": {
+        "r2": 0.4515934088089023,
+        "mae": 0.37571538456766185,
+        "rmse": 0.5738075599809586
+      },
+      "best_iters_per_fold": [
+        {
+          "fold": 1,
+          "best_iter": 363
+        },
+        {
+          "fold": 2,
+          "best_iter": 365
+        },
+        {
+          "fold": 3,
+          "best_iter": 265
+        },
+        {
+          "fold": 4,
+          "best_iter": 261
+        },
+        {
+          "fold": 5,
+          "best_iter": 151
+        }
+      ],
+      "elapsed_sec": 2.91,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp2_boosting\\LightGBM_oof_predictions.csv"
+    },
+    "CatBoost": {
+      "config": {
+        "iterations": "2000",
+        "depth": "6",
+        "learning_rate": "0.03",
+        "l2_leaf_reg": "3.0",
+        "subsample": "0.8",
+        "random_seed": "42",
+        "verbose": "0"
+      },
+      "fold_metrics": [
+        {
+          "r2": 0.43607837156538387,
+          "mae": 0.3766359683640899,
+          "rmse": 0.5728043061515378
+        },
+        {
+          "r2": 0.5324094839005207,
+          "mae": 0.3579382874733718,
+          "rmse": 0.5166779251374435
+        },
+        {
+          "r2": 0.4372524231929189,
+          "mae": 0.3670147443824822,
+          "rmse": 0.5692717392134352
+        },
+        {
+          "r2": 0.46191013387832025,
+          "mae": 0.3760249077895459,
+          "rmse": 0.6252675210182558
+        },
+        {
+          "r2": 0.47524596464622393,
+          "mae": 0.36870825156764336,
+          "rmse": 0.5343121540854695
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.46857927543667355,
+        "r2_std": 0.03521618415056668,
+        "mae_mean": 0.3692644319154267,
+        "mae_std": 0.006836600941344391,
+        "rmse_mean": 0.5636667291212284,
+        "rmse_std": 0.0373609630224276
+      },
+      "pooled": {
+        "r2": 0.4684925147749699,
+        "mae": 0.3692638018998151,
+        "rmse": 0.5648974644983051
+      },
+      "best_iters_per_fold": [
+        {
+          "fold": 1,
+          "best_iter": 590
+        },
+        {
+          "fold": 2,
+          "best_iter": 1119
+        },
+        {
+          "fold": 3,
+          "best_iter": 828
+        },
+        {
+          "fold": 4,
+          "best_iter": 517
+        },
+        {
+          "fold": 5,
+          "best_iter": 720
+        }
+      ],
+      "elapsed_sec": 11.23,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp2_boosting\\CatBoost_oof_predictions.csv"
+    },
+    "HistGradientBoosting": {
+      "config": {
+        "max_iter": "2000",
+        "max_depth": "6",
+        "learning_rate": "0.03",
+        "max_leaf_nodes": "31",
+        "min_samples_leaf": "20",
+        "l2_regularization": "0.1",
+        "early_stopping": "True",
+        "validation_fraction": "0.2",
+        "n_iter_no_change": "50",
+        "random_state": "42"
+      },
+      "fold_metrics": [
+        {
+          "r2": 0.4299925055455477,
+          "mae": 0.3836652815863098,
+          "rmse": 0.5758868757910452
+        },
+        {
+          "r2": 0.47703040032979704,
+          "mae": 0.37046836412310435,
+          "rmse": 0.546418357959725
+        },
+        {
+          "r2": 0.41100202180581247,
+          "mae": 0.3735898566625657,
+          "rmse": 0.5823977782500342
+        },
+        {
+          "r2": 0.4433051952386813,
+          "mae": 0.3895917563874471,
+          "rmse": 0.6359852564880899
+        },
+        {
+          "r2": 0.4264334598198072,
+          "mae": 0.3739875597314157,
+          "rmse": 0.5586104603274604
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.43755271654792904,
+        "r2_std": 0.022258987307351565,
+        "mae_mean": 0.3782605636981685,
+        "mae_std": 0.007188871184572715,
+        "rmse_mean": 0.5798597457632709,
+        "rmse_std": 0.030796612828691224
+      },
+      "pooled": {
+        "r2": 0.4383958679412887,
+        "mae": 0.3782601833442277,
+        "rmse": 0.5806709240680543
+      },
+      "best_iters_per_fold": [
+        {
+          "fold": 1,
+          "best_iter": 205
+        },
+        {
+          "fold": 2,
+          "best_iter": 407
+        },
+        {
+          "fold": 3,
+          "best_iter": 402
+        },
+        {
+          "fold": 4,
+          "best_iter": 408
+        },
+        {
+          "fold": 5,
+          "best_iter": 507
+        }
+      ],
+      "elapsed_sec": 8.21,
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp2_boosting\\HistGradientBoosting_oof_predictions.csv"
+    }
+  }
+}

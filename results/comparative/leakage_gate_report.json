@@ -1,0 +1,165 @@
+{
+  "gate_timestamp": "2026-11-13T11:50:34.843938",
+  "tests": {
+    "gate_1_manifest_check": {
+      "passed": true,
+      "manifest_sha256": "6712e1575dc12c36e2345e08cc1112a3ae90be283fce882dcf681e59862cbe22",
+      "expected_sha256": "6712e1575dc12c36e2345e08cc1112a3ae90be283fce882dcf681e59862cbe22",
+      "feature_count": 25,
+      "direct_formula_overlap": []
+    },
+    "gate_2_fold_disjointness": {
+      "passed": true,
+      "overlaps_per_fold": {
+        "fold_1": 0,
+        "fold_2": 0,
+        "fold_3": 0,
+        "fold_4": 0,
+        "fold_5": 0
+      }
+    },
+    "gate_3_reconstruction_test": {
+      "passed": true,
+      "components": {
+        "RIDAGEYR": {
+          "reconstruction_r2": 0.5505607969743656,
+          "max_single_pearson": 0.439029200153619,
+          "max_correlated_feature": "BPXOSY1",
+          "deterministic_leakage": false
+        },
+        "LBXSASSI": {
+          "reconstruction_r2": 0.1875930530913168,
+          "max_single_pearson": 0.40347371705776336,
+          "max_correlated_feature": "LBXSGTSI",
+          "deterministic_leakage": false
+        },
+        "LBXSATSI": {
+          "reconstruction_r2": 0.2594368067991164,
+          "max_single_pearson": 0.4132530098193059,
+          "max_correlated_feature": "LBXSGTSI",
+          "deterministic_leakage": false
+        },
+        "LBXPLTSI": {
+          "reconstruction_r2": 0.2741399393505142,
+          "max_single_pearson": 0.3523687403152454,
+          "max_correlated_feature": "LBXWBCSI",
+          "deterministic_leakage": false
+        }
+      }
+    },
+    "gate_4_proxy_screen": {
+      "passed": true,
+      "liver_correlations": {
+        "LBXSGTSI": {
+          "RIDAGEYR": {
+            "pearson": 0.08847441894786269,
+            "spearman": 0.230838676032675
+          },
+          "LBXSASSI": {
+            "pearson": 0.40347371705776336,
+            "spearman": 0.37323040083866926
+          },
+          "LBXSATSI": {
+            "pearson": 0.4132530098193059,
+            "spearman": 0.5536824289095191
+          },
+          "LBXPLTSI": {
+            "pearson": -0.03880049024997082,
+            "spearman": -0.013398332176165612
+          }
+        },
+        "LBXSAL": {
+          "RIDAGEYR": {
+            "pearson": -0.26968144269344124,
+            "spearman": -0.2824702199418707
+          },
+          "LBXSASSI": {
+            "pearson": 0.048592684892816006,
+            "spearman": 0.14926500719071734
+          },
+          "LBXSATSI": {
+            "pearson": 0.07191538495910171,
+            "spearman": 0.10913339109779853
+          },
+          "LBXPLTSI": {
+            "pearson": -0.0657070483776024,
+            "spearman": -0.04979541327185682
+          }
+        },
+        "LBXSTB": {
+          "RIDAGEYR": {
+            "pearson": 0.05260211049743602,
+            "spearman": 0.1214186155040568
+          },
+          "LBXSASSI": {
+            "pearson": 0.11871748968795524,
+            "spearman": 0.1984988036744012
+          },
+          "LBXSATSI": {
+            "pearson": 0.08368902284370493,
+            "spearman": 0.14128663621052082
+          },
+          "LBXPLTSI": {
+            "pearson": -0.20842592093885912,
+            "spearman": -0.25777090395789903
+          }
+        },
+        "LBXSAPSI": {
+          "RIDAGEYR": {
+            "pearson": -0.25372240241533817,
+            "spearman": -0.07649040973723749
+          },
+          "LBXSASSI": {
+            "pearson": 0.058230514682879125,
+            "spearman": 0.08910869360293985
+          },
+          "LBXSATSI": {
+            "pearson": 0.013416809922647946,
+            "spearman": 0.06299166387531077
+          },
+          "LBXPLTSI": {
+            "pearson": 0.0849433209524872,
+            "spearman": 0.10582064677760028
+          }
+        },
+        "LUXSMED": {
+          "RIDAGEYR": {
+            "pearson": 0.11172686249175423,
+            "spearman": 0.14132410907211582
+          },
+          "LBXSASSI": {
+            "pearson": 0.1304041418651671,
+            "spearman": 0.15973439460547484
+          },
+          "LBXSATSI": {
+            "pearson": 0.12448049372057497,
+            "spearman": 0.2256178495843387
+          },
+          "LBXPLTSI": {
+            "pearson": -0.08654268522737463,
+            "spearman": -0.04858610804268339
+          }
+        },
+        "LUXCAPM": {
+          "RIDAGEYR": {
+            "pearson": 0.23206787540605125,
+            "spearman": 0.22670822082352887
+          },
+          "LBXSASSI": {
+            "pearson": 0.10589894926810157,
+            "spearman": 0.11128478030311786
+          },
+          "LBXSATSI": {
+            "pearson": 0.25749833804161343,
+            "spearman": 0.32387378798265704
+          },
+          "LBXPLTSI": {
+            "pearson": 0.041600668902092616,
+            "spearman": 0.039219249303400906
+          }
+        }
+      }
+    }
+  },
+  "all_passed": true
+}

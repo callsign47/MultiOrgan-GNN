@@ -1,0 +1,90 @@
+{
+  "NoCrossTalk": {
+    "observed_delta_r2": -0.008915247944179971,
+    "ci_r2": [
+      -0.020515108574284964,
+      0.002897856739970293
+    ],
+    "observed_delta_rmse": 0.0049007626922523695,
+    "ci_rmse": [
+      -0.0015911010148451864,
+      0.011420529510960491
+    ],
+    "observed_delta_mae": -0.0001092238497996112,
+    "ci_mae": [
+      -0.0034169333785302055,
+      0.0032194545178280904
+    ],
+    "raw_p_value": 0.143,
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 0.572,
+    "holm_significant_05": false
+  },
+  "FlatReadout": {
+    "observed_delta_r2": 0.005428373511235485,
+    "ci_r2": [
+      -0.007414681625496358,
+      0.020025791739975058
+    ],
+    "observed_delta_rmse": -0.002962677590125695,
+    "ci_rmse": [
+      -0.010739632590926734,
+      0.004132826645298745
+    ],
+    "observed_delta_mae": 0.0015870244027855196,
+    "ci_mae": [
+      -0.0018594665230578912,
+      0.004828074603610501
+    ],
+    "raw_p_value": 0.452,
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 1.0,
+    "holm_significant_05": false
+  },
+  "RandomEdges": {
+    "observed_delta_r2": 0.003997026075398202,
+    "ci_r2": [
+      -0.011090562423721565,
+      0.018315919137735316
+    ],
+    "observed_delta_rmse": -0.002183029275877435,
+    "ci_rmse": [
+      -0.009932752549956977,
+      0.006066768482956821
+    ],
+    "observed_delta_mae": -0.00483255560741469,
+    "ci_mae": [
+      -0.008409559754312016,
+      -0.0013182137945483728
+    ],
+    "raw_p_value": 0.604,
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 1.0,
+    "holm_significant_05": false
+  },
+  "HomoGNN": {
+    "observed_delta_r2": 0.002919083423312041,
+    "ci_r2": [
+      -0.012976836535967016,
+      0.018661362266303407
+    ],
+    "observed_delta_rmse": -0.001595149538274221,
+    "ci_rmse": [
+      -0.010309424686942186,
+      0.006978930012536046
+    ],
+    "observed_delta_mae": -0.005072933187126982,
+    "ci_mae": [
+      -0.009540877356218426,
+      -0.0006354826095521215
+    ],
+    "raw_p_value": 0.713,
+    "a_significantly_better_r2": false,
+    "b_significantly_better_r2": false,
+    "holm_p_value": 1.0,
+    "holm_significant_05": false
+  }
+}

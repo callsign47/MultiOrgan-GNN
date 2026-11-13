@@ -1,0 +1,17 @@
+{
+  "Classical_HGNN": {
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "epochs": 40,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "HSGIN": {
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "epochs": 50,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  }
+}

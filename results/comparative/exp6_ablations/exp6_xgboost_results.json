@@ -1,0 +1,950 @@
+{
+  "experiment": "Exp6a_XGBoost_FeatureDomainAblation",
+  "xgb_config": {
+    "n_estimators": 360,
+    "max_depth": 5,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "ablations": {
+    "FULL_25": {
+      "config": {
+        "type": "full_reference",
+        "features": [
+          "RIAGENDR",
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM",
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022",
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E",
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 25,
+      "fold_metrics": [
+        {
+          "r2": 0.44696673189399216,
+          "mae": 0.3738038889783469,
+          "rmse": 0.5672474170987589
+        },
+        {
+          "r2": 0.5164994040265797,
+          "mae": 0.3571743350372365,
+          "rmse": 0.525394553966535
+        },
+        {
+          "r2": 0.4540844031850434,
+          "mae": 0.360483813090488,
+          "rmse": 0.5606935480691053
+        },
+        {
+          "r2": 0.4517671281731389,
+          "mae": 0.38222573647808106,
+          "rmse": 0.6311331614050474
+        },
+        {
+          "r2": 0.49726058686032737,
+          "mae": 0.3604814224197035,
+          "rmse": 0.5229842700826868
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4733156508278163,
+        "r2_std": 0.02816608508618403,
+        "mae_mean": 0.3668338392007712,
+        "mae_std": 0.009586179081825612,
+        "rmse_mean": 0.5614905901244267,
+        "rmse_std": 0.03916509817910689
+      },
+      "pooled": {
+        "r2": 0.4723388154105961,
+        "mae": 0.3668334107390242,
+        "rmse": 0.5628497881466115
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_FULL_25_oof.csv",
+      "elapsed_sec": 6.43
+    },
+    "LOO_Demographics": {
+      "config": {
+        "type": "leave_one_out",
+        "excluded_domain": "Demographics",
+        "features": [
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM",
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022",
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E",
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 24,
+      "fold_metrics": [
+        {
+          "r2": 0.4595890379640727,
+          "mae": 0.3714017173106082,
+          "rmse": 0.5607366895330141
+        },
+        {
+          "r2": 0.5225188902001277,
+          "mae": 0.3542171510829008,
+          "rmse": 0.5221137819399577
+        },
+        {
+          "r2": 0.4455524583728616,
+          "mae": 0.3629963387769672,
+          "rmse": 0.5650580138668128
+        },
+        {
+          "r2": 0.45590565674570094,
+          "mae": 0.38006236221451,
+          "rmse": 0.6287464834263878
+        },
+        {
+          "r2": 0.49925411122991126,
+          "mae": 0.3611003088964947,
+          "rmse": 0.5219463392402893
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4765640309025348,
+        "r2_std": 0.029337093506862987,
+        "mae_mean": 0.36595557565629616,
+        "mae_std": 0.008930657261365946,
+        "rmse_mean": 0.5597202616012924,
+        "rmse_std": 0.0390775141161492
+      },
+      "pooled": {
+        "r2": 0.47565809731601794,
+        "mae": 0.3659545732215473,
+        "rmse": 0.5610766764006223
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_LOO_Demographics_oof.csv",
+      "elapsed_sec": 7.77
+    },
+    "LOO_Liver": {
+      "config": {
+        "type": "leave_one_out",
+        "excluded_domain": "Liver",
+        "features": [
+          "RIAGENDR",
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022",
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E",
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 19,
+      "fold_metrics": [
+        {
+          "r2": 0.3332566266303567,
+          "mae": 0.40566777494324663,
+          "rmse": 0.6228396505489537
+        },
+        {
+          "r2": 0.4262143962589118,
+          "mae": 0.37834004730306803,
+          "rmse": 0.5723502590031749
+        },
+        {
+          "r2": 0.38004223430824946,
+          "mae": 0.3799351464818753,
+          "rmse": 0.5975081862039691
+        },
+        {
+          "r2": 0.35005705309096813,
+          "mae": 0.40396864198481025,
+          "rmse": 0.6871888137354878
+        },
+        {
+          "r2": 0.39523253135214875,
+          "mae": 0.38532192598252774,
+          "rmse": 0.5736029426574039
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.37696056832812697,
+        "r2_std": 0.03287289009453766,
+        "mae_mean": 0.39064670733910567,
+        "mae_std": 0.011812291296854412,
+        "rmse_mean": 0.6106979704297979,
+        "rmse_std": 0.04247076163844879
+      },
+      "pooled": {
+        "r2": 0.3758166302705732,
+        "mae": 0.3906471397761883,
+        "rmse": 0.6121685719461315
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_LOO_Liver_oof.csv",
+      "elapsed_sec": 2.04
+    },
+    "LOO_Kidney": {
+      "config": {
+        "type": "leave_one_out",
+        "excluded_domain": "Kidney",
+        "features": [
+          "RIAGENDR",
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM",
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E",
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 19,
+      "fold_metrics": [
+        {
+          "r2": 0.4111611294759818,
+          "mae": 0.3915297165663832,
+          "rmse": 0.5853223854230791
+        },
+        {
+          "r2": 0.45455365927589586,
+          "mae": 0.38588775795028163,
+          "rmse": 0.5580371038840991
+        },
+        {
+          "r2": 0.40135490940986507,
+          "mae": 0.3927286943250981,
+          "rmse": 0.58714791115353
+        },
+        {
+          "r2": 0.42846283583623435,
+          "mae": 0.39890128749789955,
+          "rmse": 0.6444076708640688
+        },
+        {
+          "r2": 0.4503335168117387,
+          "mae": 0.3793269004725727,
+          "rmse": 0.5468482010246315
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.42917321016194315,
+        "r2_std": 0.020931905378118836,
+        "mae_mean": 0.38967487136244705,
+        "mae_std": 0.0066229263872793825,
+        "rmse_mean": 0.5843526544698816,
+        "rmse_std": 0.03380665929373967
+      },
+      "pooled": {
+        "r2": 0.42935630206824205,
+        "mae": 0.3896745635293726,
+        "rmse": 0.5853255010853965
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_LOO_Kidney_oof.csv",
+      "elapsed_sec": 2.1
+    },
+    "LOO_Heart": {
+      "config": {
+        "type": "leave_one_out",
+        "excluded_domain": "Heart",
+        "features": [
+          "RIAGENDR",
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM",
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022",
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 17,
+      "fold_metrics": [
+        {
+          "r2": 0.40676420125550217,
+          "mae": 0.40110176527626934,
+          "rmse": 0.5875036561547566
+        },
+        {
+          "r2": 0.4653314794309207,
+          "mae": 0.3862102919291505,
+          "rmse": 0.5524962917007827
+        },
+        {
+          "r2": 0.39364291471899304,
+          "mae": 0.3902912295047681,
+          "rmse": 0.590917750471722
+        },
+        {
+          "r2": 0.4452286523931702,
+          "mae": 0.40732871790369307,
+          "rmse": 0.6348855975099287
+        },
+        {
+          "r2": 0.45012017579663066,
+          "mae": 0.38586469765148035,
+          "rmse": 0.5469543143095275
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.43221748471904337,
+        "r2_std": 0.02728442987348707,
+        "mae_mean": 0.39415934045307227,
+        "mae_std": 0.008585808276600597,
+        "rmse_mean": 0.5825515220293435,
+        "rmse_std": 0.03163495198259134
+      },
+      "pooled": {
+        "r2": 0.4330934484031954,
+        "mae": 0.39415918008606565,
+        "rmse": 0.5834057039922179
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_LOO_Heart_oof.csv",
+      "elapsed_sec": 6.68
+    },
+    "LOO_Biomarker": {
+      "config": {
+        "type": "leave_one_out",
+        "excluded_domain": "Biomarker",
+        "features": [
+          "RIAGENDR",
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM",
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022",
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E"
+        ]
+      },
+      "features_count": 21,
+      "fold_metrics": [
+        {
+          "r2": 0.4183791030520635,
+          "mae": 0.388275218389764,
+          "rmse": 0.5817238895596067
+        },
+        {
+          "r2": 0.460744557864315,
+          "mae": 0.3768042698934395,
+          "rmse": 0.5548611634865939
+        },
+        {
+          "r2": 0.38306215196288995,
+          "mae": 0.38758221821184335,
+          "rmse": 0.5960511286405165
+        },
+        {
+          "r2": 0.3914994045681175,
+          "mae": 0.40162731946178387,
+          "rmse": 0.6649193435826054
+        },
+        {
+          "r2": 0.44148364123245465,
+          "mae": 0.37834901792272635,
+          "rmse": 0.5512328726939713
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.4190337717359681,
+        "r2_std": 0.029313183775811782,
+        "mae_mean": 0.3865276087759114,
+        "mae_std": 0.008872432254900904,
+        "rmse_mean": 0.5897576795926588,
+        "rmse_std": 0.04112262783401079
+      },
+      "pooled": {
+        "r2": 0.4178789220024961,
+        "mae": 0.3865263381483396,
+        "rmse": 0.5911825348970516
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_LOO_Biomarker_oof.csv",
+      "elapsed_sec": 4.6
+    },
+    "ONLY_Demographics": {
+      "config": {
+        "type": "single_domain",
+        "domain": "Demographics",
+        "features": [
+          "RIAGENDR"
+        ]
+      },
+      "features_count": 1,
+      "fold_metrics": [
+        {
+          "r2": 0.006559562838030497,
+          "mae": 0.5541498581828603,
+          "rmse": 0.7602699325206635
+        },
+        {
+          "r2": 0.007213058821597618,
+          "mae": 0.5537601271947682,
+          "rmse": 0.7528614985989125
+        },
+        {
+          "r2": 0.005706029853433603,
+          "mae": 0.558206718177037,
+          "rmse": 0.7566938606235933
+        },
+        {
+          "r2": 0.0004647969835079868,
+          "mae": 0.5554186735645557,
+          "rmse": 0.8521921136808038
+        },
+        {
+          "r2": 0.006445704487138437,
+          "mae": 0.5311149278168161,
+          "rmse": 0.7352126356995611
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.005277830596741628,
+        "r2_std": 0.002453590121029088,
+        "mae_mean": 0.5505300609872075,
+        "mae_std": 0.009831716574520252,
+        "rmse_mean": 0.7714460082247069,
+        "rmse_std": 0.041281243575967796
+      },
+      "pooled": {
+        "r2": 0.005929100859470515,
+        "mae": 0.5505311522510921,
+        "rmse": 0.7725446921974858
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_ONLY_Demographics_oof.csv",
+      "elapsed_sec": 1.92
+    },
+    "ONLY_Liver": {
+      "config": {
+        "type": "single_domain",
+        "domain": "Liver",
+        "features": [
+          "LBXSGTSI",
+          "LBXSAL",
+          "LBXSTB",
+          "LBXSAPSI",
+          "LUXSMED",
+          "LUXCAPM"
+        ]
+      },
+      "features_count": 6,
+      "fold_metrics": [
+        {
+          "r2": 0.18806871676744286,
+          "mae": 0.4881753974974322,
+          "rmse": 0.6873161294981754
+        },
+        {
+          "r2": 0.16638957942395105,
+          "mae": 0.5022787012280717,
+          "rmse": 0.6898721728887305
+        },
+        {
+          "r2": 0.17186243591197126,
+          "mae": 0.486216469546733,
+          "rmse": 0.690580084748123
+        },
+        {
+          "r2": 0.25597180986429624,
+          "mae": 0.5002856857074838,
+          "rmse": 0.7352468270985685
+        },
+        {
+          "r2": 0.24501396061224234,
+          "mae": 0.4621454431626147,
+          "rmse": 0.6408946117294396
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.20546130051598074,
+        "r2_std": 0.03761305501162727,
+        "mae_mean": 0.4878203394284671,
+        "mae_std": 0.014327092146532834,
+        "rmse_mean": 0.6887819651926075,
+        "rmse_std": 0.02986219173030032
+      },
+      "pooled": {
+        "r2": 0.20832141964989792,
+        "mae": 0.4878226993806526,
+        "rmse": 0.6894287345566277
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_ONLY_Liver_oof.csv",
+      "elapsed_sec": 5.31
+    },
+    "ONLY_Kidney": {
+      "config": {
+        "type": "single_domain",
+        "domain": "Kidney",
+        "features": [
+          "LBXSCR",
+          "LBXSBU",
+          "LBXSUA",
+          "URXUMA",
+          "URXUCR",
+          "KIQ022"
+        ]
+      },
+      "features_count": 6,
+      "fold_metrics": [
+        {
+          "r2": 0.1506834553103067,
+          "mae": 0.4882323975794933,
+          "rmse": 0.7029617433850441
+        },
+        {
+          "r2": 0.18155260725541067,
+          "mae": 0.4702062819613647,
+          "rmse": 0.6835691345781945
+        },
+        {
+          "r2": 0.16107986952109576,
+          "mae": 0.4733895352903785,
+          "rmse": 0.695061311361458
+        },
+        {
+          "r2": 0.12601390229986587,
+          "mae": 0.48585753574887824,
+          "rmse": 0.7968759611398352
+        },
+        {
+          "r2": 0.12798222106381352,
+          "mae": 0.4726082429322766,
+          "rmse": 0.6887788921201988
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.1494624110900985,
+        "r2_std": 0.02086848392846399,
+        "mae_mean": 0.47805879870247836,
+        "mae_std": 0.0074497652555555625,
+        "rmse_mean": 0.713449408516946,
+        "rmse_std": 0.04221271862696189
+      },
+      "pooled": {
+        "r2": 0.1492419874018066,
+        "mae": 0.47805916847818897,
+        "rmse": 0.7146904138275314
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_ONLY_Kidney_oof.csv",
+      "elapsed_sec": 6.34
+    },
+    "ONLY_Heart": {
+      "config": {
+        "type": "single_domain",
+        "domain": "Heart",
+        "features": [
+          "BPXOSY1",
+          "BPXODI1",
+          "BPXOPLS1",
+          "LBDHDD",
+          "LBXTC",
+          "BPQ020",
+          "MCQ160C",
+          "MCQ160E"
+        ]
+      },
+      "features_count": 8,
+      "fold_metrics": [
+        {
+          "r2": 0.2231213498353124,
+          "mae": 0.4439620450220385,
+          "rmse": 0.6723160692853457
+        },
+        {
+          "r2": 0.2678246523302006,
+          "mae": 0.43457593292040075,
+          "rmse": 0.6465388269587775
+        },
+        {
+          "r2": 0.21615337873584173,
+          "mae": 0.44756931081239276,
+          "rmse": 0.6718593305502971
+        },
+        {
+          "r2": 0.1916091326671514,
+          "mae": 0.45628286342420765,
+          "rmse": 0.7663888240137743
+        },
+        {
+          "r2": 0.22240048223930198,
+          "mae": 0.4466097678475811,
+          "rmse": 0.6504218930158892
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.22422179916156165,
+        "r2_std": 0.024635025522774037,
+        "mae_mean": 0.4457999840053241,
+        "mae_std": 0.006971863030718468,
+        "rmse_mean": 0.6815049887648168,
+        "rmse_std": 0.04375278679797852
+      },
+      "pooled": {
+        "r2": 0.2232428667216526,
+        "mae": 0.44579790307652567,
+        "rmse": 0.6829007002205962
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_ONLY_Heart_oof.csv",
+      "elapsed_sec": 6.77
+    },
+    "ONLY_Biomarker": {
+      "config": {
+        "type": "single_domain",
+        "domain": "Biomarker",
+        "features": [
+          "LBXWBCSI",
+          "LBXRBCSI",
+          "LBXHGB",
+          "LBXHSCRP"
+        ]
+      },
+      "features_count": 4,
+      "fold_metrics": [
+        {
+          "r2": 0.1140956493794637,
+          "mae": 0.5069607390797338,
+          "rmse": 0.717943578828066
+        },
+        {
+          "r2": 0.14605534933992403,
+          "mae": 0.499142793274125,
+          "rmse": 0.6982354926259952
+        },
+        {
+          "r2": 0.14079184855089866,
+          "mae": 0.5028111668067687,
+          "rmse": 0.7034156100121852
+        },
+        {
+          "r2": 0.18404122278324064,
+          "mae": 0.5095854356562158,
+          "rmse": 0.7699678169183135
+        },
+        {
+          "r2": 0.16966605512530397,
+          "mae": 0.48358637699017776,
+          "rmse": 0.6721149507592319
+        }
+      ],
+      "aggregate": {
+        "r2_mean": 0.1509300250357662,
+        "r2_std": 0.024210355451153485,
+        "mae_mean": 0.5004173023614042,
+        "mae_std": 0.00913790174434317,
+        "rmse_mean": 0.7123354898287584,
+        "rmse_std": 0.03240062261156403
+      },
+      "pooled": {
+        "r2": 0.15309445243393693,
+        "mae": 0.5004181417636078,
+        "rmse": 0.7130704209442202
+      },
+      "oof_csv": "c:\\Users\\admin_fix\\Downloads\\3 ORGAN\\results\\comparative\\exp6_ablations\\XGBoost_ONLY_Biomarker_oof.csv",
+      "elapsed_sec": 6.27
+    }
+  },
+  "bootstrap_vs_full": {
+    "LOO_Demographics": {
+      "observed_delta_r2": -0.003319281905421967,
+      "ci_r2": [
+        -0.0087495338969882,
+        0.002197708336767537
+      ],
+      "observed_delta_rmse": 0.0017731117459892642,
+      "ci_rmse": [
+        -0.0011232392330107726,
+        0.004781646758062087
+      ],
+      "observed_delta_mae": 0.0008788375174769159,
+      "ci_mae": [
+        -0.0008465588932203699,
+        0.0026072811669115826
+      ],
+      "a_significantly_better_r2": false,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.239,
+      "holm_p_value": 0.239,
+      "holm_significant_05": false
+    },
+    "LOO_Liver": {
+      "observed_delta_r2": 0.09652218514002286,
+      "ci_r2": [
+        0.07146502912744129,
+        0.1202517596040133
+      ],
+      "observed_delta_rmse": -0.04931878379952004,
+      "ci_rmse": [
+        -0.06318770992289066,
+        -0.03554450592766908
+      ],
+      "observed_delta_mae": -0.023813729037164055,
+      "ci_mae": [
+        -0.028759044689130868,
+        -0.0186971603785145
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "LOO_Kidney": {
+      "observed_delta_r2": 0.042982513342354034,
+      "ci_r2": [
+        0.031560251464223886,
+        0.05606374097369729
+      ],
+      "observed_delta_rmse": -0.02247571293878503,
+      "ci_rmse": [
+        -0.02852256026477918,
+        -0.01669712203106516
+      ],
+      "observed_delta_mae": -0.022841152790348374,
+      "ci_mae": [
+        -0.027235116294147217,
+        -0.01851570854014275
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "LOO_Heart": {
+      "observed_delta_r2": 0.03924536700740067,
+      "ci_r2": [
+        0.020910423256765544,
+        0.05800883175188428
+      ],
+      "observed_delta_rmse": -0.020555915845606454,
+      "ci_rmse": [
+        -0.029547680804254562,
+        -0.011471449638975912
+      ],
+      "observed_delta_mae": -0.02732576934704145,
+      "ci_mae": [
+        -0.03195607430820164,
+        -0.022563293769560615
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "LOO_Biomarker": {
+      "observed_delta_r2": 0.05445989340809998,
+      "ci_r2": [
+        0.03962626566731738,
+        0.06967235804861416
+      ],
+      "observed_delta_rmse": -0.028332746750440174,
+      "ci_rmse": [
+        -0.03648820377617534,
+        -0.020334904677551564
+      ],
+      "observed_delta_mae": -0.019692927409315386,
+      "ci_mae": [
+        -0.024220827347339942,
+        -0.015062878869411054
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "ONLY_Demographics": {
+      "observed_delta_r2": 0.46640971455112556,
+      "ci_r2": [
+        0.43978124446252714,
+        0.4951178931990173
+      ],
+      "observed_delta_rmse": -0.20969490405087432,
+      "ci_rmse": [
+        -0.22892679527291793,
+        -0.19076688435514436
+      ],
+      "observed_delta_mae": -0.18369774151206786,
+      "ci_mae": [
+        -0.19302100921064935,
+        -0.17399608369105893
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "ONLY_Liver": {
+      "observed_delta_r2": 0.26401739576069816,
+      "ci_r2": [
+        0.21994148246130438,
+        0.3078023732607401
+      ],
+      "observed_delta_rmse": -0.1265789464100162,
+      "ci_rmse": [
+        -0.14227681090809227,
+        -0.11120802561985636
+      ],
+      "observed_delta_mae": -0.12098928864162839,
+      "ci_mae": [
+        -0.12914408085860507,
+        -0.11314044600957696
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "ONLY_Kidney": {
+      "observed_delta_r2": 0.32309682800878947,
+      "ci_r2": [
+        0.2855675030141473,
+        0.35999333943143264
+      ],
+      "observed_delta_rmse": -0.15184062568091994,
+      "ci_rmse": [
+        -0.17405071055757432,
+        -0.12957336188955074
+      ],
+      "observed_delta_mae": -0.11122575773916477,
+      "ci_mae": [
+        -0.11952641766854062,
+        -0.10258395770376379
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "ONLY_Heart": {
+      "observed_delta_r2": 0.24909594868894347,
+      "ci_r2": [
+        0.21655337734021493,
+        0.2794974977228957
+      ],
+      "observed_delta_rmse": -0.12005091207398477,
+      "ci_rmse": [
+        -0.1391265637683731,
+        -0.1015203415429289
+      ],
+      "observed_delta_mae": -0.07896449233750141,
+      "ci_mae": [
+        -0.08661347956034635,
+        -0.07128234615514042
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    },
+    "ONLY_Biomarker": {
+      "observed_delta_r2": 0.31924436297665915,
+      "ci_r2": [
+        0.2820483332334728,
+        0.3576778467412009
+      ],
+      "observed_delta_rmse": -0.15022063279760878,
+      "ci_rmse": [
+        -0.1659635460379895,
+        -0.13535348935032615
+      ],
+      "observed_delta_mae": -0.13358473102458357,
+      "ci_mae": [
+        -0.14195591138937533,
+        -0.12475165328990478
+      ],
+      "a_significantly_better_r2": true,
+      "b_significantly_better_r2": false,
+      "raw_p_value": 0.0,
+      "holm_p_value": 0.0,
+      "holm_significant_05": true
+    }
+  }
+}
