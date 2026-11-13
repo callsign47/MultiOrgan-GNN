@@ -4,6 +4,10 @@ __pycache__/
 NHANES AUG'21 - AUG'23/
 data/master_patient.csv
 data/final_cohort.csv
+data/processed/
+data/raw/
+**/master_patient.csv
+**/final_cohort.csv
 data/hsgin_ablation_cache.json
 graphs/*.pt
 !graphs/.gitkeep

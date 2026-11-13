@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp9_subgroups",
+  "stratification_categories": [
+    "Age",
+    "Sex",
+    "Race_Ethnicity",
+    "BMI",
+    "Glycemic_Status",
+    "Hypertension"
+  ],
+  "primary_models": ["HSGIN", "XGBoost", "NNW_Blend", "Ridge"]
+}

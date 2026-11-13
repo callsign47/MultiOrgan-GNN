@@ -1,0 +1,1946 @@
+[
+  {
+    "original_path": ".gitignore",
+    "new_path": ".gitignore",
+    "category": "PROJECT_ROOT",
+    "action": "UPDATE",
+    "sha256": "e0c55daf2f5c03310f55b4cb743464dd34a309893f799de3875968fb1c3d4812",
+    "size_bytes": 325,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "PRD Comparative Evaluation of Machine Learning, Deep Learning, and Graph Neural.md",
+    "new_path": "docs/PRD_Comparative_Evaluation_v1.1.md",
+    "category": "PROJECT_ROOT",
+    "action": "REFACTOR",
+    "sha256": "1ba2b61b79e7b6b3e7e39ffde3a8b9e71c1ecfb8da4c87c2278000fe328850da",
+    "size_bytes": 67849,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "README.md",
+    "new_path": "docs/LEGACY_README.md",
+    "category": "PROJECT_ROOT",
+    "action": "ARCHIVE_AND_SUPERSEDE",
+    "sha256": "9f56e4c82cf120793505d350cb3ccda67fcab3830c284135a81b52a3946c5e59",
+    "size_bytes": 9331,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "requirements.txt",
+    "new_path": "requirements.txt",
+    "category": "PROJECT_ROOT",
+    "action": "UPDATE",
+    "sha256": "1905b7e1b7d7c9896723e378bd7575cd3359cb39d1f80035c0e821d596c80d5f",
+    "size_bytes": 148,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package.zip",
+    "new_path": "docs/technical_evidence/technical_evidence_package.zip",
+    "category": "ARCHIVE_EVIDENCE",
+    "action": "REFACTOR",
+    "sha256": "00dca4a5f35c46a20c3b57d67b7571d0273a9efdcb90d76a000e92c13b947bec",
+    "size_bytes": 81115,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp3_deep_tabular/deep_tabular_configs.json",
+    "new_path": "configs/experiments/deep_tabular_configs.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "23db568088767124b33057fe25cd127820fcd991eca57ba59321d73cb73b4005",
+    "size_bytes": 612,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp4_gnn/gnn_configs.json",
+    "new_path": "configs/experiments/gnn_configs.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "5ac98dfdd1d189889c3ae1eb2cc0f8599792775997f759f1c2bb9603b86fc532",
+    "size_bytes": 292,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp5_ensemble/base_model_selection.json",
+    "new_path": "configs/experiments/base_model_selection.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "6d56f58e7b120e1f12d84fdf132ac376a5d90999dc4a0373911bc9477e4752b1",
+    "size_bytes": 728,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp6_ablations/exp6_config.json",
+    "new_path": "configs/experiments/exp6_config.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "26627822f75c89cc18360dbb220d8117493133c55a97e01c5d7510c27d059553",
+    "size_bytes": 593,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp6_ablations/exp7_config.json",
+    "new_path": "configs/experiments/exp7_config.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "5a4fb6cca78acc9a7bc80ae813628e274966b3ef7370e2bcc8c9480153fce96c",
+    "size_bytes": 1395,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "configs/comparative/exp8_controls/exp8_config.json",
+    "new_path": "configs/experiments/exp8_config.json",
+    "category": "CONFIG",
+    "action": "MOVE",
+    "sha256": "9ef32f848509febc5d20682da356559009e37ab6e01aabec76e90a7d737729fe",
+    "size_bytes": 782,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "data/artifact_checksums.json",
+    "new_path": "data/metadata/artifact_checksums.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "b2b3968228f73dae63c4632d8cb41fce813db4173a6859f636b0b59d19a0637b",
+    "size_bytes": 3243,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/feature_manifest.json",
+    "new_path": "data/metadata/feature_manifest.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "6712e1575dc12c36e2345e08cc1112a3ae90be283fce882dcf681e59862cbe22",
+    "size_bytes": 4956,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/feature_preprocessing_audit.json",
+    "new_path": "data/metadata/feature_preprocessing_audit.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "3b371acaf6e2be87d51efc1a77587cdc7c4649849ce46bc7f58ef78839e916e9",
+    "size_bytes": 9039,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/file_mapping_analysis.json",
+    "new_path": "data/metadata/file_mapping_analysis.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "63ce3c6c503cd7dccd226701cd462b6fcdbe03848171ade7b4c3704dd55775e6",
+    "size_bytes": 12102,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/final_cohort.csv",
+    "new_path": "data/processed/final_cohort.csv",
+    "category": "DATA_PROCESSED",
+    "action": "MOVE",
+    "sha256": "7d9f30deb21b4c49683b96a62d6866fedd8877f3c60b8c03d208f699c6c5ca1f",
+    "size_bytes": 8183972,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/hsgin_architecture_audit.json",
+    "new_path": "data/metadata/hsgin_architecture_audit.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "a43a6ec185b7494e8e2fc49863be4968d680cdb5366843deef1189437228a37d",
+    "size_bytes": 28991,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/master_patient.csv",
+    "new_path": "data/processed/master_patient.csv",
+    "category": "DATA_PROCESSED",
+    "action": "MOVE",
+    "sha256": "b1682cb1d0ad083a2d8e7749f826a9c078169925a8f9914eae2460f12d1a111d",
+    "size_bytes": 11537773,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/raw_file_audit.json",
+    "new_path": "data/metadata/raw_file_audit.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "6e318ce429af84bf72f3d7fdaaa5ae302b912193d6cec112f37f0b961bc18f63",
+    "size_bytes": 17526,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/table_inventory.json",
+    "new_path": "data/metadata/table_inventory.json",
+    "category": "DATA_METADATA",
+    "action": "MOVE",
+    "sha256": "891e5d45f4ea8aeffca9d8a8d9283d8d74e19eb728b286224a7a52c2e2ae6fb7",
+    "size_bytes": 10838,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "data/comparative/folds_v1.json",
+    "new_path": "data/splits/folds_v1.json",
+    "category": "DATA_SPLITS",
+    "action": "MOVE",
+    "sha256": "226b731be71e246942c3378c02182b9de5a9a1a02cf2742418fa0d343152cfe8",
+    "size_bytes": 1193842,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "graphs/.gitkeep",
+    "new_path": "artifacts/graphs/.gitkeep",
+    "category": "ARTIFACT_MISC",
+    "action": "REFACTOR",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "graphs/patient_graphs.pt",
+    "new_path": "artifacts/graphs/patient_graphs.pt",
+    "category": "ARTIFACT_GRAPH",
+    "action": "MOVE",
+    "sha256": "4bffe0406004b951b3db848c7d92bd4183d4b2530a523a38f885e6dc21324145",
+    "size_bytes": 19393163,
+    "status": "CRITICAL_VERIFIED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/DEMO G/DEMO_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/DEMO_G/DEMO_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "ca4374a158b493b8b0163e1388da21d57a18d1b9cecff2aa4e2fa2bec494fe23",
+    "size_bytes": 2582160,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/EXAMINATION/BMX_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/EXAMINATION/BMX_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "44440c416d9ad709e8b1708a5975378ab4d5b18edc39eb5015c2ae7186500170",
+    "size_bytes": 1563200,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/EXAMINATION/BPXO_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/EXAMINATION/BPXO_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "189aa9bed689d2c69cf8d780b01de85073276fea5694dd52cdf696229f9054a6",
+    "size_bytes": 696720,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/EXAMINATION/LUX_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/EXAMINATION/LUX_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "40e49c5f1b58054e4787cd59cdeb224cd7658784b760274c3449bd4c1eb64c34",
+    "size_bytes": 765680,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/ALB_CR_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/ALB_CR_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "fc011a80d14419884559372a3196f0a268b494f4f2fa972d00be1f3a23ba3c41",
+    "size_bytes": 545440,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/BIOPRO_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/BIOPRO_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "912b345aad6b71d53a3bc299a7f3bb0d5530e9fa5b6e76d2d00103979861a476",
+    "size_bytes": 2425520,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/CBC_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/CBC_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "4405da2a5899dcd11e3ef4dbec0b4d2fca6d736a3efa7a85afee668baa95923f",
+    "size_bytes": 1609840,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/GHB_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/GHB_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "67aee0353160e2392dc0a33bece99b90764a630c76d82415ac4639105ad9dd03",
+    "size_bytes": 174000,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/GLU_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/GLU_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "70f773ab37e3d8485341f32137e280e05b9279e5fe9b6f0362e4052d8fe9a201",
+    "size_bytes": 129200,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HDL_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HDL_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "c1bb43df5ca366f470b411c043f4aee7ae6552a7f4bca1178bc87b24fb9a7300",
+    "size_bytes": 259520,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HEPA_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HEPA_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "0eacb9b1b0bce97ac85aa5df1f95f78aca36bff72c9f07ba70a9d381579b5517",
+    "size_bytes": 207920,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HEPBD_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HEPBD_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "e2828da40dbca482a784a5aa2971bb7923fe43b4199bf7953290a3fb9ff01982",
+    "size_bytes": 324160,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HEPC_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HEPC_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "ccdbbec2d51adc948fc4db9f328721c734ed74eac4b33dbba6ed643870231b83",
+    "size_bytes": 324160,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HEPE_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HEPE_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "6753e7540a7a76a0e2e16aaf85b036e38ac34b9c6e620aebec95592724f5194b",
+    "size_bytes": 259520,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/HSCRP_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/HSCRP_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "c56098d7c33509087a4645dfdf39936c14213d9123e1e718831a10d5bc4e3a1b",
+    "size_bytes": 280560,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/INS_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/INS_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "cdbf53b644805e5e67725c81ee32048dad3c06687689435b042a7a144cb9ec65",
+    "size_bytes": 161280,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/TCHOL_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/TCHOL_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "5c3312e555bb0706fd97cbd63fcbc9e78f00bda8d2d149732d9dd368169b25d3",
+    "size_bytes": 259520,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/LABORATORY/TRIGLY_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/LABORATORY/TRIGLY_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "77679864c33b98d9b6db528f3a0ac0a15ea34bde9731c04d23bc9801277975f4",
+    "size_bytes": 321840,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/BPQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/BPQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "0acde3af0526c375942fe0735e3bf69a0422bcbc606f98a478209d2f47baa4b5",
+    "size_bytes": 409680,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/DBQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/DBQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "774ead4e3b8d4ec90e464dc77d8eed3fb20e5eb2899e78dc98b3100ab98d1c88",
+    "size_bytes": 2582160,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/DIQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/DIQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "9535a023673ae869afae19d842d8679e06f6a464606ac15900686b41ef05090f",
+    "size_bytes": 847600,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/DPQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/DPQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "25605a02685035fe997477b31a0991cca2776b0f72f24a8e61ac5b018456304b",
+    "size_bytes": 560000,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/FNQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/FNQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "d140701b0ae0e6a1711bd63a2f64589ca9cb59c6247603e80c0b9d7dcc24eb29",
+    "size_bytes": 2806400,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/HEQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/HEQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "0d515ca8d8666618b6d007d1a29185266ab4f6ee4ecaa4db92cab53d453eb541",
+    "size_bytes": 172240,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/KIQ_U_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/KIQ_U_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "2f114aeee6e9c7bc9381729b95a6685e28f35c3fbc26558ca8b9458bf4bf3437",
+    "size_bytes": 564320,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/MCQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/MCQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "0889bb3eaa5adedf1a11c4af2d4776fc4c4c3cfdeea24fcedb77c4636b478f61",
+    "size_bytes": 3294000,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "NHANES AUG'21 - AUG'23/QUESTIONNAIRE/SLQ_L.xpt",
+    "new_path": "data/raw/nhanes_2021_2023/QUESTIONNAIRE/SLQ_L.xpt",
+    "category": "DATA_RAW",
+    "action": "MOVE",
+    "sha256": "918c3258b2f466ac1cae55ea45330c736dbdc573ee4dc72306e3d2b222764741",
+    "size_bytes": 375840,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/final_benchmark_summary.json",
+    "new_path": "artifacts/results/final_benchmark_summary.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "64e10d0f60a69f0ed14af6ea1827bc26f5af07b43b403aff44ca3962fcf22c0e",
+    "size_bytes": 16815,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/leakage_gate_report.json",
+    "new_path": "artifacts/results/leakage_gate_report.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "f8b11479ed17c14841c736816e2e5eb6b0fad89489efb786a9d48de89d5ab25f",
+    "size_bytes": 5048,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/paired_bootstrap_phase3.json",
+    "new_path": "artifacts/results/paired_bootstrap_phase3.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "34eedfdc0310e404b833535ce1cc5f8e3a57e24d9855925210f66bea1d1319be",
+    "size_bytes": 6759,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/paired_bootstrap_phase4.json",
+    "new_path": "artifacts/results/paired_bootstrap_phase4.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "9f57402e7268aff6399bac8a5c3be411f83e6e060724348ab673399918351b75",
+    "size_bytes": 6261,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/paired_bootstrap_phase5.json",
+    "new_path": "artifacts/results/paired_bootstrap_phase5.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "140ae9bc0484dcb4800008fcec5292670138d3a76addaf538faa01b6f3efa4c4",
+    "size_bytes": 3669,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/Classical_HGNN_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/Classical_HGNN_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "9f73c2b45a72c1dbe75c31e9a2369852583562e082439f39bec32b7cb1f86ca3",
+    "size_bytes": 356385,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/HSGIN_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/HSGIN_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "f77905f95b8d944ff53ddac99b72aca88b3b367889978036c2e6858c1e6b11d8",
+    "size_bytes": 356487,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/MLP_Regressor_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/MLP_Regressor_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5eab3f9121644d0a8cde7a39a5c840433de72d5b4a571d09e805b8af47c2ff0d",
+    "size_bytes": 355431,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/Random_Forest_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/Random_Forest_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8c383e74ee3ba355418845bac98456e54bc834ec1a4f9536da4ab98d950fca55",
+    "size_bytes": 354772,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/reproduction_comparison.md",
+    "new_path": "artifacts/results/exp0_reproduction/reproduction_comparison.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "0dbec66077075e5d29a23ee32bb893386ab42a0a03dd0ada4a15b24c514849ac",
+    "size_bytes": 1676,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/reproduction_report.json",
+    "new_path": "artifacts/results/exp0_reproduction/reproduction_report.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "d77584fdbcf8fe5fc63f9244b71ea125e618708d3773443ac30a862777eeeba8",
+    "size_bytes": 7885,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/Ridge_Regression_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/Ridge_Regression_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "02d3e58b2f082d2aee135e8d9d67439319a452d7daeeb27370a2202fa1cc30bc",
+    "size_bytes": 355010,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp0_reproduction/XGBoost_oof_predictions.csv",
+    "new_path": "artifacts/results/exp0_reproduction/XGBoost_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "7cd9a2fa02a07c91865ce92ad6cf9eb02717009511d5370ff8e341ac78e4ac78",
+    "size_bytes": 354955,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/ElasticNet_oof_predictions.csv",
+    "new_path": "artifacts/results/exp1_linear_trees/ElasticNet_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "7565573255e04229c888be93b46598224e8d61bcf98be72c16338dfd97ce310f",
+    "size_bytes": 354936,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/exp1_results.json",
+    "new_path": "artifacts/results/exp1_linear_trees/exp1_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "a5a1ab40f6835718d10b0542c4b5484b6118f8bfc098617ab4c3638a82756284",
+    "size_bytes": 9477,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/exp1_summary.md",
+    "new_path": "artifacts/results/exp1_linear_trees/exp1_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "65e528ee05459a31dac78c27878ccd36fb48bd41f6a2f3bc23d8d09aba73dd8f",
+    "size_bytes": 824,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/ExtraTrees_oof_predictions.csv",
+    "new_path": "artifacts/results/exp1_linear_trees/ExtraTrees_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "2617847951d1a4715e59ffd21eef70de302177ac0dee87a80d3f4925e14802b5",
+    "size_bytes": 354861,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/RandomForest_oof_predictions.csv",
+    "new_path": "artifacts/results/exp1_linear_trees/RandomForest_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "20234c320d2a6ca7d02122ee49ef5f97c5600efc8f68b55dc14e19bc5fde902c",
+    "size_bytes": 354859,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp1_linear_trees/Ridge_oof_predictions.csv",
+    "new_path": "artifacts/results/exp1_linear_trees/Ridge_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "bd77d29baf1bf6de01707e5fdc8a43ad255079e332e8614c4996f0e626b2a073",
+    "size_bytes": 355006,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/CatBoost_oof_predictions.csv",
+    "new_path": "artifacts/results/exp2_boosting/CatBoost_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "004376dacac9a968413b77d20c54d0b611e2f0e8b80ad554303a7d1637d7937c",
+    "size_bytes": 355054,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/exp2_results.json",
+    "new_path": "artifacts/results/exp2_boosting/exp2_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "34918fe64fce61986640c4b4f6867ace73e7c00adc6aed410249667b7d371871",
+    "size_bytes": 8865,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/exp2_summary.md",
+    "new_path": "artifacts/results/exp2_boosting/exp2_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "db96001f1c5d27cc60aa6c1e506f41ccccbfec6549abc5d89776d1b6d7850ba4",
+    "size_bytes": 820,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/HistGradientBoosting_oof_predictions.csv",
+    "new_path": "artifacts/results/exp2_boosting/HistGradientBoosting_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "ec2fc3c1efa1d564aebc32730f44e0b4b2f12af259017ee628b04f0bace256b7",
+    "size_bytes": 355003,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/LightGBM_oof_predictions.csv",
+    "new_path": "artifacts/results/exp2_boosting/LightGBM_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "1c707b96031fb1ae48f98218f48f318e099ded61cf408c5476806140637f8505",
+    "size_bytes": 354849,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp2_boosting/XGBoost_tuned_oof_predictions.csv",
+    "new_path": "artifacts/results/exp2_boosting/XGBoost_tuned_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "76a1561e96c993ea123f60d6d2cf2114ca6c49204838ce0a796e6b1eb506ac7f",
+    "size_bytes": 355002,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/exp3_results.json",
+    "new_path": "artifacts/results/exp3_deep_tabular/exp3_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "423c529b85786f4a722fb2f8e30687cd86e387945c624e86b5bb7bce2d31469d",
+    "size_bytes": 14796,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/exp3_summary.md",
+    "new_path": "artifacts/results/exp3_deep_tabular/exp3_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "6860de210dc4cba9b088914aad9b3f5565bc7682f569f787e947c469e675e942",
+    "size_bytes": 669,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/FT_Transformer_ensemble_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/FT_Transformer_ensemble_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "dc0f0f855cb2bf714122e947b78237358ce8fd967bb3f0eb1144b2ec31619790",
+    "size_bytes": 355060,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/FT_Transformer_seed42_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/FT_Transformer_seed42_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "d6b5e29779be4a98ae25d6efac5a70f32eb104cc82cb88ced4eaa59e7afc48d2",
+    "size_bytes": 355068,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/FT_Transformer_seed43_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/FT_Transformer_seed43_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "a5e47b64630d5a94347d0ac4d04622c18ce8e6737be1b046e852e14342d21c85",
+    "size_bytes": 355043,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/FT_Transformer_seed44_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/FT_Transformer_seed44_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "c8257e135173b942d9a58989e996b4aa7ac5ab04020d895962a2bf4334ff7747",
+    "size_bytes": 355121,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/MLP_Retuned_ensemble_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/MLP_Retuned_ensemble_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "7404ddb71206ac13d233a604a3c566da6eaeaae837fb987c129b56ce4689eee7",
+    "size_bytes": 355103,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/MLP_Retuned_seed42_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/MLP_Retuned_seed42_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "35db65051ea0ea9290b1fdaa97fda3e15281e3caa15dfe5863f0e23082058071",
+    "size_bytes": 355081,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/MLP_Retuned_seed43_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/MLP_Retuned_seed43_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "2b3fa30e33258ae0a14829db180f696175195a671765e81ed68c622a2b7d3f80",
+    "size_bytes": 355083,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/MLP_Retuned_seed44_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/MLP_Retuned_seed44_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "1ec9f9250858be57d6a6cfad5c81e93d7699cad0c3c9cb388cfac8ea88c7c3c9",
+    "size_bytes": 355022,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/TabNet_ensemble_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/TabNet_ensemble_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "fd1d70905b2dd6ca9e534dd1c3f598d59d767991daf06625f0047e92d3a4df15",
+    "size_bytes": 354771,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/TabNet_seed42_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/TabNet_seed42_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "215317164f8263f0775b87cd49d42873cf4b95e27346bdb37e8c16b9ed3e4b77",
+    "size_bytes": 354763,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/TabNet_seed43_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/TabNet_seed43_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "9faf7fc0130e8c5678a888187c6f87e49ce2b6fcc45fd7f64623d4fe79d37f48",
+    "size_bytes": 354790,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp3_deep_tabular/TabNet_seed44_oof_predictions.csv",
+    "new_path": "artifacts/results/exp3_deep_tabular/TabNet_seed44_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "a292a9b2e5b651d619ae6f8cb49b1e2ef193779d234033ec7bcc918b6fae3090",
+    "size_bytes": 354887,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/Classical_HGNN_ensemble_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/Classical_HGNN_ensemble_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "2a9ebbcd27b9df8c5bafccf4b19b2c8f0be1cb425b4e0eb6c41ca4ed5f869648",
+    "size_bytes": 356318,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/Classical_HGNN_seed42_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/Classical_HGNN_seed42_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "9f73c2b45a72c1dbe75c31e9a2369852583562e082439f39bec32b7cb1f86ca3",
+    "size_bytes": 356385,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/Classical_HGNN_seed43_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/Classical_HGNN_seed43_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "a7090332314987411fdf2b3ad53bc1a5680d28aaa3769d031da2cb7bf9dab8fc",
+    "size_bytes": 356301,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/Classical_HGNN_seed44_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/Classical_HGNN_seed44_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "db893747d964c3bcab9580bef7c9a913bd7f10548c18d00948cb7519c0d5161b",
+    "size_bytes": 356420,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/exp4_results.json",
+    "new_path": "artifacts/results/exp4_gnn/exp4_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "17d5376d4615c0a2937f7114bac3a6fd4445ff169a09e91622ddd9d58fda059d",
+    "size_bytes": 9734,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/exp4_summary.md",
+    "new_path": "artifacts/results/exp4_gnn/exp4_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "25e9e87de8b107a0377c9ae879ce71880e1e614b03713016085f1aa50c0d2656",
+    "size_bytes": 591,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/HSGIN_ensemble_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/HSGIN_ensemble_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "176a168930c4e3ba969772ac3871e553d4eec977a6c2b30469ff210b87b529fc",
+    "size_bytes": 356547,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/HSGIN_seed42_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/HSGIN_seed42_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "f77905f95b8d944ff53ddac99b72aca88b3b367889978036c2e6858c1e6b11d8",
+    "size_bytes": 356487,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/HSGIN_seed43_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/HSGIN_seed43_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8c99486cd19ce9565fa13f79d4c589fbbdc0791d1ca953acab92e89fa0380663",
+    "size_bytes": 356661,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp4_gnn/HSGIN_seed44_oof_predictions.csv",
+    "new_path": "artifacts/results/exp4_gnn/HSGIN_seed44_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "40704f3da7e7b587e81eaefd32ea041ed53d564c5a1a932c18d4f6891fc56d93",
+    "size_bytes": 356416,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/diversity_analysis.json",
+    "new_path": "artifacts/results/exp5_ensemble/diversity_analysis.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "a5ccf2ba88ab0b69c30cd7736f1e806df39cbed07357155e504af2d444122925",
+    "size_bytes": 1208,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/exp5_results.json",
+    "new_path": "artifacts/results/exp5_ensemble/exp5_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "4ba4d190c47da04d17cdb47796ce7c0ab917db301b05afbb0c31f388e998293b",
+    "size_bytes": 13798,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/exp5_summary.md",
+    "new_path": "artifacts/results/exp5_ensemble/exp5_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "3ffbd4efc306a22cb12f0e3946030ba194f717d1c87f5030bc7baec4401a9a70",
+    "size_bytes": 2657,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/inner_meta_predictions.npz",
+    "new_path": "artifacts/results/exp5_ensemble/inner_meta_predictions.npz",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5c02b71c565c85796504f9511e62594ec239f52561c84b9d6f1d8c9750f2c690",
+    "size_bytes": 804698,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/meta_leakage_audit.json",
+    "new_path": "artifacts/results/exp5_ensemble/meta_leakage_audit.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "b93747da1df3a10e4e8c8a6811f35a1cf86cf9bab1295fd0af4e3652bbbaa48e",
+    "size_bytes": 3882,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/NNW_Blend_oof_predictions.csv",
+    "new_path": "artifacts/results/exp5_ensemble/NNW_Blend_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "1b4a094e7639814ba79238df80de752d5d2dea9a0c9804588d299f49ed4b439b",
+    "size_bytes": 311078,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/RidgeStacking_oof_predictions.csv",
+    "new_path": "artifacts/results/exp5_ensemble/RidgeStacking_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "7e8f13f1bcd541e73c6f1062984e112520ababfb1cdb2e68fb0cd0abb408f41f",
+    "size_bytes": 311105,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp5_ensemble/SimpleAverage_oof_predictions.csv",
+    "new_path": "artifacts/results/exp5_ensemble/SimpleAverage_oof_predictions.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "1ae36a75bc80ae6c71301790af05cadbcf47b88b06e43b8d5da12e6a13b15bcf",
+    "size_bytes": 311062,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp6a_bootstrap_holm.json",
+    "new_path": "artifacts/results/exp6_ablations/exp6a_bootstrap_holm.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "ea2bfb344213a9bf2cf94c9f8df6b5df7ef83a388a29d25e01f25180b21da09d",
+    "size_bytes": 5840,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp6b_bootstrap_holm.json",
+    "new_path": "artifacts/results/exp6_ablations/exp6b_bootstrap_holm.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "4319ffcf47af1ba4ecc1aa4f86c195846acbe3037761a4ff1e5060ca81bb7fd4",
+    "size_bytes": 2940,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp6_hsgin_results.json",
+    "new_path": "artifacts/results/exp6_ablations/exp6_hsgin_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8a8d64f567da6c80d301c5e980cba23d76d14dbec72858890788c557884d2f69",
+    "size_bytes": 11544,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp6_xgboost_results.json",
+    "new_path": "artifacts/results/exp6_ablations/exp6_xgboost_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "4f9561f9477632df874491950c3e93c7e228036c9b056c53049414e9a1a14663",
+    "size_bytes": 26208,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp6_xgboost_summary.md",
+    "new_path": "artifacts/results/exp6_ablations/exp6_xgboost_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "012dc43e3c6b9db118ef096fc4d1a097ae30ef2aea4617b7d42a8289fb5bd79e",
+    "size_bytes": 3635,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp7_bootstrap_holm.json",
+    "new_path": "artifacts/results/exp6_ablations/exp7_bootstrap_holm.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "30e1f2c0ffdd4ba07bf9f9fffe69e612f4ea8ef2079e86f3d5d79d6ab0b5ebd4",
+    "size_bytes": 2382,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp7_graph_ablation_results.json",
+    "new_path": "artifacts/results/exp6_ablations/exp7_graph_ablation_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5b7265e51b43c8bd89151956dac2b859b37386b686bf43c9a4d65c6d7843cbeb",
+    "size_bytes": 10130,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/exp7_random_edges_multiseed_results.json",
+    "new_path": "artifacts/results/exp6_ablations/exp7_random_edges_multiseed_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "cf324712e6c7bc02f9f38aa8d9ad0a82f70f448286ecc95c5e897ea0386e4ac2",
+    "size_bytes": 2304,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_FULL_25_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_FULL_25_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5c68903040be46fa5ac19d63f85d6401612fef258aa0943940c82b273a56d80c",
+    "size_bytes": 354465,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_LOO_Biomarker_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_LOO_Biomarker_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "68bd027d4a35fcf120e4f6da59c337a2d9f7f299e5da44ad3b8a50071a2271a0",
+    "size_bytes": 356435,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_LOO_Demographics_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_LOO_Demographics_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "e0c01fe631dcbb5d8fa12e93364cf840aa928ee8d71cb256192efed032dfffbf",
+    "size_bytes": 356374,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_LOO_Heart_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_LOO_Heart_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "469808bbba710b66bedb4e2cfe51a83ca2702afb14b34bf218c082374ff0531f",
+    "size_bytes": 356277,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_LOO_Kidney_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_LOO_Kidney_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5d2308661f4900be91018d4760dd70423f6f407930fa2294e0e9123db03cd362",
+    "size_bytes": 356350,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_LOO_Liver_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_LOO_Liver_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8948672412c9d1be1252457c2ea672f09afd247dbba6d829e6b79aaad1170bae",
+    "size_bytes": 356423,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_FlatReadout_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_FlatReadout_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "375bd297750d16dd601a71767e91dea2bc3c06636ffebc60cf93aacde0be1bd9",
+    "size_bytes": 356515,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_HomoGNN_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_HomoGNN_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "e824ec0a81e4ff39be0d1fc0165f6e8b015e2ff10b792477d14307fced1510f6",
+    "size_bytes": 356411,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_NoCrossTalk_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_NoCrossTalk_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "3f0bd0c16f2bbff38cb39c3d6f987cd8d8878a53b17162cbed181db1583d07ec",
+    "size_bytes": 356365,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_RandomEdges_ensemble_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_RandomEdges_ensemble_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "d480581d2d9f9eee624db2f1684226fb6e5294381847bc9c8217259428c11895",
+    "size_bytes": 355290,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_RandomEdges_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_RandomEdges_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5b35b59867d805dfb7e5d2e9d966e23e4a2346b1539c4a75b8287aaa9718ce8d",
+    "size_bytes": 356458,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_RandomEdges_seed43_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_RandomEdges_seed43_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "d2ec7c92d2b9d6e9ffaa9b19e67d2c58e7e70fb038a1c974503130484bd73481",
+    "size_bytes": 356477,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/HSGIN_Variant_RandomEdges_seed44_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/HSGIN_Variant_RandomEdges_seed44_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "15e80b7741664f2166986be7985f85ae206e7c106c093b107e7b68ad2750b599",
+    "size_bytes": 356470,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_FULL_25_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_FULL_25_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "aeb581c446259c72daf657c90751b2b361ce60763f10a0eee24cd2d5d45ad45e",
+    "size_bytes": 367608,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_LOO_Biomarker_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_LOO_Biomarker_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "2c01ab99fb1e8b7f4ea8d185acf3fe761727a0b5de54d0d0714f22490e09b29f",
+    "size_bytes": 367581,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_LOO_Demographics_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_LOO_Demographics_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "373102333e395f770d1736cfffd1190b903facb9a8606869de7a7fd69ff8695b",
+    "size_bytes": 367440,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_LOO_Heart_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_LOO_Heart_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "6ce197006af88b8bd54b50dd52895060025eeaef8d73476d252c4503ed08a6a6",
+    "size_bytes": 367398,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_LOO_Kidney_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_LOO_Kidney_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "47bd62ced136ca13c284da4897134735eee553157bf1ce3741ff1af663377b3b",
+    "size_bytes": 367505,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_LOO_Liver_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_LOO_Liver_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "3eb1a399544f763be36066b86b2be132e53a247e6de43fb55bb7fdf0f43242d7",
+    "size_bytes": 367547,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_ONLY_Biomarker_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_ONLY_Biomarker_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8fddd7281135f2825cc8faa1db124bb45afaee3436a4f703237345ca611000f0",
+    "size_bytes": 367203,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_ONLY_Demographics_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_ONLY_Demographics_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "7f3720c1ce2f904b711f3825d69e5a981e274eb62ec4d77778a36f027ece5503",
+    "size_bytes": 366940,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_ONLY_Heart_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_ONLY_Heart_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "6aa0860e7f6040982def44699c1730b669ecd5d412feca459051a0396938a3a2",
+    "size_bytes": 367320,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_ONLY_Kidney_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_ONLY_Kidney_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "c815f7aa263cd6ec38b414b964094a40b16e94ecb3e1597800de7fb16bde2435",
+    "size_bytes": 367247,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp6_ablations/XGBoost_ONLY_Liver_oof.csv",
+    "new_path": "artifacts/results/exp6_ablations/XGBoost_ONLY_Liver_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8a8a322cbe974871e9a58b10101f210f2cab4d91397bcb7a7dd67aa0f2435589",
+    "size_bytes": 367247,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/exp8_controls_results.json",
+    "new_path": "artifacts/results/exp8_controls/exp8_controls_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "71202439cee2f616290a0cdf477f3a29adad61f20fa6efc8e290e49e2c6b9d74",
+    "size_bytes": 22370,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/exp8_controls_summary.md",
+    "new_path": "artifacts/results/exp8_controls/exp8_controls_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "60ce6ad827e597985c48eb78bc56a6d831d93624c61fe8bb1137f63527265e40",
+    "size_bytes": 2449,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/hsgin_100perms_distribution.json",
+    "new_path": "artifacts/results/exp8_controls/hsgin_100perms_distribution.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "21e84015928c6e9173c1c8cc47946996863a18decba51c0d6fb97794c6cb08d4",
+    "size_bytes": 1890,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_Exact_LogFormula_Ridge_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_Exact_LogFormula_Ridge_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "0cad5211d97de7f4cd45e897a25dd88544cc9d10b9cfc8dc809abd840b157e40",
+    "size_bytes": 298783,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_MLP_Leaky_Full29_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_MLP_Leaky_Full29_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "bb9be251c33104594173df45d419452dfa3c10fe2001733a5df5b440da3d16d2",
+    "size_bytes": 299000,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_MLP_Leaky_Raw4_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_MLP_Leaky_Raw4_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "1f51def95e7472315694164cad3cb50b7beb6a1591ed1a306e76c86c91575f0c",
+    "size_bytes": 298854,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_Ridge_Leaky_Full29_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_Ridge_Leaky_Full29_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "e3f1d97411dd8b86eac95a434e0f35b97b0a49f2e40aada5932cd7e902ba24c1",
+    "size_bytes": 299266,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_Ridge_Leaky_Raw4_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_Ridge_Leaky_Raw4_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "575948b215004f26c617b24142ad3c6870d68788e83a0d25f0ecd3753dea99c9",
+    "size_bytes": 299264,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_XGBoost_Leaky_Full29_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_XGBoost_Leaky_Full29_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "f667c04f0873ddb8c304cb9a7ac959b2a3f5ebb56f801bfb05b71c685813700b",
+    "size_bytes": 298724,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/LEAKY_DEMO_XGBoost_Leaky_Raw4_oof.csv",
+    "new_path": "artifacts/results/exp8_controls/LEAKY_DEMO_XGBoost_Leaky_Raw4_oof.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "9a0f279c5f0bc7443bc31ffe55a3552273ff1e0f6c2fe8ee11f0b7b7d20f81c6",
+    "size_bytes": 298742,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_11_25.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_11_25.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "fc97acfc67836e3580611902f1d7af266e8da10f895822820123b3d19d5c71e8",
+    "size_bytes": 287,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_26_40.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_26_40.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "e985a1c233173237a2e81f834088fffce0b27cbf9e7cf4e8a7086237624dda58",
+    "size_bytes": 286,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_41_55.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_41_55.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "ff7e92db40ce49412bf606d2188642ff1e8502e12de85387ab5b242846a2a4f2",
+    "size_bytes": 288,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_56_70.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_56_70.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "ec79b9cdd408ff0836d83580d984bb0ef92cbaef72ab61be3a8b841936a31bce",
+    "size_bytes": 287,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_71_85.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_71_85.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5b81db293a33db9ea6ef65e30ae8713ab9391bfd16440b0f68c8130be8e683a0",
+    "size_bytes": 287,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp8_controls/parts/hsgin_perms_86_100.json",
+    "new_path": "artifacts/results/exp8_controls/parts/hsgin_perms_86_100.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "4870652ddbea1d024b01e1d40bbabe820948c625a82c175c05dd484c1737c337",
+    "size_bytes": 287,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp9_subgroups/exp9_subgroups_summary.md",
+    "new_path": "artifacts/results/exp9_subgroups/exp9_subgroups_summary.md",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "8e57d13aa1d6872715b69ddda4bfc40fd2f3541b22093c75f43481324fb242b3",
+    "size_bytes": 3324,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp9_subgroups/exp9_subgroup_results.json",
+    "new_path": "artifacts/results/exp9_subgroups/exp9_subgroup_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "e4f55a2ce1f8b30c7d4c014756c5245f5d3899db7a706c489d18e5040cc997a5",
+    "size_bytes": 57896,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/exp9_subgroups/subgroup_patient_evaluations.csv",
+    "new_path": "artifacts/results/exp9_subgroups/subgroup_patient_evaluations.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "c727619b8581189f5feb9b9e2d5b1002653e835f968120a2a7577b42e6e78c4e",
+    "size_bytes": 977990,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/explainability/domain_importance_summary.csv",
+    "new_path": "artifacts/results/explainability/domain_importance_summary.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "fbe6d9c8379699e955a211cdad5a115c8a5a086126503fa6913c4668b4bb7946",
+    "size_bytes": 324,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/explainability/explainability_results.json",
+    "new_path": "artifacts/results/explainability/explainability_results.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "973b17c9090155fcdf4f3dc99ce49f285a2652794579599260f98a0e7491db3b",
+    "size_bytes": 5878,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/explainability/feature_permutation_importance.csv",
+    "new_path": "artifacts/results/explainability/feature_permutation_importance.csv",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "4c0cd4d8209169bf9b7639ba4d29eb90e6343d5faea7cf8ad5d3eeb7f7e7ff18",
+    "size_bytes": 5678,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "results/comparative/explainability/reconciled_domain_attribution.json",
+    "new_path": "artifacts/results/explainability/reconciled_domain_attribution.json",
+    "category": "ARTIFACT_RESULTS",
+    "action": "MOVE",
+    "sha256": "5cf6c0eb4111ab7a45333ea18ba42f4df9993853bde052ec89a7fc4e423db2f8",
+    "size_bytes": 2755,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/base_adapter.py",
+    "new_path": "src/organix/experiments/base_adapter.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "aeda3d2167652b1b506b547860c12bb4f67af1200012f8d41959bc6bb4fc1902",
+    "size_bytes": 2165,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/compute_multiple_corrections.py",
+    "new_path": "src/organix/experiments/compute_multiple_corrections.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "d00e22e33e6c2fb8dbc28df7266a7e73f8f636bd5a99e64db47cb7fd210bb701",
+    "size_bytes": 6716,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/deep_tabular.py",
+    "new_path": "src/organix/experiments/deep_tabular.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "3ae58255efb8be0eff88edaec4dfcaef37bfc94664fa21f944b0944dcf1d79f5",
+    "size_bytes": 2683,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp0_reproduction.py",
+    "new_path": "src/organix/experiments/exp0_reproduction.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "c6c629f344117582e90b863f05dfcad9825e07617b09be3a654b41b8180c3466",
+    "size_bytes": 13680,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp1_linear_trees.py",
+    "new_path": "src/organix/experiments/exp1_linear_trees.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "6c61a9dbedf714e67d16e3b065eb98176b051db9340745df9bafad613c5342fe",
+    "size_bytes": 8552,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp2_boosting.py",
+    "new_path": "src/organix/experiments/exp2_boosting.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "8ea5017541deaef4806f31e4fa8a053664147846c09b05824954a18889836819",
+    "size_bytes": 10838,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp3_deep_tabular.py",
+    "new_path": "src/organix/experiments/exp3_deep_tabular.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "f9eaa519776faffc38e6c975db99602415c6bcf83f9b9ef7f81c24289bc143d0",
+    "size_bytes": 13772,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp4_gnn.py",
+    "new_path": "src/organix/experiments/exp4_gnn.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "b90cceb1b28f07214fb8ddabacadb1e47fff417d32e215bc46c3e5c1a97554f0",
+    "size_bytes": 10254,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp5_ensemble.py",
+    "new_path": "src/organix/experiments/exp5_ensemble.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "41cc704ca556d5effa5871f2dfef895c619ae944b1aae754dcbe282c857dd505",
+    "size_bytes": 30406,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/exp6_ablations.py",
+    "new_path": "src/organix/experiments/exp6_ablations.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "bc79293ea4d14ffaa7afa02f3993825e2de1683288a6a5754e75fac70dc6e5f4",
+    "size_bytes": 43996,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/finalize_phase6_audit.py",
+    "new_path": "src/organix/experiments/finalize_phase6_audit.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "c98bddc482fccfc710ca171c0577cc522a5300de0505f2c4233546f65b5ea696",
+    "size_bytes": 30943,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/finalize_phase7_report.py",
+    "new_path": "src/organix/experiments/finalize_phase7_report.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "5b8ab77a7c642dbbb2b13cdbf40a7f5b79123b20c70af8a93b622bbcf9dee64e",
+    "size_bytes": 21144,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/leakage_gate.py",
+    "new_path": "src/organix/experiments/leakage_gate.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "b987e544b67e877e4b300508bdfdf0f0010cad160b67256535acc25f2f3dbc11",
+    "size_bytes": 7090,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/metrics.py",
+    "new_path": "src/organix/experiments/metrics.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "5899ea08d9d0d5bf28f175a38cd546f7ee0a119cf8e884c2f758c15ff85d9104",
+    "size_bytes": 3004,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/paired_tests.py",
+    "new_path": "src/organix/experiments/paired_tests.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "6a7a6e2e6a570432711ce3e6c22ce01307f39d7eb9b7b9fcb385eac1dfbe905f",
+    "size_bytes": 3235,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/pipeline.py",
+    "new_path": "src/organix/data/pipeline.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "24d33b42b5971d98016765434ecefd703f0e65c97fcd518f43c3378c3a0ae328",
+    "size_bytes": 3660,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/reconcile_liver_contribution.py",
+    "new_path": "src/organix/experiments/reconcile_liver_contribution.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "8f9ce1ba4bbe06073e6d6366748bc4b57424a6e01600a580f857b38515351112",
+    "size_bytes": 4296,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/rerun_exp7_random_edges.py",
+    "new_path": "src/organix/experiments/rerun_exp7_random_edges.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "ca9681dedcc820080c6d60d86cfa95fe9f90c1305d278a1360837ff5f6321cd3",
+    "size_bytes": 10168,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp6b_hsgin.py",
+    "new_path": "src/organix/experiments/run_exp6b_hsgin.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "1b00f85bc2780cbc28dde50bc11b599c24ca5e28933f6d0045f96ecac415effe",
+    "size_bytes": 8472,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp6_xgboost.py",
+    "new_path": "src/organix/experiments/run_exp6_xgboost.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "51c2427f55b9ed0fe1e54b1ccccb7ebc3e730bfd98ddc7d86b4af62e14478824",
+    "size_bytes": 6084,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp7_graph_ablations.py",
+    "new_path": "src/organix/experiments/run_exp7_graph_ablations.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "de0ea5328188694ff8bec7b0d0e0d2b445cb21b8aab1a6ea2cd3a20ab853cde1",
+    "size_bytes": 15642,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp7_random_edges_multiseed.py",
+    "new_path": "src/organix/experiments/run_exp7_random_edges_multiseed.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "d4ec28a95e93d02a0820e4c3c34fb722e72033f01e8130e4bea0f9992e5cffa4",
+    "size_bytes": 13564,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp8_controls.py",
+    "new_path": "src/organix/experiments/run_exp8_controls.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "ad7aa48d2a049a12f2d041b00f89e9ddf737ac57d1074885d81b938d8151cc65",
+    "size_bytes": 21035,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp8_hsgin_100perms.py",
+    "new_path": "src/organix/experiments/run_exp8_hsgin_100perms.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "7beafefa766dd877178cc504d8fbb0d60ef9a5dd8f0f2a491052b4edf1060aa0",
+    "size_bytes": 8008,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp8_multiprocess.py",
+    "new_path": "src/organix/experiments/run_exp8_multiprocess.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "838eff5d0b120b59d09abca89052bb02b8958b8a47e16d8d0d635757433690b3",
+    "size_bytes": 4637,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp8_worker.py",
+    "new_path": "src/organix/experiments/run_exp8_worker.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "c748ffba0d2efc93308cc0fd9aa79fc9b374fabc21af3c84406513fcf38f35e3",
+    "size_bytes": 4827,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_exp9_subgroups.py",
+    "new_path": "src/organix/experiments/run_exp9_subgroups.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "cdb7b81aa65252699a59b3cecc811dd5bd56f5912658af86b08a536e98117596",
+    "size_bytes": 13546,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/run_phase8_synthesis.py",
+    "new_path": "src/organix/experiments/run_phase8_synthesis.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "72618ff3234a0edf97b10afec119e1becef67213968638c888c0f954f5c47b00",
+    "size_bytes": 40759,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/split.py",
+    "new_path": "src/organix/experiments/split.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "de0d6e197f98a2e40ad23a32365295af709e0dcecae23d30d0de48187e4e07ba",
+    "size_bytes": 2538,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/__init__.py",
+    "new_path": "src/organix/experiments/__init__.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "8e5966f59193d8c0e8c727cb6702ce52dd1dd7499f2165bdaf0433d272c50b32",
+    "size_bytes": 88,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/models/baselines.py",
+    "new_path": "src/organix/models/baselines.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "2e24f4e6b8cedfa0a0c949847b66e8be9925478cbdd9de394d0422161c51a39e",
+    "size_bytes": 3903,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/models/hsgin.py",
+    "new_path": "src/organix/models/hsgin.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "4d9bd5a8372e3eb9d234701fb7d8885efa2f087ddb95f807488e04ad9ac65b6d",
+    "size_bytes": 4720,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/models/__init__.py",
+    "new_path": "src/organix/models/__init__.py",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/__pycache__/leakage_gate.cpython-310.pyc",
+    "new_path": "src/organix/experiments/leakage_gate.cpython-310.pyc",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "6b1a5c83445dd92fe60f0b6ccefd9842d3e3d4bcdd387bb468bfa35a306e1f85",
+    "size_bytes": 5419,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "src/comparative/__pycache__/__init__.cpython-310.pyc",
+    "new_path": "src/organix/experiments/__init__.cpython-310.pyc",
+    "category": "SOURCE_CODE",
+    "action": "REFACTOR",
+    "sha256": "e196e05e6fe63036269ff21075020692845c0099013cbe26114ceb61861880f4",
+    "size_bytes": 250,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/README.md",
+    "new_path": "docs/technical_evidence/README.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "3fcb7eabc4d89e58c365d8eb77039e79c6aec2bec35b12316597fa8a80670f1e",
+    "size_bytes": 9963,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/01_repository_architecture/01_repository_tree.md",
+    "new_path": "docs/technical_evidence/01_repository_architecture/01_repository_tree.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "df7fd13f6eff0e217f1a002eef14c001ffb21afd32a41daa987ec8ac01c61cec",
+    "size_bytes": 67606,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/01_repository_architecture/02_python_sources_manifest.md",
+    "new_path": "docs/technical_evidence/01_repository_architecture/02_python_sources_manifest.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "b53826870ba11e42e8f32c47c93dc239e842ca2c2ae18350d5a037678c31f648",
+    "size_bytes": 33436,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/02_dataset_and_features/01_dataset_and_provenance.md",
+    "new_path": "docs/technical_evidence/02_dataset_and_features/01_dataset_and_provenance.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "7a34c0c80d01398db24355c3595269cf6895cca636e30a60b0453df121d06004",
+    "size_bytes": 11803,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/02_dataset_and_features/02_locked_25_feature_manifest.md",
+    "new_path": "docs/technical_evidence/02_dataset_and_features/02_locked_25_feature_manifest.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "cf8f5af4ee94983202fa9af15f96db9764289816d6da7d5ac3152f7f512fb215",
+    "size_bytes": 8158,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/03_target_formulation/fib4_target_specification.md",
+    "new_path": "docs/technical_evidence/03_target_formulation/fib4_target_specification.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "0a7bf0e60ec2fde33103ee2f5b871398621eebcac301ff6cdf885fb739cd6496",
+    "size_bytes": 7947,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/04_graph_neural_network_architecture/hsgin_architecture_implementation.md",
+    "new_path": "docs/technical_evidence/04_graph_neural_network_architecture/hsgin_architecture_implementation.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "57fc132e5ecf54356d7938bbd35a69e344d293ff853cee2ba5d69f777d8870ad",
+    "size_bytes": 10490,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/05_preprocessing_and_leakage_controls/preprocessing_folds_and_leakage_controls.md",
+    "new_path": "docs/technical_evidence/05_preprocessing_and_leakage_controls/preprocessing_folds_and_leakage_controls.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "146fe1b5ffa8f254d4a66f26802c22a09fe1bf3c92d16ff1e701832695252840",
+    "size_bytes": 10085,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/06_models_and_hyperparameters/model_configurations_and_training_procedures.md",
+    "new_path": "docs/technical_evidence/06_models_and_hyperparameters/model_configurations_and_training_procedures.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "36c805b4671f328b6550a9c3d811b538c3848292c825473ff68538dc3fd9d7e2",
+    "size_bytes": 14246,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/07_experiments_0_to_9_implementation/experiments_0_to_9_implementation_details.md",
+    "new_path": "docs/technical_evidence/07_experiments_0_to_9_implementation/experiments_0_to_9_implementation_details.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "658c98b5bcbaa06ae673ce2d0a2abb3fe86956daef1b966c35b8c762edd91c6a",
+    "size_bytes": 17377,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/08_benchmark_results_and_statistics/benchmark_results_metrics_and_statistical_outputs.md",
+    "new_path": "docs/technical_evidence/08_benchmark_results_and_statistics/benchmark_results_metrics_and_statistical_outputs.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "cbacd6bb0ef5cc7cdc9a06160e3b8c07639a5c77d0362b7c3da4a73b90dd69f8",
+    "size_bytes": 18893,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/09_ablations_controls_and_subgroups/y_randomization_ablations_ensembles_and_subgroups.md",
+    "new_path": "docs/technical_evidence/09_ablations_controls_and_subgroups/y_randomization_ablations_ensembles_and_subgroups.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "8a34f123e6003e0ae416db0708d659065ee28956d138cce9da861130976e51e9",
+    "size_bytes": 15785,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/10_verification_and_logs/automated_tests_execution_logs_and_verification.md",
+    "new_path": "docs/technical_evidence/10_verification_and_logs/automated_tests_execution_logs_and_verification.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "68eb4541192764417923372d61a03b9752fb31253d0efaff2e7a07d7b099ba20",
+    "size_bytes": 7526,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/11_environment_and_reproduction/environment_dependencies_and_reproduction.md",
+    "new_path": "docs/technical_evidence/11_environment_and_reproduction/environment_dependencies_and_reproduction.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "5b97aff2ec82d71ea1fe9076ed4fe3c19380a8fcdba980137e01d2af41b68f79",
+    "size_bytes": 5567,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "technical_evidence_package/12_checkpoint_and_artifact_inventory/checkpoint_inventory_and_artifact_paths.md",
+    "new_path": "docs/technical_evidence/12_checkpoint_and_artifact_inventory/checkpoint_inventory_and_artifact_paths.md",
+    "category": "DOC_EVIDENCE",
+    "action": "MOVE",
+    "sha256": "7968b8e3023b5b17cb496db5a74cc278d82580693687dd70c752a2f914fb6cba",
+    "size_bytes": 10574,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "tests/test_leakage_gate.py",
+    "new_path": "tests/test_leakage_gate.py",
+    "category": "TESTS",
+    "action": "REFACTOR",
+    "sha256": "7151b140eb28192dc4057ae9ba08811bfa185570e773b135a2789b2224667bcb",
+    "size_bytes": 663,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "tests/test_splits.py",
+    "new_path": "tests/test_splits.py",
+    "category": "TESTS",
+    "action": "REFACTOR",
+    "sha256": "7cc072fb1af477281d1250401e6ff68a92ef09f5e9a751b0cc44e1c0f7b323f8",
+    "size_bytes": 1256,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "tests/__pycache__/test_leakage_gate.cpython-310.pyc",
+    "new_path": "tests/test_leakage_gate.cpython-310.pyc",
+    "category": "TESTS",
+    "action": "REFACTOR",
+    "sha256": "3753b30c78d784adfee5b6d23563450d84bb8782501cb33ac87f813246d0cc61",
+    "size_bytes": 961,
+    "status": "PRESERVED"
+  },
+  {
+    "original_path": "tests/__pycache__/test_splits.cpython-310.pyc",
+    "new_path": "tests/test_splits.cpython-310.pyc",
+    "category": "TESTS",
+    "action": "REFACTOR",
+    "sha256": "790dfb46458d66591c354ee22823bcc24785d25d50f6595eb53ec8b0ad9b85d2",
+    "size_bytes": 1225,
+    "status": "PRESERVED"
+  }
+]

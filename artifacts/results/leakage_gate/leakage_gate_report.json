@@ -1,0 +1,61 @@
+{
+  "gate_timestamp": "2026-11-13T14:15:29.263872",
+  "tests": {
+    "gate_1_manifest_check": {
+      "passed": true,
+      "manifest_sha256": "6712e1575dc12c36e2345e08cc1112a3ae90be283fce882dcf681e59862cbe22",
+      "hash_verified": true,
+      "feature_count": 25,
+      "direct_overlap": []
+    },
+    "gate_2_fold_disjointness": {
+      "passed": true,
+      "zero_patient_overlap": true,
+      "cohort_coverage_exact": true,
+      "total_evaluated_patients": 6277,
+      "fold_overlaps": {}
+    },
+    "gate_3_reconstruction_test": {
+      "passed": true,
+      "components": {
+        "RIDAGEYR": {
+          "reconstruction_r2": 0.5506,
+          "max_pairwise_spearman": 0.5096,
+          "max_correlated_feature": "KIQ022",
+          "is_reconstructed": false
+        },
+        "LBXSASSI": {
+          "reconstruction_r2": 0.1876,
+          "max_pairwise_spearman": 0.3732,
+          "max_correlated_feature": "LBXSGTSI",
+          "is_reconstructed": false
+        },
+        "LBXSATSI": {
+          "reconstruction_r2": 0.2594,
+          "max_pairwise_spearman": 0.5537,
+          "max_correlated_feature": "LBXSGTSI",
+          "is_reconstructed": false
+        },
+        "LBXPLTSI": {
+          "reconstruction_r2": 0.2741,
+          "max_pairwise_spearman": 0.3428,
+          "max_correlated_feature": "LBXWBCSI",
+          "is_reconstructed": false
+        }
+      }
+    },
+    "gate_4_proxy_screen": {
+      "passed": true,
+      "liver_features": [
+        "LBXSGTSI",
+        "LBXSAL",
+        "LBXSTB",
+        "LBXSAPSI",
+        "LUXSMED",
+        "LUXCAPM"
+      ],
+      "note": "Documented in Experiment 6 Leave-One-Domain-Out ablation"
+    }
+  },
+  "all_passed": true
+}

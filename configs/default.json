@@ -1,0 +1,18 @@
+{
+  "project_name": "ORGANIX",
+  "version": "1.0.0",
+  "cohort_size": 6277,
+  "n_splits": 5,
+  "random_seed": 42,
+  "target_column": "fib4_target",
+  "num_features": 25,
+  "device": "auto",
+  "hsgin_architecture": {
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "heads": 2,
+    "channels_per_head": 32,
+    "dropout": 0.2,
+    "readout": "organ_aware_concatenation"
+  }
+}

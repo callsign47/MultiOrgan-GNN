@@ -1,189 +1,143 @@
-# MultiOrgan-GNN: Heterogeneous Systemic Graph Interaction Network for Multi-Organ Disease Modeling
+# ORGANIX: Heterogeneous Systemic Graph Interaction Network for Multi-Organ Disease Modeling & FIB-4 Risk Stratification
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
 [![PyTorch Geometric](https://img.shields.io/badge/PyG-2.3+-3C2179.svg)](https://pyg.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://img.shields.io/badge/Tests-22%20Passed-brightgreen.svg)]()
+[![Leakage Gate](https://img.shields.io/badge/Leakage%20Gate-Verified-success.svg)]()
 
-Official repository for **MultiOrgan-GNN** (formerly HSGIN), a multi-organ graph neural network architecture designed to model inter-organ interactions across **Liver, Kidney, and Heart/Cardiovascular** physiological domains for liver fibrosis risk assessment (continuous FIB-4 index) on the **NHANES August 2021–August 2023** cohort ($N = 6,277$).
+**ORGANIX** is an open-source, modular, and mathematically rigorous computational medicine framework implementing the **Heterogeneous Systemic Graph Interaction Network (HSGIN)**. 
 
----
-
-## 🔬 Core Scientific Contributions
-
-1. **Leakage-Free Multi-Organ Modeling**: Strictly excludes direct algebraic components of FIB-4 ($\text{Age}$, $\text{AST}$, $\text{ALT}$, $\text{Platelets}$) from model feature inputs, preventing mathematical identity leakage and enforcing genuine multi-organ relational learning.
-2. **Heterogeneous Organ Graph Formulation**: Each patient is modeled as an isolated `HeteroData` graph featuring **5 node types** (`patient`, `liver`, `kidney`, `heart`, `biomarker`) and **14 directed edge types** encoding patient-affinity and physiological organ cross-talk.
-3. **Multi-Organ Readout Architecture**: Outperforms strong tabular baselines (XGBoost $R^2 = 0.4519$, Classical HGNN $R^2 = 0.4681$) by achieving **$R^2 = 0.4976 \pm 0.0285$** under rigorous 5-fold cross-validation.
-4. **Architectural Organ Ablation**: Demonstrates empirical gains across organ subgraphs: Liver-only ($R^2 = 0.3540$) $\to$ Liver+Kidney ($R^2 = 0.4394$) $\to$ Liver+Heart ($R^2 = 0.4592$) $\to$ Full 3-Organ ($R^2 = 0.4976$).
+The framework evaluates inter-organ physiological interactions across **Liver, Kidney, and Heart/Cardiovascular** clinical domains for continuous Fibrosis-4 (FIB-4) liver fibrosis risk stratification on the representative **NHANES August 2021–August 2023** cohort ($N = 6,277$).
 
 ---
 
-## 📊 Performance Benchmark Summary (5-Fold CV)
+## 🔬 Core Scientific Highlights
 
-| Model Class | Architecture | Mean MAE ($\pm$ SD) | Mean RMSE ($\pm$ SD) | Mean $R^2$ ($\pm$ SD) | $\Delta R^2$ vs XGBoost |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **Tabular Baseline** | Ridge Regression | $0.4065 \pm 0.0094$ | $0.6058 \pm 0.0386$ | $0.3869 \pm 0.0222$ | $-0.0650$ |
-| **Tabular Baseline** | Random Forest | $0.3927 \pm 0.0093$ | $0.6019 \pm 0.0391$ | $0.3940 \pm 0.0409$ | $-0.0579$ |
-| **Tabular Baseline** | XGBoost Regressor | $0.3740 \pm 0.0102$ | $0.5728 \pm 0.0417$ | $0.4519 \pm 0.0324$ | Baseline ($0.0000$) |
-| **Tabular Baseline** | MLP Regressor | $0.4679 \pm 0.0280$ | $0.7204 \pm 0.0760$ | $0.1320 \pm 0.1152$ | $-0.3199$ |
-| **Classical GNN** | Heterogeneous SAGE (HGNN) | $0.3648 \pm 0.0070$ | $0.5641 \pm 0.0337$ | $0.4681 \pm 0.0195$ | $+0.0162$ |
-| **Proposed Model** | **HSGIN (Hetero GAT + Organ Readout)** | $\mathbf{0.3509 \pm 0.0091}$ | $\mathbf{0.5478 \pm 0.0287}$ | $\mathbf{0.4976 \pm 0.0285}$ | $\mathbf{+0.0457}$ |
-| **Validation Control** | Y-Randomization Control | $0.5569 \pm 0.0070$ | $0.7838 \pm 0.0351$ | $-0.0280 \pm 0.0291$ | *No target leakage* |
+1. **Strict Algebraic Leakage Control**: Direct mathematical formula components of FIB-4 ($\text{Age}$, $\text{AST}$, $\text{ALT}$, $\text{Platelet Count}$) are strictly removed from model feature matrices, preventing artificial target leakage ($R^2 \approx 1.00$) and enforcing genuine multi-organ relational learning.
+2. **Heterogeneous Organ Graph Topology**: Formulates each patient as an isolated `HeteroData` graph featuring **5 node types** (`patient`, `liver`, `kidney`, `heart`, `biomarker`) and **14 directed relations** encoding physiological cross-talk and systemic biomarker affinities.
+3. **Benchmarking Superiority**: Achieves top benchmark performance with pooled out-of-fold **$R^2 = 0.5114$** ($0.4988 \pm 0.0264$), statistically outperforming tuned XGBoost ($R^2 = 0.4698, p = 0.0140$), FT-Transformer ($R^2 = 0.4674, p = 0.0031$), Classical HGNN ($R^2 = 0.4771, p = 0.0028$), and linear baselines ($R^2 = 0.3864, p = 0.0023$).
+4. **Physiological & Graph Ablations**: Retrained Leave-One-Domain-Out (LODO) ablations prove Liver markers contribute the single largest retrained delta ($\Delta R^2 = -0.1074$), followed by Heart ($\Delta R^2 = -0.0458$) and Kidney ($\Delta R^2 = -0.0321$).
 
 ---
 
-## 📁 Repository Structure
+## 📊 Benchmark League Table (5-Fold CV, $N=6,277$)
+
+| Rank | Model Architecture | Family | Pooled $R^2$ | Fold Mean $R^2 \pm \text{SD}$ | RMSE | MAE | Spearman $\rho$ | Stat Significance vs HSGIN |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **1** | **HSGIN** | Graph Neural Network | **0.5114** | $0.4988 \pm 0.0264$ | **0.5416** | **0.3456** | **0.7736** | **Benchmark Champion** |
+| 2 | **NNW Blend** | Ensemble (Weighted) | 0.5101 | $0.5100 \pm 0.0293$ | 0.5423 | 0.3466 | 0.7733 | Equivalent ($\Delta R^2 = -0.0013, p = 0.862$) |
+| 3 | **RandomEdges Control** | Graph Null Control | 0.5095 | $0.4934 \pm 0.0026$ | 0.5427 | 0.3469 | 0.7743 | Equivalent ($\Delta R^2 = -0.0019, p = 0.814$) |
+| 4 | **Ridge Stacking** | Ensemble (Stacking) | 0.5089 | $0.5089 \pm 0.0293$ | 0.5430 | 0.3518 | 0.7722 | Equivalent ($\Delta R^2 = -0.0025, p = 0.734$) |
+| 5 | **Classical HGNN** | Graph Neural Network | 0.4771 | $0.4702 \pm 0.0150$ | 0.5603 | 0.3591 | 0.7558 | HSGIN Superior ($\Delta R^2 = +0.0343, p = 0.0028$) |
+| 6 | **XGBoost (Tuned)** | Boosted Trees | 0.4698 | $0.4701 \pm 0.0340$ | 0.5642 | 0.3699 | 0.7438 | HSGIN Superior ($\Delta R^2 = +0.0416, p = 0.0140$) |
+| 7 | **CatBoost** | Boosted Trees | 0.4685 | $0.4692 \pm 0.0345$ | 0.5649 | 0.3693 | 0.7487 | HSGIN Superior ($\Delta R^2 = +0.0429, p = 0.0070$) |
+| 8 | **FT-Transformer** | Deep Tabular | 0.4674 | $0.4665 \pm 0.0289$ | 0.5655 | 0.3511 | 0.7681 | HSGIN Superior ($\Delta R^2 = +0.0440, p = 0.0031$) |
+| 9 | **Deep MLP** | Deep Tabular | 0.4582 | $0.4533 \pm 0.0336$ | 0.5703 | 0.3523 | 0.7670 | HSGIN Superior ($\Delta R^2 = +0.0532, p = 0.0035$) |
+| 10 | **LightGBM** | Boosted Trees | 0.4516 | $0.4518 \pm 0.0315$ | 0.5738 | 0.3757 | 0.7367 | HSGIN Superior ($\Delta R^2 = +0.0598, p = 0.0047$) |
+| 11 | **Extra Trees** | Tree Ensemble | 0.4440 | $0.4438 \pm 0.0264$ | 0.5777 | 0.3766 | 0.7392 | HSGIN Superior ($\Delta R^2 = +0.0674, p < 0.001$) |
+| 12 | **HistGradientBoosting** | Boosted Trees | 0.4384 | $0.4379 \pm 0.0270$ | 0.5807 | 0.3783 | 0.7300 | HSGIN Superior ($\Delta R^2 = +0.0730, p < 0.001$) |
+| 13 | **Random Forest** | Tree Ensemble | 0.4288 | $0.4285 \pm 0.0271$ | 0.5856 | 0.3822 | 0.7276 | HSGIN Superior ($\Delta R^2 = +0.0826, p < 0.001$) |
+| 14 | **Ridge (Tuned)** | Regularized Linear | 0.3864 | $0.3871 \pm 0.0221$ | 0.6069 | 0.4061 | 0.6918 | HSGIN Superior ($\Delta R^2 = +0.1250, p = 0.0023$) |
+| 15 | **ElasticNet** | Regularized Linear | 0.3864 | $0.3870 \pm 0.0221$ | 0.6070 | 0.4060 | 0.6924 | HSGIN Superior ($\Delta R^2 = +0.1250, p = 0.0023$) |
+
+---
+
+## 📁 Repository Organization
 
 ```
-├── .gitignore                          # Standard git ignore definitions
-├── README.md                           # Project documentation and reproduction guide
-├── requirements.txt                    # Core Python dependencies
-├── generate_dataset_report.py          # Report generation script
-├── HSGIN_3_Organ_Training_Pipeline_PRD.md # Project Requirements Document
+ORGANIX/
+├── pyproject.toml              # Modern package build configuration
+├── requirements.txt            # Locked runtime dependencies
+├── README.md                   # Master repository documentation
+├── MIGRATION_MANIFEST.md       # Audit and migration mapping record
+├── configs/
+│   ├── default.json            # Global default settings
+│   └── experiments/            # Experiment configurations (Exp0 to Exp9)
 ├── data/
-│   ├── cohort_flow.csv                 # 6-step cohort attrition counts (11,933 -> 6,277)
-│   ├── experiment_results.json         # Master results record (Baselines, HSGIN, Ablations)
-│   ├── feature_manifest.json           # Locked 25-feature manifest specification
-│   ├── fib4_target_validation.json     # FIB-4 moments and validation metrics
-│   ├── ingestion_summary.csv           # 27-file metadata audit verifying unique SEQN
-│   ├── leakage_audit_results.json      # 3-experiment target leakage benchmark results
-│   └── missingness_report.csv          # Per-feature missingness analysis (raw vs. cohort)
-├── graphs/
-│   └── .gitkeep                        # Output directory for patient_graphs.pt
-├── reports/
-│   ├── dataset_report.md               # Phase 1 dataset & missingness audit
-│   ├── experiment_report.md            # Final experiment results & organ ablation report
-│   ├── FINAL_MASTER_HANDOVER.md        # Master technical handover document
-│   ├── leakage_audit_report.md         # Pre-training target-leakage audit
-│   └── NHANES_Dataset_Report.md        # Complete dataset provenance & acquisition tutorial
-└── src/
-    ├── __init__.py
-    ├── pipeline.py                     # Data ingestion, SEQN merging & cohort filtering
-    ├── graph_builder.py                # PyG HeteroData graph construction
-    ├── train.py                        # 5-fold CV training pipeline (Baselines + HSGIN)
-    ├── hsgin_ablation.py               # HSGIN organ subgraph ablation suite (A-D)
-    └── models/
-        ├── __init__.py
-        ├── baselines.py                # Classical HGNN and baseline model definitions
-        └── hsgin.py                    # HSGIN architecture implementation
+│   ├── raw/                    # Original 27 SAS Transport XPT survey files
+│   ├── processed/              # Canonical final_cohort.csv and master_patient.csv
+│   ├── splits/                 # folds_v1.json (5-fold patient disjoint splits)
+│   └── metadata/               # Locked feature_manifest.json and dataset audits
+├── artifacts/
+│   ├── graphs/                 # patient_graphs.pt (PyG HeteroData graphs)
+│   └── results/                # 112 audited result files, metrics, OOF predictions
+│       ├── benchmarks/         # final_benchmark_summary.json
+│       ├── leakage_gate/       # leakage_gate_report.json
+│       ├── statistical_tests/  # paired_bootstrap_phase3/4/5.json
+│       ├── explainability/     # feature_permutation_importance.csv, etc.
+│       └── experiments/        # exp0 through exp9 results and OOF prediction CSVs
+├── docs/                       # Technical guides and documentation
+│   ├── architecture.md         # System architecture & physiological rationale
+│   ├── installation.md         # Environment setup instructions
+│   ├── dataset_preparation.md  # NHANES provenance & cohort filtering flow
+│   ├── graph_construction.md   # HeteroData schema & graph builders
+│   ├── model_architecture.md   # HSGIN & comparative model specifications
+│   ├── training_and_evaluation.md # Protocol, metrics, statistical tests
+│   ├── experiment_execution.md # Experiment runner & registry guide
+│   ├── results_and_artifacts.md# Complete results league table & artifact inventory
+│   ├── reproducibility.md      # Deterministic seeding & scientific limitations
+│   ├── migration_changelog.md  # Transformation log from legacy codebase
+│   └── technical_evidence/     # 12 authoritative technical evidence sections
+├── src/
+│   └── organix/                # Core modular Python package
+│       ├── core/               # Constants, config, exceptions, logging
+│       ├── data/               # Ingestion, cohort, manifest, target, splits
+│       ├── graphs/             # Schema, builder, dataset, graph preprocessing
+│       ├── models/             # HSGIN, ClassicalHGNN, FT-Transformer, MLP, Baselines
+│       ├── training/           # Deterministic trainers & loss functions
+│       ├── evaluation/         # Metrics, leakage gate, bootstrap tests, subgroups
+│       ├── explainability/     # Permutation attribution & domain ablations
+│       ├── experiments/        # BaseExperiment and central registry
+│       ├── utils/              # Paths, seeding, atomic I/O
+│       └── cli.py              # Command-line interface
+└── tests/                      # Full automated test suite (22 tests)
 ```
 
 ---
 
-## 🛠️ Installation & Setup
+## 🚀 Quickstart
 
-### 1. Clone the Repository
+### 1. Installation
 ```bash
-git clone https://github.com/your-username/MultiOrgan-GNN.git
-cd MultiOrgan-GNN
+git clone https://github.com/your-username/organix.git
+cd organix
+pip install -e .
 ```
 
-### 2. Set Up Environment
+### 2. Verify Assets & Integrity
 ```bash
-python -m venv venv
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-.\venv\Scripts\activate
+organix verify
+```
 
-pip install --upgrade pip
-pip install -r requirements.txt
+### 3. Run the Automated Leakage Control Gate
+```bash
+organix gate
+```
+
+### 4. Run the Full Test Suite
+```bash
+pytest tests/
+# or
+python -m unittest discover tests
 ```
 
 ---
 
-## 📥 Data Acquisition: NHANES August 2021–August 2023
-
-Download the official SAS Transport (`.XPT`) files from the **CDC/NCHS NHANES** repository:
-**Official Portal**: `https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2021-2023`
-
-Place the downloaded `.XPT` files in the following directory layout:
-```
-NHANES AUG'21 - AUG'23/
-├── DEMO G/
-│   └── DEMO_L.xpt
-├── LABORATORY/
-│   ├── ALB_CR_L.xpt
-│   ├── BIOPRO_L.xpt
-│   ├── CBC_L.xpt
-│   ├── HDL_L.xpt
-│   ├── HSCRP_L.xpt
-│   └── TCHOL_L.xpt
-├── EXAMINATION/
-│   ├── BPXO_L.xpt
-│   └── LUX_L.xpt
-└── QUESTIONNAIRE/
-    ├── BPQ_L.xpt
-    ├── KIQ_U_L.xpt
-    └── MCQ_L.xpt
-```
-
-*(Refer to [`reports/NHANES_Dataset_Report.md`](reports/NHANES_Dataset_Report.md) for a beginner-friendly tutorial on navigating and downloading these files).*
+## 📖 Detailed Documentation
+- [Architecture Overview](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/architecture.md)
+- [Installation Guide](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/installation.md)
+- [Dataset Preparation & Attrition](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/dataset_preparation.md)
+- [Graph Construction Guide](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/graph_construction.md)
+- [Model Architecture & Baselines](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/model_architecture.md)
+- [Training and Evaluation Protocol](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/training_and_evaluation.md)
+- [Experiment Execution Guide](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/experiment_execution.md)
+- [Benchmark Results and Artifacts](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/results_and_artifacts.md)
+- [Reproducibility and Limitations](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/reproducibility.md)
+- [Migration Changelog](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/migration_changelog.md)
+- [Technical Evidence Package](file:///c:/Users/admin_fix/Downloads/3%20ORGAN/docs/technical_evidence/README.md)
 
 ---
 
-## 🚀 End-to-End Execution Pipeline
-
-### Step 1: Ingest & Build the Final Cohort
-Runs the multi-table `SEQN` left-join, applies the sequential inclusion filters, computes the continuous FIB-4 score, and saves `data/final_cohort.csv` ($N = 6,277$):
-```bash
-python src/pipeline.py
-```
-
-### Step 2: Build PyG Heterogeneous Patient Graphs
-Converts `final_cohort.csv` into 6,277 PyTorch Geometric `HeteroData` graphs stored in `graphs/patient_graphs.pt`:
-```bash
-python src/graph_builder.py
-```
-
-### Step 3: Run Baseline & HSGIN 5-Fold Cross-Validation
-Executes fold-isolated preprocessing, trains tabular baselines (Ridge, Random Forest, XGBoost, MLP), Classical HGNN, and the proposed HSGIN architecture:
-```bash
-python src/train.py
-```
-
-### Step 4: Run HSGIN Organ Ablation Study
-Performs subgraph masking and trains 5-fold CV models across 4 organ configurations (**A**: Liver Only, **B**: Liver+Kidney, **C**: Liver+Heart, **D**: Full 3-Organ):
-```bash
-python src/hsgin_ablation.py
-```
-
----
-
-## 🧬 Graph Topology Specification
-
-Each patient graph consists of **5 node types** and **14 directed edge types**:
-
-```
-                    [Patient (dim=1)]
-                   /  |         |    \
-                  /   |         |     \
-          [Liver(6)] [Kidney(6)] [Heart(8)] [Biomarker(4)]
-                 \     |      /
-                  \    |     /
-             (inter-organ crosstalk)
-```
-
-- **Node Features (25 Total)**:
-  - `patient` (1): Gender (`RIAGENDR`)
-  - `liver` (6): `LBXSGTSI`, `LBXSAL`, `LBXSTB`, `LBXSAPSI`, `LUXSMED`, `LUXCAPM`
-  - `kidney` (6): `LBXSCR`, `LBXSBU`, `LBXSUA`, `URXUMA`, `URXUCR`, `KIQ022`
-  - `heart` (8): `BPXOSY1`, `BPXODI1`, `BPXOPLS1`, `LBDHDD`, `LBXTC`, `BPQ020`, `MCQ160C`, `MCQ160E`
-  - `biomarker` (4): `LBXWBCSI`, `LBXRBCSI`, `LBXHGB`, `LBXHSCRP`
-- **Edges (14 Total)**:
-  - 8 Patient-Organ edges (bidirectional `pertains_to` / `rev_pertains_to`)
-  - 6 Inter-Organ edges (bidirectional `interacts_with` between `liver <-> kidney`, `liver <-> heart`, `kidney <-> heart`)
-
----
-
-## 📄 Documentation & Reports
-
-- [`reports/NHANES_Dataset_Report.md`](reports/NHANES_Dataset_Report.md): Complete data provenance, acquisition guide, and validation checklist.
-- [`reports/experiment_report.md`](reports/experiment_report.md): Full empirical benchmarks, tabular ablation, and HSGIN organ ablation results.
-- [`reports/leakage_audit_report.md`](reports/leakage_audit_report.md): Controlled target leakage audit report.
-- [`reports/FINAL_MASTER_HANDOVER.md`](reports/FINAL_MASTER_HANDOVER.md): Full technical handover report.
-
----
-
-## 📜 Citation & License
-
-This project is licensed under the MIT License. Data from NHANES is in the public domain and provided by the CDC/NCHS.
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for details.

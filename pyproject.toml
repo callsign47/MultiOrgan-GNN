@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "organix"
+version = "1.0.0"
+description = "ORGANIX: Heterogeneous Systemic Graph Interaction Network (HSGIN) for Multi-Organ Disease Modeling & FIB-4 Risk Stratification"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "ORGANIX Research Team"}
+]
+keywords = [
+    "graph-neural-networks",
+    "heterogeneous-graphs",
+    "multi-organ",
+    "fib-4",
+    "liver-fibrosis",
+    "nhanes",
+    "clinical-machine-learning"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torch-geometric>=2.3.0",
+    "numpy>=1.23.0",
+    "pandas>=1.5.0",
+    "scikit-learn>=1.2.0",
+    "scipy>=1.10.0",
+    "xgboost>=1.7.0",
+    "lightgbm>=3.3.0",
+    "catboost>=1.2.0",
+    "pytorch-tabnet>=4.1.0",
+    "pyreadstat>=1.2.0",
+    "tqdm>=4.65.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0"
+]
+
+[project.scripts]
+organix = "organix.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["organix*"]
