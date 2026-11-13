@@ -100,8 +100,8 @@ ORGANIX/
 
 ### 1. Installation
 ```bash
-git clone https://github.com/your-username/organix.git
-cd organix
+git clone https://github.com/callsign47/ORGANIX.git
+cd ORGANIX
 pip install -e .
 ```
 
